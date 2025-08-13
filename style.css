@@ -15,7 +15,6 @@ a {
 header {
     font-weight: 600;
     letter-spacing: 0px;
-    vertical-align: middle;
 }
 
 header .top-navigation {
@@ -57,7 +56,7 @@ section.banner h1 {
     letter-spacing: -0.5px;
 }
 
-.company-name {
+span.company-name {
    color: #0265DC;
 }
 
@@ -95,12 +94,10 @@ a.black-link {
     border: 2px solid rgba(208, 215, 251, 0.169);
     width: 172px;
     height: 48px;
-    gap: 8px;
     padding-top: 10px;
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
-    border-width: 2px;
 }
 
 /*CATALOG*/
@@ -119,12 +116,10 @@ a.catalog-button {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    vertical-align: middle;
     padding-top: 10px;
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
-    border-width: 2px;
     color: #F5F8FB;
     border: 2px solid rgba(208, 215, 251, 0.169)
 }
@@ -134,12 +129,10 @@ a.catalog-button-arrow {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    vertical-align: middle;
     padding-top: 10px;
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
-    border-width: 2px;
     color: #F5F8FB;
     border: 2px solid rgba(208, 215, 251, 0.169)
 }
@@ -153,7 +146,6 @@ span.label {
     color: #0265DC;
     width: 51px;
     height: 36px;
-    gap: 10px;
     padding-top: 8px;
     padding-right: 10px;
     padding-bottom: 8px;
@@ -171,7 +163,6 @@ span.label-sold {
     color: #F5F8FB;
     width: 51px;
     height: 36px;
-    gap: 10px;
     padding-top: 8px;
     padding-right: 10px;
     padding-bottom: 8px;
@@ -196,7 +187,7 @@ p.catalog-name {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0px;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
@@ -219,7 +210,7 @@ span.our-blog-author {
     line-height: 20px;
     letter-spacing: 0px;
     text-transform: uppercase;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
@@ -228,7 +219,7 @@ time.our-blog {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
@@ -247,7 +238,7 @@ p.our-blog-description {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
@@ -257,13 +248,11 @@ a.our-blog-button {
     line-height: 24px;
     letter-spacing: 0px;
     text-align: center;
-    vertical-align: middle;
     padding-top: 8px;
     padding-right: 20px;
     padding-bottom: 8px;
     padding-left: 20px;
-    border-width: 2px;
-    border: 2px solid #D0D7FB2B;
+    border: 2px solid rgba(208, 215, 251, 0.169);
 
 }
 
@@ -278,7 +267,7 @@ a.our-blog-button {
     text-align: center;
 }
 
-.about-info {
+p.about-info {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -286,7 +275,7 @@ a.our-blog-button {
     text-align: center;
 }
 
- h3.about-feature {
+h3.about-feature {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -294,24 +283,23 @@ a.our-blog-button {
     letter-spacing: 0px;
 }
 
-.about-description {
+span.about-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
 }
 
-.read-button {
+a.read-button {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    vertical-align: middle;
     padding-top: 10px;
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
-    border: 2px solid #D0D7FB2B
+    border: 2px solid rgba(208, 215, 251, 0.169)
 }
 
 /*OUR TEAM*/
@@ -344,7 +332,7 @@ a.our-blog-button {
     line-height: 28px;
     letter-spacing: 0px;
     text-align: center;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
@@ -438,7 +426,6 @@ a.blog-banner {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
-    vertical-align: middle;
     color: #F5F8FB;
 }
 
@@ -460,7 +447,6 @@ a.bar {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    vertical-align: middle;
     color: #F5F8FB;
 
 }
@@ -471,14 +457,12 @@ a.button {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
-    vertical-align: middle;
     color: #F5F8FB;
     padding-top: 6px;
     padding-right: 12px;
     padding-bottom: 6px;
     padding-left: 12px;
-    border-width: 2px;
-    border: 2px solid #D0D7FB2B;
+    border: 2px solid rgba(208, 215, 251, 0.169);
 }
 
 span.description {
@@ -505,7 +489,6 @@ button.blue-button {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    vertical-align: middle;
     color: #F5F8FB;
     width: 122px;
     padding-top: 10px;
@@ -521,7 +504,7 @@ span.blog-author {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
@@ -530,7 +513,7 @@ time.blog {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
@@ -572,7 +555,7 @@ span.blog-highlight-rating {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    color: #EFF5FAD1;
+    color: rgba(239, 245, 250, 0.82);
 
 }
 
