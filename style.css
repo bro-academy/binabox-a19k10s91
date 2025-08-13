@@ -1,31 +1,8 @@
-.poppins-regular {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.bakbak-one-regular {
-    font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /* MAIN */
 body {
     color: #F5F8FB;
     background-color: #0D0D15;
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
 }
 
 a {
@@ -36,7 +13,6 @@ a {
 /* HEADER */
 
 header {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     letter-spacing: 0px;
     vertical-align: middle;
@@ -53,7 +29,7 @@ header .top-button {
 }
 
 header a.top-button {
-    border: 2px solid #D0D7FB2B;
+    border: 2px solid rgba(208, 215, 251, 0.169);
 }
 
 header button.top-button {
@@ -61,9 +37,12 @@ header button.top-button {
     border: none;
 }
 
+ul {
+    list-style: none;
+}
+
 /*BANNER*/
 section.banner {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -78,8 +57,8 @@ section.banner h1 {
     letter-spacing: -0.5px;
 }
 
-.binabox {
-    color: #0265DC;
+.company-name {
+   color: #0265DC;
 }
 
 p.banner-description {
@@ -87,13 +66,13 @@ p.banner-description {
 
 }
 
-.counter {
+span.counter {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 52px;
     line-height: 62px;
     letter-spacing: -0.5px;
-    text-shadow: 0px 4px 13px #FFFFFF66;
+    text-shadow: 0px 4px 13px rgba(255, 255, 255, 0.4);
 }
 
 span.banner {
@@ -101,7 +80,7 @@ span.banner {
 
 }
 
-.blue-link {
+a.blue-link {
     background-color: #0265DC;
     border: none;
     width: 190px;
@@ -112,8 +91,8 @@ span.banner {
     padding-left: 24px;
 }
 
-.black-link {
-    border: 2px solid #D0D7FB2B;
+a.black-link {
+    border: 2px solid rgba(208, 215, 251, 0.169);
     width: 172px;
     height: 48px;
     gap: 8px;
@@ -136,7 +115,6 @@ span.banner {
 }
 
 a.catalog-button {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -148,11 +126,10 @@ a.catalog-button {
     padding-left: 24px;
     border-width: 2px;
     color: #F5F8FB;
-    border: 2px solid #D0D7FB2B
+    border: 2px solid rgba(208, 215, 251, 0.169)
 }
 
 a.catalog-button-arrow {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -164,11 +141,10 @@ a.catalog-button-arrow {
     padding-left: 24px;
     border-width: 2px;
     color: #F5F8FB;
-    border: 2px solid #D0D7FB2B
+    border: 2px solid rgba(208, 215, 251, 0.169)
 }
 
 span.label {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -187,7 +163,6 @@ span.label {
 }
 
 span.label-sold {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -217,7 +192,6 @@ p.catalog-price {
 }
 
 p.catalog-name {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -240,7 +214,6 @@ p.catalog-name {
 }
 
 span.our-blog-author {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -251,7 +224,6 @@ span.our-blog-author {
 }
 
 time.our-blog {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -271,7 +243,6 @@ p.our-blog-name {
 }
 
 p.our-blog-description {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -281,7 +252,6 @@ p.our-blog-description {
 }
 
 a.our-blog-button {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -309,7 +279,6 @@ a.our-blog-button {
 }
 
 .about-info {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -326,7 +295,6 @@ a.our-blog-button {
 }
 
 .about-description {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -334,7 +302,6 @@ a.our-blog-button {
 }
 
 .read-button {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -372,7 +339,6 @@ a.our-blog-button {
 }
 
  p.team-role {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -403,7 +369,6 @@ summary.faqs {
 }
 
 p.faqs-answer {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -412,7 +377,6 @@ p.faqs-answer {
 }
 
 span.faqs-answer {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -423,7 +387,6 @@ span.faqs-answer {
 
 /*FOOTER*/
 footer p.slogan {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -432,7 +395,6 @@ footer p.slogan {
 }
 
 footer nav h2.low-navigation {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -441,7 +403,6 @@ footer nav h2.low-navigation {
 }
 
 footer nav ul.low-navigation {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -450,7 +411,6 @@ footer nav ul.low-navigation {
 }
 
 footer p.rights {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -473,7 +433,6 @@ section.blog-banner h1.blog-banner {
 }
 
 a.blog-banner {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -484,11 +443,10 @@ a.blog-banner {
 }
 
 a.blog-banner.active {
-color:gray
+    color:gray
 }
 
 h2.bar {
-    font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -498,7 +456,6 @@ h2.bar {
 }
 
 a.bar {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -509,7 +466,6 @@ a.bar {
 }
 
 a.button {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -526,7 +482,6 @@ a.button {
 }
 
 span.description {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -546,7 +501,6 @@ h2.blog {
 }
 
 button.blue-button {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -563,7 +517,6 @@ button.blue-button {
 }
 
 span.blog-author {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -573,7 +526,6 @@ span.blog-author {
 }
 
 time.blog {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -583,7 +535,6 @@ time.blog {
 }
 
 section.blog {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -617,7 +568,6 @@ div.blog-highlight {
 }
 
 span.blog-highlight-rating {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -627,7 +577,6 @@ span.blog-highlight-rating {
 }
 
 span.blog-highlight {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -637,12 +586,9 @@ span.blog-highlight {
 }
 
 a.blog-link {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
     color: #78BBFA;
-
-
 }
