@@ -60,6 +60,10 @@ span.company-name {
    color: #0265DC;
 }
 
+p.banner-text {
+  color: #D9D9D9;
+}
+
 p.banner-description {
     color: #D9D9D9;
 
@@ -88,6 +92,8 @@ a.blue-link {
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
+    font-size: 18px;
+    font-weight: 700; 
 }
 
 a.black-link {
@@ -98,6 +104,8 @@ a.black-link {
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
+    font-size: 18px;
+    font-weight: 700; 
 }
 
 /*CATALOG*/
@@ -574,4 +582,9 @@ a.blog-link {
     line-height: 28px;
     letter-spacing: 0px;
     color: #78BBFA;
+}
+
+span.blog-tags {
+  font-size: 16px;
+  line-height: 24px;
 }
