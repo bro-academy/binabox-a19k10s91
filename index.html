@@ -5,99 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BINABOX Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <img src="logo.png" alt="Logo">
-        <nav>
+        <nav class="top-navigation">
             <ul>
                 <li>
-                    <a href="#">HOME</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="blog.html">BLOG</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="#">CATALOG</a>
+                    <a href="#">Catalog</a>
                 </li>
                 <li>
-                    <a href="#">ABOUT US</a>
+                    <a href="#">About us</a>
                 </li>
             </ul>
         </nav>
         <input type="search">
-        <a href="#">
+        <a href="#" class="top-button">
             <img src="assets/images/discord-icon.svg" alt="Discord icon">
             <span>DISCORD</span>
         </a>
-        <button>
+        <button class="top-button">
             <img src="log_in.svg" alt="login icon">
             <span>Log In</span>
         </button>
     </header>
 
     <main>
-        <section>
-            <h1>WITH BINABOX EXPLORE NFT COLLECTION</h1>
-            <p>We are the best way to check the rarity of NFT collection</p>
+        <section class="banner">
+            <h1>WITH <span class="binabox company-name">BINABOX</span> EXPLORE NFT COLLECTION</h1>
+            <p class="banner-text"></p>We are the best way to check the rarity of NFT collection</p>
             <p>
-                <span>2240+</span>
+                <span class="counter">2240+</span>
                 <span>Total items</span>
             </p>
             <p>
-                <span>1000+</span>
+                <span class="counter">1000+</span>
                 <span>Profiles whitelisted</span>
             </p>
-            <a href="#">Connect Wallet</a>
-            <a href="#">Whitelist now</a>
+            <a href="#" class="blue-link">Connect Wallet</a>
+            <a href="#" class="black-link">Whitelist now</a>
         </section>
         <section>
-            <h2>Catalog</h2>
+            <h2 class="catalog">Catalog</h2>
             <div></div>
-            <a href="#">See all</a>
-            <button></button>
+            <a href="#" class="catalog-button">See all</a>
+            <button class="catalog-button"></button>
             <button></button>
             <div>
-                <article>
+                <article class="catalog-item">
                     <div>
                         <img src="/echo_of_bones.png" alt="echo of bones">
-                        <span>New</span>
+                        <span class="label">New</span>
                     </div>
-                    <p>$1990</p>
-                    <p>Echo of Bones</p>
+                    <p class="catalog-price">$1990</p>
+                    <p class="catalog-name">Echo of Bones</p>
                 </article>
-                <article>
+                <article class="catalog-item">
                     <div>
                         <img src="/nyx_the_watcher.png" alt="nyx the watcher">
-                        <span>New</span>
+                        <span class="label">New</span>
                     </div>
-                    <p>$299.99</p>
-                    <p>Nyx the Watcher</p>
+                    <p class="catalog-price">$299.99</p>
+                    <p class="catalog-name">Nyx the Watcher</p>
                 </article>
-                <article>
+                <article class="catalog-item">
                     <div>
                         <img src="/blade_of_silence.png" alt="blade of silence">
-                        <span>Sold out</span>
+                        <span class="label-sold">Sold out</span>
                     </div>
-                    <p>$20</p>
-                    <p>Blade of Silence</p>
-                </article>
+                    <p class="catalog-price">$20</p>
+                    <p class="catalog-name">Blade of Silence</p>
+                </article class="catalog-item">
                 <article>
                     <div>
                         <img src="/data_core.png" alt="data core">
                         <span>New</span>
                     </div>
-                    <p>$1.000.000</p>
-                    <p>Data Core: Alpha</p>
+                    <p class="catalog-price">$1.000.000</p>
+                    <p class="catalog-name">Data Core: Alpha</p>
                 </article>
-                <article>
+                <article class="catalog-item">
                     <div>
                         <img src="/phantome_concole.png" alt="phantome concole">
                         <span>New</span>
                     </div>
-                    <p>$199.5</p>
-                    <p>Phantom Concole</p>
+                    <p class="catalog-price">$199.5</p>
+                    <p class="catalog-name">Phantom Concole</p>
                 </article>
             </div>
         </section>
@@ -108,7 +112,7 @@
                     <article>
                         <div>
                             <img src="/neutral_drift.png" alt="neutral drift">
-                            <span>NFT</span>
+                            <span class="label">NFT</span>
                         </div>
                         <span>NOVA RIVEN</span>
                         <time>04 Dec 2022</time>
@@ -122,7 +126,7 @@
                     <article>
                         <div>
                             <img src="/deadframe.png" alt="deadframe">
-                            <span>DROP</span>
+                            <span class="label">DROP</span>
                         </div>
                         <span>Kairo Null</span>
                         <time>04 Dec 2022</time>
@@ -136,7 +140,7 @@
                     <article>
                         <div>
                             <img src="/glitch_panther.png" alt="glitch panther">
-                            <span>NFT</span>
+                            <span class="label">NFT</span>
                         </div>
                         <span>Synthya Void</span>
                         <time>07 Dec 2022</time>
@@ -149,7 +153,7 @@
                     <article>
                         <div>
                             <img src="/primal.png" alt="primal">
-                            <span>RARE</span>
+                            <span class="label">RARE</span>
                         </div>
                         <span>Dr. Wex Omega</span>
                         <time>08 Dec 2022</time>
@@ -162,7 +166,7 @@
                     <article>
                         <div>
                             <img src="/white_photocol.png" alt="white photocol">
-                            <span>NFT</span>
+                            <span class="label">NFT</span>
                         </div>
                         <span>Tony Nguyer</span>
                         <time>20 Jun 2022</time>
@@ -175,7 +179,7 @@
                     <article>
                         <div>
                             <img src="/retrocore.png" alt="retrocore">
-                            <span>ARTIFACT</span>
+                            <span class="label">ARTIFACT</span>
                         </div>
                         <span>Echo Zero</span>
                         <time>09 Dec 2022</time>
@@ -185,37 +189,37 @@
                     </article>
                 </li>
                 <li>
-                    <a href="#">Read more</a>
+                    <a href="#" class="read-button">Read more</a>
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="about">
             <h2>About us</h2>
-            <p>We craft digital artifacts for those who live between worlds. Our space is built for creators,
+            <p class="about-info">We craft digital artifacts for those who live between worlds. Our space is built for creators,
                 collectors, and the quietly obsessed.</p>
             <ul>
                 <li>
-                    <h3>Crystal Clear Quality</h3>
-                    <span>Every NFT we drop is razor-sharp, high-res, and glitch-free. Art that hits hard and stays
+                    <h3 class="about">Crystal Clear Quality</h3>
+                    <span class="about-description">Every NFT we drop is razor-sharp, high-res, and glitch-free. Art that hits hard and stays
                         clean.</span>
                 </li>
                 <li>
-                    <h3>Curated Depth</h3>
-                    <span>Not just big — meaningful. Each piece tells a story, every collection builds a
+                    <h3 class="about">Curated Depth</h3>
+                    <span class="about-description">Not just big — meaningful. Each piece tells a story, every collection builds a
                         universe.</span>
                 </li>
                 <li>
-                    <h3>Rare Source Access</h3>
-                    <span>Early drops. Backstage peeks. Our members don’t scroll — they unlock.</span>
+                    <h3 class="about">Rare Source Access</h3>
+                    <span class="about-description">Early drops. Backstage peeks. Our members don’t scroll — they unlock.</span>
                 </li>
                 <li>
-                    <h3>Living Network</h3>
-                    <span>Our community isn't a list — it's a force.Artists, rebels, dreamers.</span>
+                    <h3 class="about">Living Network</h3>
+                    <span class="about-description">Our community isn't a list — it's a force.Artists, rebels, dreamers.</span>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="#">Read more</a>
+                    <a href="#" class="read-button">Read more</a>
                 </li>
             </ul>
         </section>
@@ -348,26 +352,26 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>FAQs</h2>
+        <section class="faqs">
+            <h2 class="faqs">FAQs</h2>
             <details>
-                <summary>What are the NFTs?</summary>
-                <p><span>NFTs (non-fungible tokens)</span> are unique digital objects stored on the blockchain. They can
+                <summary class="faqs">What are the NFTs?</summary>
+                <p class="faqs-answer"><span class="faqs-answer">NFTs (non-fungible tokens)</span> are unique digital objects stored on the blockchain. They can
                     be
                     art, music, code, memes, memories — anything that can be owned and verified.No copies. No fakes.
                     Just you and the chain.</p>
             </details>
             <details>
-                <summary>How do I get NFTs?</summary>
-                <p>.....</p>
+                <summary class="faqs">How do I get NFTs?</summary>
+                <p class="faqs-answer">.....</p>
             </details>
             <details>
-                <summary>How can we buy your NFTs?</summary>
-                <p>......</p>
+                <summary class="faqs">How can we buy your NFTs?</summary>
+                <p class="faqs-answer">......</p>
             </details>
             <details>
-                <summary>Wo are the team behind the project?</summary>
-                <p>......</p>
+                <summary class="faqs">Who are the team behind the project?</summary>
+                <p class="faqs-answer">......</p>
             </details>
         </section>
     </main>
@@ -375,10 +379,10 @@
         <a href="#">
             <img src="logo.png" alt="Logo BINABOX">
         </a>
-        <p>We are the best way to check the rarity of NFT collection.</p>
+        <p class="slogan">We are the best way to check the rarity of NFT collection.</p>
         <nav>
-            <h2>Navigation</h2>
-            <ul>
+            <h2 class="low-navigation">Navigation</h2>
+            <ul class="low-navigation">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -406,7 +410,7 @@
             </ul>
         </nav>
         <hr>
-        <p>BINABOX 2025 - All rights reserved</p>
+        <p class="rights">BINABOX 2025 - All rights reserved</p>
         <div>
             <ul>
                 <li>
