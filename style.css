@@ -88,6 +88,8 @@ a.banner__button {
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
+    font-size: 18px;
+    font-weight: 700; 
 }
 
 a.banner__link {
@@ -98,6 +100,8 @@ a.banner__link {
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
+    font-size: 18px;
+    font-weight: 700; 
 }
 
 /*CATALOG*/
