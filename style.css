@@ -440,7 +440,7 @@ a.active {
     color:gray
 }
 
-h2.blog-sidebar__title {
+h2.sidebar__list{
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -450,7 +450,17 @@ h2.blog-sidebar__title {
 
 }
 
-a.blog-sidebar__categories{
+h2.sidebar__item{
+    font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: rgba(245, 248, 251, 1);
+
+}
+
+a.sidebar__list{
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -459,7 +469,7 @@ a.blog-sidebar__categories{
 
 }
 
-a.blog-sidebar__button {
+a.sidebar__button {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
