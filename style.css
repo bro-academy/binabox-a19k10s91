@@ -5,7 +5,7 @@ body {
     font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
 }
 
-a {
+a, button {
     color: #F5F8FB;
     text-decoration: none;
 }
@@ -17,23 +17,27 @@ header {
     letter-spacing: 0px;
 }
 
-header .header-navigation {
+header .header__nav {
     font-size: 16px;
     line-height: 24px;
 }
 
-header .top-button {
-    font-size: 18px;
-    line-height: 28px;
+.button {
+    padding: 10px 24px;
+    border: none;
+    background-color: #0D0D15;
 }
 
-header a.top-button {
+.button__primary {
+    width: 161px;
+    height: 40px;
     border: 2px solid rgba(208, 215, 251, 0.169);
 }
 
-header button.top-button {
+.button__secondary{
+    width: 190px;
+    height: 48px;
     background-color: #0265DC;
-    border: none;
 }
 
 ul {
@@ -60,12 +64,12 @@ span.banner__title-highlighted {
    color: #0265DC;
 }
 
-p.banner__subtitle {
+p.banner__description {
     color: #D9D9D9;
 
 }
 
-span.banner__statistic-counter {
+span.banner__counter {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -74,74 +78,50 @@ span.banner__statistic-counter {
     text-shadow: 0px 4px 13px rgba(255, 255, 255, 0.4);
 }
 
-span.banner__statistic-text{
+span.banner__subtext{
     color: #D9D9D9;
 
 }
 
-a.banner__button {
-    background-color: #0265DC;
-    border: none;
-    width: 190px;
-    height: 48px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-left: 24px;
-    font-size: 18px;
-    font-weight: 700; 
-}
-
-a.banner__link {
-    border: 2px solid rgba(208, 215, 251, 0.169);
-    width: 172px;
-    height: 48px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-left: 24px;
-    font-size: 18px;
-    font-weight: 700; 
-}
-
 /*CATALOG*/
 
-h2.catalog-section__title {
+h2.catalog__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0px;
-
 }
 
-a.catalog-section__link{
+.slider-nav__all {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-left: 24px;
+    width: 108px;
+    height: 48px;
+    padding: 10px 24px;
     color: #F5F8FB;
     border: 2px solid rgba(208, 215, 251, 0.169)
 }
 
-a.catalog-section__slider-button{
+.slider-nav__arrow{
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-left: 24px;
+    width: 48px;
+    height: 48px;
+    padding: 10px 24px;
     color: #F5F8FB;
     border: 2px solid rgba(208, 215, 251, 0.169)
 }
 
-span.label {
+.slider-nav__arrow--right {
+    background-color: #0265DC;
+}
+
+span.label--available {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -296,17 +276,6 @@ span.counted-list__text {
     letter-spacing: 0px;
 }
 
-a.read-button {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-left: 24px;
-    border: 2px solid rgba(208, 215, 251, 0.169)
-}
 
 /*OUR TEAM*/
  h2.section-title {
@@ -332,7 +301,7 @@ a.read-button {
 
 }
 
- p.personal-card__possition {
+ p.personal-card__position {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -380,7 +349,7 @@ span.faqs-info__highlighted {
 }
 
 /*FOOTER*/
-p.footer-slogan {
+p.footer__slogan {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -388,7 +357,7 @@ p.footer-slogan {
 
 }
 
-h2.footer-navigation {
+h2.footer__subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -396,7 +365,7 @@ h2.footer-navigation {
 
 }
 
-ul.footer-navigation__list {
+ul.footer__nav-list {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -404,7 +373,7 @@ ul.footer-navigation__list {
 
 }
 
-p.footer-rights {
+p.footer__rights {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -415,8 +384,7 @@ p.footer-rights {
 
 
 /*OUR BLOG_page*/
-section.blog-page
-h1.blog-page {
+.blog-page__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -427,7 +395,7 @@ h1.blog-page {
 
 }
 
-a.blog-page__navigation-link {
+a.blog-page__nav-item {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -436,11 +404,11 @@ a.blog-page__navigation-link {
     color: #F5F8FB;
 }
 
-a.active {
-    color:gray
+a.blog-page__nav-item--active{
+    color: rgba(231, 238, 247, 0.66);
 }
 
-h2.blog-sidebar__title {
+h2.sidebar__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -450,7 +418,7 @@ h2.blog-sidebar__title {
 
 }
 
-a.blog-sidebar__categories{
+a.sidebar__list-item{
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -459,7 +427,7 @@ a.blog-sidebar__categories{
 
 }
 
-a.blog-sidebar__button {
+a.sidebar__tags-item {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -473,7 +441,7 @@ a.blog-sidebar__button {
     border: 2px solid rgba(208, 215, 251, 0.169);
 }
 
-figcaption.blog-content__description {
+figcaption.article-picture__description {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -482,7 +450,7 @@ figcaption.blog-content__description {
 
 }
 
-h2.blog-page__title {
+h2.blog-content__text {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -492,22 +460,17 @@ h2.blog-page__title {
 
 }
 
-button.button--play_button {
+button.blog-content__button {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
     color: #F5F8FB;
     width: 122px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-left: 24px;
-    background-color: #0265DC;
-
+    padding: 10px 24px;
 }
 
-span.blog-page__author {
+span.blog-content__author {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -516,7 +479,7 @@ span.blog-page__author {
 
 }
 
-time.blog-page__time {
+time.blog-content__time {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -525,7 +488,7 @@ time.blog-page__time {
 
 }
 
-p.blog-page__subtitle{
+p.blog-content__text{
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -541,7 +504,7 @@ li.blog-page__list-description{
     color:  rgb(248, 247, 255);
 }
 
-span.blog-page__features-info {
+span.features-list__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -578,12 +541,12 @@ p.blog-page__topic-info {
 
 }
 
-blockquote.blog-page--highlighted {padding: 16px;
+blockquote.blockquote {padding: 16px;
     border-radius: 16px;
     background-color: #002754;
 }
 
-p.blog-page__text {
+p.blockquote__text {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 28px;
@@ -593,7 +556,7 @@ p.blog-page__text {
     color: #F8F7FF;
    }
 
-span.blog-page__rating {
+span.blockquote__rating {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -602,7 +565,7 @@ span.blog-page__rating {
 
 }
 
-span.blog-page__company {
+span.blockquote__company {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -619,7 +582,7 @@ a.blog-page__topic-link {
     color: #78BBFA;
 }
 
-a.tags__button {
+a.tags__link {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
