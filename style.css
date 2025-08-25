@@ -17,7 +17,7 @@ header {
     letter-spacing: 0px;
 }
 
-header .header__nav {
+.header__nav {
     font-size: 16px;
     line-height: 24px;
 }
@@ -45,14 +45,14 @@ ul {
 }
 
 /*BANNER*/
-section.banner {
+.banner {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0px;
 }
 
-h1.banner__title {
+.banner__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -60,16 +60,16 @@ h1.banner__title {
     letter-spacing: -0.5px;
 }
 
-span.banner__title-highlighted {
+.banner__title-highlighted {
    color: #0265DC;
 }
 
-p.banner__description {
+.banner__description {
     color: #D9D9D9;
 
 }
 
-span.banner__counter {
+.banner__counter {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -78,14 +78,14 @@ span.banner__counter {
     text-shadow: 0px 4px 13px rgba(255, 255, 255, 0.4);
 }
 
-span.banner__subtext{
+.banner__subtext{
     color: #D9D9D9;
 
 }
 
 /*CATALOG*/
 
-h2.catalog__title {
+.catalog__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -121,7 +121,7 @@ h2.catalog__title {
     background-color: #0265DC;
 }
 
-span.label--available {
+.label--available {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -138,7 +138,7 @@ span.label--available {
     background-color: #F5F8FB;
 }
 
-span.label--sold {
+.label--sold {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -156,7 +156,7 @@ span.label--sold {
 
 }
 
-p.catalog-item__price {
+.catalog-item__price {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -166,7 +166,7 @@ p.catalog-item__price {
 
 }
 
-p.catalog-item__name {
+.catalog-item__name {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -177,7 +177,7 @@ p.catalog-item__name {
 
 
 /*OUR BLOG*/
-h2.blog-section__title {
+.blog-section__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -188,7 +188,7 @@ h2.blog-section__title {
 
 }
 
-span.blog-item__author {
+.blog-item__author {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -199,7 +199,7 @@ span.blog-item__author {
 }
 
 
-time.blog-item__time {
+.blog-item__time {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -208,7 +208,7 @@ time.blog-item__time {
 
 }
 
-p.blog-item__title {
+.blog-item__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -218,7 +218,7 @@ p.blog-item__title {
 
 }
 
-p.blog-item__text {
+.blog-item__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -227,7 +227,7 @@ p.blog-item__text {
 
 }
 
-a.blog-item__button{
+.blog-item__button{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -244,7 +244,7 @@ a.blog-item__button{
 
 /*ABOUT US*/
 
-h2.about-title {
+.about-title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -253,7 +253,7 @@ h2.about-title {
     text-align: center;
 }
 
-p.about__description {
+.about__description {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -261,7 +261,7 @@ p.about__description {
     text-align: center;
 }
 
-h3.counted-list__title {
+.counted-list__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -269,7 +269,7 @@ h3.counted-list__title {
     letter-spacing: 0px;
 }
 
-span.counted-list__text {
+.counted-list__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -278,7 +278,7 @@ span.counted-list__text {
 
 
 /*OUR TEAM*/
- h2.section-title {
+.section-title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -289,7 +289,7 @@ span.counted-list__text {
 
 }
 
- p.tpersonal-card__name {
+.tpersonal-card__name {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -301,7 +301,7 @@ span.counted-list__text {
 
 }
 
- p.personal-card__position {
+.personal-card__position {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -312,7 +312,7 @@ span.counted-list__text {
 }
 
 /*FAQs*/
- h2.section-title faq__title {
+.section-title faq__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -322,7 +322,7 @@ span.counted-list__text {
 
 }
 
-summary.faq-info__title {
+.faq-info__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -331,7 +331,7 @@ summary.faq-info__title {
 
 }
 
-p.faqs-info__answer{
+.faqs-info__answer{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -339,7 +339,7 @@ p.faqs-info__answer{
 
 }
 
-span.faqs-info__highlighted {
+.faqs-info__highlighted {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -349,7 +349,7 @@ span.faqs-info__highlighted {
 }
 
 /*FOOTER*/
-p.footer__slogan {
+.footer__slogan {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -357,7 +357,7 @@ p.footer__slogan {
 
 }
 
-h2.footer__subtitle {
+.footer__subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -365,7 +365,7 @@ h2.footer__subtitle {
 
 }
 
-ul.footer__nav-list {
+.footer__nav-list {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -373,7 +373,7 @@ ul.footer__nav-list {
 
 }
 
-p.footer__rights {
+.footer__rights {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -395,7 +395,7 @@ p.footer__rights {
 
 }
 
-a.blog-page__nav-item {
+.blog-page__nav-item {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -404,11 +404,11 @@ a.blog-page__nav-item {
     color: #F5F8FB;
 }
 
-a.blog-page__nav-item--active{
+.blog-page__nav-item--active{
     color: rgba(231, 238, 247, 0.66);
 }
 
-h2.sidebar__title {
+.sidebar__title {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -418,7 +418,7 @@ h2.sidebar__title {
 
 }
 
-a.sidebar__list-item{
+.sidebar__list-item{
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -427,7 +427,7 @@ a.sidebar__list-item{
 
 }
 
-a.sidebar__tags-item {
+.sidebar__tags-item {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -441,7 +441,7 @@ a.sidebar__tags-item {
     border: 2px solid rgba(208, 215, 251, 0.169);
 }
 
-figcaption.article-picture__description {
+.article-picture__description {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -450,7 +450,7 @@ figcaption.article-picture__description {
 
 }
 
-h2.blog-content__text {
+.blog-content__subtitle {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -460,7 +460,7 @@ h2.blog-content__text {
 
 }
 
-button.blog-content__button {
+.blog-content__button {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -470,7 +470,7 @@ button.blog-content__button {
     padding: 10px 24px;
 }
 
-span.blog-content__author {
+.blog-content__author {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -479,7 +479,7 @@ span.blog-content__author {
 
 }
 
-time.blog-content__time {
+.blog-content__time {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -488,7 +488,7 @@ time.blog-content__time {
 
 }
 
-p.blog-content__text{
+.blog-content__text{
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -496,7 +496,7 @@ p.blog-content__text{
     color: rgba(248, 247, 255);
 }
 
-li.blog-page__list-description{
+.blog-page__list-description{
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -504,7 +504,7 @@ li.blog-page__list-description{
     color:  rgb(248, 247, 255);
 }
 
-span.features-list__text {
+.features-list__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -513,16 +513,8 @@ span.features-list__text {
 
 }
 
-section.blog {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0px;
-    color: #F8F7FF;
 
-}
-
-h3.blog-page__topic {
+.blog-page__topic {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 28px;
@@ -532,7 +524,7 @@ h3.blog-page__topic {
 
 }
 
-p.blog-page__topic-info {
+.blog-page__topic-info {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -541,12 +533,12 @@ p.blog-page__topic-info {
 
 }
 
-blockquote.blockquote {padding: 16px;
+.blockquote {padding: 16px;
     border-radius: 16px;
     background-color: #002754;
 }
 
-p.blockquote__text {
+.blockquote__text {
     font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 28px;
@@ -556,7 +548,7 @@ p.blockquote__text {
     color: #F8F7FF;
    }
 
-span.blockquote__rating {
+.blockquote__rating {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -565,7 +557,7 @@ span.blockquote__rating {
 
 }
 
-span.blockquote__company {
+.blockquote__company {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -574,7 +566,7 @@ span.blockquote__company {
 
 }
 
-a.blog-page__topic-link {
+.blog-page__topic-link {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -582,7 +574,7 @@ a.blog-page__topic-link {
     color: #78BBFA;
 }
 
-a.tags__link {
+.tags__link {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
