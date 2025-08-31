@@ -1,0 +1,23 @@
+<section class="blog-section">
+    <h2 class="blog-section__title">{{ index.blog.title }}</h2>
+    <ul class="blog-section__list">
+        <li class="blog-section__item">
+              {% for item in index.blog.items %}
+            <article class="blog-item">
+                <div>
+                    <img class="blog-item__picture" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
+                    <span class="label label--available">{{ item.category }}</span>
+                </div>
+                <span class="blog-item__author">{{ item.author }}</span>
+                <time class="blog-item__time">{{ item.date }}</time>
+                <p class="blog-item__title"><strong>{{ item.title }}</strong></p>
+                <p class="blog-item__text">{{ item.text }}</p>
+                <a class="button button__primary" href="#">{{ index.blog.button_primary }} ></a>
+            </article>
+            {% endfor %}    
+        </li>
+        <li>
+            <a href="#" class="button button__primary">{{ index.blog.button_primary }}</a>
+        </li>
+    </ul>
+</section>

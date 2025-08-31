@@ -1,5 +1,29 @@
 {
-  "common": {
-    "siteTitle": "Bro Starter"
+  "siteTitle": "BINABOX",
+  "header": {
+    "default_button": {
+      "text": "Discord",
+      "link": "#",
+      "icon": "assets/images/discord-icon.svg"
+    },
+    "primary_button": "Connect",
+    "nav": [
+      {
+        "text": "Home",
+        "link": "index.html"
+      },
+      {
+        "text": "Blog",
+        "link": "blog.html"
+      },
+      {
+        "text": "Catalog",
+        "link": "catalog.html"
+      },
+      {
+        "text": "About Us",
+        "link": "about_us.html"
+      }
+    ]
   }
 }
