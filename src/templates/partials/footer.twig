@@ -1,58 +1,28 @@
 <footer class="footer">
     <a class="footer-logo" href="#">
-        <img class="footer-logo__picture" src="logo.png" alt="Logo BINABOX">
+        <img class="footer-logo__picture" src="{{ footer.logo.icon }}" alt="{{ footer.logo.alt }}">
     </a>
-    <p class="footer__slogan">We are the best way to check the rarity of NFT collection.</p>
+    <p class="footer__slogan">{{ footer.logo.slogan }}</p>
     <nav>
-        <h2 class="footer__subtitle">Navigation</h2>
+        <h2 class="footer__subtitle">{{ footer.nav.title }}</h2>
         <ul class="footer__nav-list">
+            {% for link in footer.nav.links %}
             <li>
-                <a href="#">Home</a>
+                <a href="{{ link.href }}">{{ link.label }}</a>
             </li>
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="#">Catalog</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
-            <li>
-                <a href="#">Terms Conditions</a>
-            </li>
-            <li>
-                <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#">Whitepaper</a>
-            </li>
-            <li>
-                <a href="#">Help Center</a>
-            </li>
+            {% endfor %}
         </ul>
     </nav>
     <hr>
-    <p class="footer__rights">BINABOX 2025 - All rights reserved</p>
+    <p class="footer__rights">{{ footer.text_rights }}</p>
     <div>
         <ul class="footer-social">
+            {% for link in footer.social %}
             <li>
-                <a class="footer-social__icon" href="#">twitter</a>
+                <img class="footer-social__logo" src="{{ link.icon }}" alt="{{ link.alt }}">
+                <a class="footer-social__icon" href="{{ link.href }}"></a>
             </li>
-            <li>
-                <a class="footer-social__icon" href="#">facebook</a>
-            </li>
-            <li>
-                <a class="footer-social__icon" href="#">telegram</a>
-            </li>
-            <li>
-                <a class="footer-social__icon" href="#">youtube</a>
-            </li>
-            <li>
-                <a class="footer-social__icon" href="#">tiktok</a>
-            </li>
-            <li>
-                <a class="footer-social__icon" href="#">discord</a>
+            {% endfor %}
         </ul>
     </div>
 </footer>

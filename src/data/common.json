@@ -1,28 +1,114 @@
 {
   "siteTitle": "BINABOX",
   "header": {
+    "logo": {
+      "icon": "logo.svg",
+      "alt": "BINABOX Logo"
+    },
     "default_button": {
       "text": "Discord",
-      "link": "#",
-      "icon": "assets/images/discord-icon.svg"
+      "icon": "discord.svg",
+      "alt": "Discord Icon"
     },
-    "primary_button": "Connect",
-    "nav": [
+    "primary_button": {
+      "text": "Log In",
+      "icon": "log_in.svg",
+      "alt": "Log In Icon"
+    },
+    "links": [
       {
-        "text": "Home",
-        "link": "index.html"
+        "label": "Home",
+        "href": "index.html",
+        "active": true
       },
       {
-        "text": "Blog",
-        "link": "blog.html"
+        "label": "Blog",
+        "href": "blog.html"
       },
       {
-        "text": "Catalog",
-        "link": "catalog.html"
+        "label": "Catalog",
+        "href": "catalog.html"
       },
       {
-        "text": "About Us",
-        "link": "about_us.html"
+        "label": "About Us",
+        "href": "about_us.html"
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "icon": "logo.svg",
+      "alt": "BINABOX Logo",
+      "slogan": "We are the best way to check the rarity of NFT collection."
+    },
+    "nav": {
+      "title": "Navigation",
+      "links": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Blog",
+          "href": "blog.html"
+        },
+        {
+          "label": "Catalog",
+          "href": "catalog.html"
+        },
+        {
+          "label": "Contact Us",
+          "href": "contact_us.html"
+        },
+        {
+          "label": "Terms Conditions",
+          "href": "terms_conditions.html"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "privacy_policy.html"
+        },
+        {
+          "label": "Whitepaper",
+          "href": "whitepaper.html"
+        },
+        {
+          "label": "Help Center",
+          "href": "help_center.html"
+        }
+      ]
+    },
+    "text_rights": "BINABOX 2025. All rights reserved",
+    "social": [
+      {
+        "icon": "twitter.svg",
+        "alt": "Twitter",
+        "href": "twitter.com"
+      },
+      {
+        "icon": "facebook.svg",
+        "alt": "Facebook",
+        "href": "https://facebook.com"
+      },
+      {
+        "icon": "telegram.svg",
+        "alt": "Telegram",
+        "href": "https://telegram.com"
+      },
+      {
+        "icon": "youtube.svg",
+        "alt": "YouTube",
+        "href": "https://youtube.com"
+      },
+      {
+        "icon": "tiktok.svg",
+        "alt": "TitTok",
+        "href": "https://tiktok.com"
+      },
+      {
+        "icon": "discord.svg",
+        "alt": "Discord",
+        "href": "https://discord.com"
       }
     ]
   }
