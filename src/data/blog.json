@@ -40,11 +40,11 @@
           "href": "#"
         },
         {
-          "label": "obot (24)",
+          "label": "Robot (24)",
           "href": "#"
         },
         {
-          "label": "Lauchpad (24)",
+          "label": "Launchpad (24)",
           "href": "#"
         },
         {
@@ -71,7 +71,7 @@
           "href": "#"
         },
         {
-          "label": "Lauchpad",
+          "label": "Launchpad",
           "href": "#"
         },
         {
@@ -116,7 +116,7 @@
         },
         {
           "icon_logo": "/binabox_icon",
-          "alt_logo": "abel of Binabox",
+          "alt_logo": "label of Binabox",
           "text": "Metaverse integration"
         }
       ],

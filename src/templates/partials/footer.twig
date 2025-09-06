@@ -19,8 +19,9 @@
         <ul class="footer-social">
             {% for link in footer.social %}
             <li>
-                <img class="footer-social__logo" src="{{ link.icon }}" alt="{{ link.alt }}">
-                <a class="footer-social__icon" href="{{ link.href }}"></a>
+                <a class="footer-social__icon" href="{{ link.href }}">
+                    <img class="footer-social__logo" src="{{ link.icon }}" alt="{{ link.alt }}">
+                </a>
             </li>
             {% endfor %}
         </ul>

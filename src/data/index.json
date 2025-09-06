@@ -72,7 +72,7 @@
       "items": [
         {
           "image_link": "/neutral_drift.png",
-          "image_alt": "/neutral_drift.png",
+          "image_alt": "neutral_drift.png",
           "category": "NFT",
           "author": "NOVA RIVEN",
           "date": "04 Dec 2022",
@@ -241,7 +241,7 @@
           "image_link": "/team_member_4.png",
           "image_alt": "team member_4",
           "name": "Dr. Wex Omega",
-          "position": "LVisual Disruptor",
+          "position": "Visual Disruptor",
           "social": [
             {
               "icon": "twitter.svg",

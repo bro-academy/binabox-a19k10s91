@@ -1,8 +1,8 @@
 <section class="blog-section">
     <h2 class="blog-section__title">{{ index.blog.title }}</h2>
-    <ul class="blog-section__list">
+    <ul class="blog-section__list">  
+        {% for item in index.blog.items %}
         <li class="blog-section__item">
-              {% for item in index.blog.items %}
             <article class="blog-item">
                 <div>
                     <img class="blog-item__picture" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
@@ -13,11 +13,11 @@
                 <p class="blog-item__title"><strong>{{ item.title }}</strong></p>
                 <p class="blog-item__text">{{ item.text }}</p>
                 <a class="button button__primary" href="#">{{ index.blog.button_primary }} ></a>
-            </article>
-            {% endfor %}    
+            </article>    
         </li>
         <li>
             <a href="#" class="button button__primary">{{ index.blog.button_primary }}</a>
         </li>
+         {% endfor %}
     </ul>
 </section>
