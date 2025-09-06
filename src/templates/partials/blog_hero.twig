@@ -1,0 +1,12 @@
+<section class="blog-page">
+    <h1 class="blog-page__title">{{ blog.hero.title }}</h1>
+    <nav class="blog-page__nav">
+        <ul class="blog-page__nav-list">
+            {% for link in blog.hero.links %}
+            <li>
+                <a href="{{ link.href }}" class="blog-page__nav-item {% if link.active %} blog-page__nav-item--active {% endif %}">{{ link.label }}</a>
+            </li>
+              {% endfor %} 
+        </ul>
+    </nav>
+</section>

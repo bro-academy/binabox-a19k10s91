@@ -1,0 +1,21 @@
+<header class="header">
+    <img class="header__logo" src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}">
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            {% for link in header.links %}
+            <li>
+                <a class="header__nav-item {% if link.active %} header__nav-item--active {% endif %}" href="{{ link.href }} ">{{ link.label }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <input type="search">
+    <a href="#" class="button button__primary">
+        <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}">
+        <span>{{ header.default_button.text }}</span>
+    </a>
+    <a class="button button__secondary">
+        <img src="{{ header.primary_button.icon }}" alt=" {{ .header.primary_button.alt }}">
+        <span>{{ header.primary_button.text }}</span>
+    </a>
+</header>

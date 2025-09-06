@@ -12,7 +12,7 @@ a, button {
 
 /* HEADER */
 
-header {
+.header {
     font-weight: 600;
     letter-spacing: 0px;
 }

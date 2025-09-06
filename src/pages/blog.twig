@@ -1,0 +1,9 @@
+{% extends 'src/templates/layouts/base.twig' %}
+
+{% from 'src/templates/partials/ui/icon.twig' import icon %}
+
+{% block content %}
+  {% include 'src/templates/partials/blog_hero.twig' %}
+  {% include 'src/templates/partials/blog_sidebar.twig' %}
+  {% include 'src/templates/partials/blog_content.twig' %}
+{% endblock %}
