@@ -1,27 +1,12 @@
-/* MAIN */
-body {
-    color: #F5F8FB;
-    background-color: #0D0D15;
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-}
+@use "../base/global";
 
-a, button {
-    color: #F5F8FB;
-    text-decoration: none;
-}
-
-/* HEADER */
-
-.header {
-    font-weight: 600;
-    letter-spacing: 0px;
-}
 
 .header__nav {
     font-size: 16px;
     line-height: 24px;
 }
-
+@use "../components/button";
+@use "../layout/banner";
 .button {
     padding: 10px 24px;
     border: none;

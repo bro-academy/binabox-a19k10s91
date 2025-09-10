@@ -19,4 +19,7 @@ export default defineConfig({
     postcss(),
     imageOptimizer(),
   ],
+  CSS: {
+    devSourcemap: true
+  },
 });

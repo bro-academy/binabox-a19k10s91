@@ -1,0 +1,38 @@
+/*BANNER*/
+.banner {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+.banner__title {
+    font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+}
+
+.banner__title-highlighted {
+   color: #0265DC;
+}
+
+.banner__description {
+    color: #D9D9D9;
+
+}
+
+.banner__counter {
+    font-family: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    text-shadow: 0px 4px 13px rgba(255, 255, 255, 0.4);
+}
+
+.banner__subtext{
+    color: #D9D9D9;
+
+}
