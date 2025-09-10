@@ -28,13 +28,13 @@ a, button {
     background-color: #0D0D15;
 }
 
-.button__primary {
+.button--primary {
     width: 161px;
     height: 40px;
     border: 2px solid rgba(208, 215, 251, 0.169);
 }
 
-.button__secondary{
+.button--secondary{
     width: 190px;
     height: 48px;
     background-color: #0265DC;
@@ -496,7 +496,7 @@ ul {
     color: rgba(248, 247, 255);
 }
 
-.blog-page__list-description{
+.blog-content__list-description{
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
