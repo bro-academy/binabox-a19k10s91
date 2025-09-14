@@ -2,33 +2,13 @@
     <h2 class="catalog__title">{{ index.catalog.title }}</h2>
     <div></div>
     <div class="slider-nav">
-        <button class="button slider-nav__all">{{ index.catalog.slider.button_all }}</button>
-        <button class="button slider-nav__arrow slider-nav__arrow--left">{{ index.catalog.slider.button_left }}</button>
-        <button class="button slider-nav__arrow slider-nav__arrow--right">{{ index.catalog.slider.button_right
-            }}</button>
+        <button class="button">{{ index.catalog.slider.button_all }}</button>
+        <button class="button">{{ index.catalog.slider.button_left }}</button>
+        <button class="button button--secondary">{{ index.catalog.slider.button_right }}</button>
     </div>
     <div>
         {% for item in index.catalog.items %}
-        <article class="catalog-item">
-            <div>
-                <img class="catalog-item__image" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
-
-                {% if item.status == "new" %}
-                <span class="label label--available">
-                    {{ index.catalog.items_status_new }}
-                </span>
-                {% endif %}
-
-                {% if item.status == "sold" %}
-                <span class="label label--sold">
-                    {{ index.catalog.items_status_sold }}
-                </span>
-                {% endif %}
-
-            </div>
-            <p class="catalog-item__price">{{ item.price }}</p>
-            <p class="catalog-item__name">{{ item.name }}</p>
-        </article>
+            {% include "../partials/catalog_item.twig" %}
         {% endfor %}
     </div>
 </section>

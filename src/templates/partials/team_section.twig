@@ -2,21 +2,7 @@
     <h2 class="section-title team__title">{{ index.team.title }}</h2>
     <ul class="team__list">
         {% for member in index.team.members %}
-        <li class="team__item personal-card">
-            <img class="personal-card__picture" src="{{ member.image_link }}" alt="{{ member.image_alt }}">
-            <p class="personal-card__name"><strong>{{ member.name }}</strong></p>
-            <p class="personal-card__position">{{ member.position }}</p>
-            <ul class="personal-card__social-list social-list">
-                {% for social in member.social %}
-                <li>
-                    <a class="social-list__link" href="{{ social.link}}">
-                        <img class="social-list__personal-icon" src="{{ social.icon }}" alt="{{ social.alt }}">
-                    </a>
-                </li>
-
-                {% endfor %}    
-            </ul>
-        </li>
+            {% include "../partials/personal_card.twig" %}
         {% endfor %}    
     </ul>
 </section>
