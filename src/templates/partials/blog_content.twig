@@ -4,7 +4,7 @@
         <figcaption class="article-picture__description">{{ blog.content.block_1.description }}</figcaption>
     </figure>
     <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
-    <button class="button button__secondary blog-content__button">{{ blog.content.button }}</button>
+    <button class="button button--secondary blog-content__button">{{ blog.content.button }}</button>
     <div>
         <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}" alt="{{ blog.content.alt_contact }}">
         <span class="blog-content__author">{{ blog.content.author }}</span>
@@ -12,10 +12,10 @@
         <time class="blog-content__time">{{ blog.content.date }}</time>
     </div>
     <p class="blog-content__text">{{ blog.content.subtitle }}</p>
-    <ul class="blog-page__list">
-        <li class="blog-page__list-description">{{ blog.content.paragraph_1 }}</li>
-        <li class="blog-page__list-description">{{ blog.content.paragraph_2 }}</li>
-        <li class="blog-page__list-description">{{ blog.content.paragraph_3 }}</li>
+    <ul class="blog-content__list">
+        <li class="blog-content__list-description">{{ blog.content.paragraph_1 }}</li>
+        <li class="blog-content__list-description">{{ blog.content.paragraph_2 }}</li>
+        <li class="blog-content__list-description">{{ blog.content.paragraph_3 }}</li>
     </ul>
     <ul class="features-list">
         {% for list in blog.content.lists %}

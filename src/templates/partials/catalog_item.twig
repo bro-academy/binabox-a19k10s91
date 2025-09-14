@@ -1,0 +1,20 @@
+<article class="catalog-item">
+    <div>
+        <img class="catalog-item__image" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
+
+        {% if item.status == "new" %}
+        <span class="label label--available">
+            {{ index.catalog.items_status_new }}
+        </span>
+        {% endif %}
+
+        {% if item.status == "sold" %}
+        <span class="label label--sold">
+            {{ index.catalog.items_status_sold }}
+        </span>
+        {% endif %}
+
+    </div>
+    <p class="catalog-item__price">{{ item.price }}</p>
+    <p class="catalog-item__name">{{ item.name }}</p>
+</article>
