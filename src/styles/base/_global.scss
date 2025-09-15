@@ -1,15 +1,19 @@
+@use "variables" as *;
+
 body {
-    color: #F5F8FB;
-    background-color: #0D0D15;
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-family: $font-primary;
+    color: $main-color;
+    background-color: $main-bg-color;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-a, button {
-    color: #F5F8FB;
+a,
+button {
+    color: $main-color;
     text-decoration: none;
 }
 
-header {
-    font-weight: 600;
-    letter-spacing: 0px;
+ul {
+    list-style: none;
 }

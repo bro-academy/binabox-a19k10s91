@@ -1,0 +1,8 @@
+@use "../base/variables" as *;
+
+.features-list__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $title-color;
+}

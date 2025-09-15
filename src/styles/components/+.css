@@ -1,1 +1,10 @@
+@import "./_blockquote.scss";
+@import "./_blog-item.scss";
 @import "./_button.scss";
+@import "./_catalog-item.scss";
+@import "./_counted-list.scss";
+@import "./_faq.scss";
+@import "./_label.scss";
+@import "./_personal-card.scss";
+@import "./_sidebar.scss";
+@import "./_tags-link.scss";

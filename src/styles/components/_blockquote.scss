@@ -1,0 +1,27 @@
+@use "../base/variables" as *;
+
+.blockquote {
+    border-radius: 16px;
+    background-color: $blockquote-bg-color;
+
+    &__text {
+        font-family: $font-secondary;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+        vertical-align: bottom;
+        color: $title-color;
+    }
+
+    &__rating {
+        font-weight: 600;
+        font-size: 14px;
+        color: $subtitle-color;
+    }
+
+    &__company {
+        font-weight: 600;
+        font-size: 14px;
+        color: $title-color;
+    }
+}

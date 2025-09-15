@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+
+.blog-section__title {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: $title-color;
+}

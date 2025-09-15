@@ -1,17 +1,21 @@
+@use "../base/variables" as *;
+
 .button {
-    padding: 10px 24px;
-    border: none;
-    background-color: #0D0D15;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: $main-bg-color;
+    border: 2px solid $border-color;
 }
 
-.button__primary {
-    width: 161px;
-    height: 40px;
-    border: 2px solid rgba(208, 215, 251, 0.169);
+.button--secondary {
+    background-color: $mark-color;
+    border: 2px solid $mark-color;
 }
 
-.button__secondary{
-    width: 190px;
-    height: 48px;
-    background-color: #0265DC;
+.blog-content__button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $main-color;
 }
