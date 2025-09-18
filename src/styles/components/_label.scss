@@ -1,18 +1,18 @@
 @use "../base/variables" as *;
 
 .label {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: $fw-semibold;
+    font-size: $fontsize-sm;
     text-align: right;
     border: none;
 }
 
 .label--available {
-    color: $mark-color;
+    color: $link-color;
     background-color: $main-color;
 }
 
 .label--sold {
     color: $main-color;
-    background-color: $label-sold-color;
+    background-color: $negative-color;
 }

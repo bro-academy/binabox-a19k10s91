@@ -1,8 +1,8 @@
 @use "../base/variables" as *;
 
-.tags__link {
+.blog-content__button {
     font-weight: $fw-semibold;
-    font-size: $fontsize-sm;
+    font-size: $fontsize-md;
+    line-height: $lh-lg;
     color: $main-color;
-    border: 2px solid $seporatorbold-color;
 }

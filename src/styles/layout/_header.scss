@@ -1,7 +1,9 @@
-.header {
-    font-weight: 600;
-}
+@use "../base/variables" as *;
 
-.header__nav {
-    line-height: 24px;
+.header {
+    font-weight: $fw-semibold;
+
+    &__nav {
+        line-height: $lh-sm;
+    }
 }

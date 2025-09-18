@@ -3,14 +3,14 @@
 .counted-list {
     &__title {
         font-family: $font-secondary;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
+        font-weight: $fw-regular;
+        font-size: $fontsize-lg;
+        line-height: $lh-xl;
     }
 
     &__text {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
+        font-weight: $fw-medium;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
     }
 }

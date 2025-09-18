@@ -4,8 +4,8 @@ body {
     font-family: $font-primary;
     color: $main-color;
     background-color: $main-bg-color;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: $fontsize-base;
+    line-height: $lh-sm;
 }
 
 a,

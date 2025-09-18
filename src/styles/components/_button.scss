@@ -1,21 +1,14 @@
 @use "../base/variables" as *;
 
 .button {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: $fw-semibold;
+    font-size: $fontsize-md;
+    line-height: $lh-lg;
     background-color: $main-bg-color;
-    border: 2px solid $border-color;
+    border: 2px solid $seporatorbold-color;
 }
 
 .button--secondary {
-    background-color: $mark-color;
-    border: 2px solid $mark-color;
-}
-
-.blog-content__button {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    color: $main-color;
+    background-color: $link-color;
+    border: 2px solid $link-color;
 }

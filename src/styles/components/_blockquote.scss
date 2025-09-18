@@ -2,11 +2,11 @@
 
 .blockquote {
     border-radius: 16px;
-    background-color: $blockquote-bg-color;
+    background-color: $marina1200-color;
 
     &__text {
         font-family: $font-secondary;
-        font-weight: 400;
+        font-weight: $fw-regular;
         font-size: 28px;
         line-height: 36px;
         vertical-align: bottom;
@@ -14,14 +14,14 @@
     }
 
     &__rating {
-        font-weight: 600;
-        font-size: 14px;
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
         color: $subtitle-color;
     }
 
     &__company {
-        font-weight: 600;
-        font-size: 14px;
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
         color: $title-color;
     }
 }

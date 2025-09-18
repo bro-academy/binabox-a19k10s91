@@ -1,22 +1,26 @@
-.footer__slogan {
-    font-weight: 400;
-    font-size: 14px;
+@use "../base/variables" as *;
 
-    &__subtitle {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 28px;
-    }
+.footer {
+    &__slogan {
+        font-weight: $fw-regular;
+        font-size: $fontsize-sm;
 
-    &__rights {
-        font-weight: 400;
-        font-size: 14px;
-        text-align: left;
-    }
+        &__subtitle {
+            font-weight: $fw-medium;
+            font-size: 20px;
+            line-height: $lh-lg;
+        }
 
-    &__nav-list {
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 16px;
+        &__rights {
+            font-weight: $fw-regular;
+            font-size: $fontsize-sm;
+            text-align: left;
+        }
+
+        &__nav-list {
+            font-weight: $fw-semibold;
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 }
