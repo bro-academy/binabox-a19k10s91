@@ -4,23 +4,23 @@
     &__slogan {
         font-weight: $fw-regular;
         font-size: $fontsize-sm;
+    }
 
-        &__subtitle {
-            font-weight: $fw-medium;
-            font-size: 20px;
-            line-height: $lh-lg;
-        }
+    &__subtitle {
+        font-weight: $fw-medium;
+        font-size: 20px;
+        line-height: $lh-lg;
+    }
 
-        &__rights {
-            font-weight: $fw-regular;
-            font-size: $fontsize-sm;
-            text-align: left;
-        }
+    &__rights {
+        font-weight: $fw-regular;
+        font-size: $fontsize-sm;
+        text-align: left;
+    }
 
-        &__nav-list {
-            font-weight: $fw-semibold;
-            font-size: 12px;
-            line-height: 16px;
-        }
+    &__nav-list {
+        font-weight: $fw-semibold;
+        font-size: 12px;
+        line-height: 16px;
     }
 }
