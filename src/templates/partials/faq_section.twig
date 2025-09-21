@@ -3,7 +3,7 @@
      {% for qa in index.faq.questions %}
     <details class="faq__phrase faq-info">
         <summary class="faq-info__title">{{ qa.question }}</summary>
-        <p class="faqs-info__answer"><span class="faqs-info__highlighted">{{ qa.answer_link }} </span> {{ qa.answer }}</p>
+        <p class="faqs-info__answer"><span class="faqs-info--highlighted">{{ qa.answer_link }} </span> {{ qa.answer }}</p>
     </details>
     {% endfor %}    
 </section>
