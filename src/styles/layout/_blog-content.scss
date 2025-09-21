@@ -1,0 +1,45 @@
+@use "../base/variables" as *;
+
+.blog-content {
+    &__subtitle {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xl;
+        line-height: $lh-xxl;
+        letter-spacing: -0.5px;
+        color: $title-color;
+    }
+
+    &__author {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        color: $subtitle-color;
+    }
+
+    &__time {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        color: $subtitle-color;
+    }
+
+    &__text {
+        font-weight: $fw-regular;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
+        color: $main-color;
+    }
+
+    &__list-description {
+        font-weight: $fw-regular;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
+        color: $main-color;
+    }
+
+     &__button {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
+        color: $main-color;
+    }
+}

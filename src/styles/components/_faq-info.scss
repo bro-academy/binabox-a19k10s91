@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+
+.faq-info {
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-lg;
+        line-height: $lh-xl;
+    }
+
+    &__answer {
+        font-weight: $fw-regular;
+        line-height: $lh-sm;
+    }
+
+    &--highlighted {
+        font-weight: $fw-semibold;
+        line-height: $lh-sm;
+        color: $link-color;
+    }
+}

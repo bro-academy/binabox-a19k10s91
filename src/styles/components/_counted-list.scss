@@ -1,0 +1,16 @@
+@use "../base/variables" as *;
+
+.counted-list {
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-lg;
+        line-height: $lh-xl;
+    }
+
+    &__text {
+        font-weight: $fw-medium;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
+    }
+}

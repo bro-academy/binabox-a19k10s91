@@ -1,0 +1,36 @@
+@use "../base/variables" as *;
+
+.banner {
+    font-weight: $fw-medium;
+    font-size: 20px;
+    line-height: $lh-lg;
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xxl;
+        line-height: $lh-huge;
+        letter-spacing: -0.5px;
+    }
+
+    &__title-highlighted {
+        color: $link-color;
+    }
+
+    &__description {
+        color: $secondary-color;
+    }
+
+    &__counter {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xxl;
+        line-height: $lh-huge;
+        letter-spacing: -0.5px;
+        text-shadow: 0 4px 13px $baseicon-color;
+    }
+
+    &__subtitle {
+        color: $secondary-color;
+    }
+}

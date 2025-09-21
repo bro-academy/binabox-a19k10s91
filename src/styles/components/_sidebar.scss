@@ -1,0 +1,25 @@
+@use "../base/variables" as *;
+
+.sidebar {
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-lg;
+        line-height: $lh-xl;
+        color: $main-color;
+    }
+
+    &__list-item {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        color: $main-color;
+    }
+
+    &__tags-item {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        text-align: center;
+        color: $main-color;
+        border: 2px solid $seporatorbold-color;
+    }
+}

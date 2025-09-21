@@ -1,0 +1,31 @@
+@use "../base/variables" as *;
+
+.blog-item {
+    &__author {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        text-transform: uppercase;
+        color: $subtitle-color;
+    }
+
+    &__time {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        color: $subtitle-color;
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xl;
+        line-height: $lh-xxl;
+        letter-spacing: -0.5px;
+        color: $main-color;
+    }
+
+    &__text {
+        font-weight: $fw-regular;
+        line-height: $lh-sm;
+        color: $subtitle-color;
+    }
+}

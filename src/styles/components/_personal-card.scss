@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+
+.personal-card {
+    &__name {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-lg;
+        line-height: $lh-xl;
+        text-align: center;
+        text-transform: capitalize;
+        color: $main-color;
+
+    }
+
+    &__position {
+        font-weight: $fw-regular;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
+        text-align: center;
+        color: $subtitle-color;
+
+    }
+}

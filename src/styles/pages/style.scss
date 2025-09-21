@@ -1,0 +1,25 @@
+@use "../base/global";
+
+@use "../components/button";
+@use "../components/label";
+@use "../components/catalog-item";
+@use "../components/blog-item";
+@use "../components/counted-list";
+@use "../components/personal-card";
+@use "../components/sidebar";
+@use "../components/blockquote";
+@use "../components/tags-link";
+@use "../components/faq-info";
+
+@use "../layout/header";
+@use "../layout/banner";
+@use "../layout/footer";
+@use "../layout/catalog";
+@use "../layout/blog";
+@use "../layout/about";
+@use "../layout/team";
+@use "../layout/blog-page";
+@use "../layout/article-picture";
+@use "../layout/blog-content";
+@use "../layout/features-list";
+@use "../layout/faq";

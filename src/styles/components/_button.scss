@@ -1,0 +1,16 @@
+@use "../base/variables" as *;
+
+.button {
+    font-weight: $fw-semibold;
+    font-size: $fontsize-md;
+    line-height: $lh-lg;
+    background-color: $main-bg-color;
+    border: 2px solid $seporatorbold-color;
+}
+
+.button {
+    &--secondary {
+        background-color: $link-color;
+        border: 2px solid $link-color;
+    }
+}

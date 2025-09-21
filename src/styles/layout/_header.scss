@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+
+.header {
+    font-weight: $fw-semibold;
+
+    &__nav {
+        line-height: $lh-sm;
+    }
+}

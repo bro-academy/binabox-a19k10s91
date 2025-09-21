@@ -1,0 +1,27 @@
+@use "../base/variables" as *;
+
+.blockquote {
+    border-radius: 16px;
+    background-color: $marina1200-color;
+
+    &__text {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: 28px;
+        line-height: 36px;
+        vertical-align: bottom;
+        color: $title-color;
+    }
+
+    &__rating {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        color: $subtitle-color;
+    }
+
+    &__company {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        color: $title-color;
+    }
+}

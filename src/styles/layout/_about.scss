@@ -1,0 +1,19 @@
+@use "../base/variables" as *;
+
+.about {
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xl;
+        line-height: $lh-xxl;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+
+    &__description {
+        font-weight: $fw-medium;
+        font-size: 20px;
+        line-height: $lh-lg;
+        text-align: center;
+    }
+}
