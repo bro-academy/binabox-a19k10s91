@@ -35,4 +35,11 @@
         line-height: $lh-lg;
         color: $main-color;
     }
+
+     &__button {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
+        color: $main-color;
+    }
 }

@@ -1,7 +1,6 @@
 @use "../base/global";
 
 @use "../components/button";
-@use "../components/blog-content-button";
 @use "../components/label";
 @use "../components/catalog-item";
 @use "../components/blog-item";
@@ -15,12 +14,12 @@
 @use "../layout/header";
 @use "../layout/banner";
 @use "../layout/footer";
-@use "../layout/catalog-section";
-@use "../layout/blog-section";
-@use "../layout/about-section";
-@use "../layout/team-section";
+@use "../layout/catalog";
+@use "../layout/blog";
+@use "../layout/about";
+@use "../layout/team";
 @use "../layout/blog-page";
 @use "../layout/article-picture";
 @use "../layout/blog-content";
 @use "../layout/features-list";
-@use "../layout/faq-section";
+@use "../layout/faq";

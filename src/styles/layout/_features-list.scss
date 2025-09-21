@@ -1,8 +1,11 @@
 @use "../base/variables" as *;
 
-.features-list__text {
-    font-weight: $fw-regular;
-    font-size: $fontsize-md;
-    line-height: $lh-lg;
-    color: $title-color;
+.features-list {
+
+    &__text {
+        font-weight: $fw-regular;
+        font-size: $fontsize-md;
+        line-height: $lh-lg;
+        color: $title-color;
+    }
 }

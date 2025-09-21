@@ -1,8 +1,10 @@
 @use "../base/variables" as *;
 
-.tags__link {
-    font-weight: $fw-semibold;
-    font-size: $fontsize-sm;
-    color: $main-color;
-    border: 2px solid $seporatorbold-color;
+.tags {
+    &__link {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        color: $main-color;
+        border: 2px solid $seporatorbold-color;
+    }
 }

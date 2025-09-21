@@ -1,0 +1,10 @@
+@use "../base/variables" as *;
+
+.catalog {
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-lg;
+        line-height: $lh-xl;
+    }
+}

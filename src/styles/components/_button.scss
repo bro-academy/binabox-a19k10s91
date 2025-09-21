@@ -30,10 +30,11 @@
 
 }
 
-.button--secondary {
-    background-color: $link-color;
-    border: 2px solid $link-color;
-
+.button {
+    &--secondary {
+        background-color: $link-color;
+        border: 2px solid $link-color;
+    
     &:hover {
         background-color: rgba(56, 146, 243, 1);
         border: 2px solid rgba(56, 146, 243, 1)
@@ -53,4 +54,4 @@
         border: 1px solid rgba(0, 0, 0, 1);
         text-color: rgba(229, 236, 251, 0.36)
     }
-}
+}}

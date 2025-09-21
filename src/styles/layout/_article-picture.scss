@@ -1,7 +1,10 @@
 @use "../base/variables" as *;
 
-.article-picture__description {
-    font-weight: $fw-medium;
-    line-height: $lh-sm;
-    color: $title-color;
+.article-picture {
+    
+    &__description {
+        font-weight: $fw-medium;
+        line-height: $lh-sm;
+        color: $title-color;
+    }
 }
