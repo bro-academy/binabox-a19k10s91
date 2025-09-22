@@ -49,7 +49,7 @@
         <ul>
             {% for tag in blog.content.block_3.tags %}
             <li>
-                <a href="{{ tag.href }}" class="tags__link">{{ tag.label }}</a>
+                <a href="{{ tag.href }}" class="button tags__link">{{ tag.label }}</a>
             </li>
             {% endfor %}
         </ul>
@@ -59,7 +59,7 @@
         <ul class="social__list">
             {% for social in blog.content.block_3.socials %}
             <li>
-                <a class="social__list-item" href="{{ social.href }}">
+                <a class="button social__list-item" href="{{ social.href }}">
                     <img class="social__list-item-logo" src="{{ social.icon }}" alt="{{ social.alt }}">
                 </a>
             </li>
