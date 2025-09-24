@@ -2,6 +2,8 @@ $main-color: rgb(245, 248, 251);
 $main-bg-color: rgb(13, 13, 21);
 $link-color: rgb(2, 101, 220);
 $title-color: rgb(248, 247, 255);
+$alternative2-invert-color: rgba(244, 247, 250, 1);
+
 $subtitle-color: rgba(239, 245, 250, 0.82);
 $secondary2white-color: rgba(231, 238, 247, 0.659);
 $secondary-color: rgb(217, 217, 217);
@@ -12,6 +14,7 @@ $seporatorbold-color: rgba(208, 215, 251, 0.169);
 
 $negative-color: rgb(234, 56, 41);
 
+// Marina color palette
 $marina1200-color: rgb(0, 39, 84);
 $marina1100-color: rgb(0, 53, 113);
 $marina1000-color: rgb(0, 68, 148);
@@ -26,12 +29,11 @@ $marina200-color: rgb(181, 222, 255);
 $marina100-color: rgb(202, 232, 255);
 $marina50-color: rgb(224, 242, 255);
 
-
-
-
+// Fonts
 $font-primary: "Poppins", Arial, Verdana, Tahoma, sans-serif;
 $font-secondary: "Bakbak One", Arial, Verdana, Tahoma, sans-serif;
 
+// Font Sizes
 $fontsize-base: 16px;
 $fontsize-sm: 14px;
 $fontsize-md: 18px;
@@ -39,10 +41,12 @@ $fontsize-lg: 24px;
 $fontsize-xl: 36px;
 $fontsize-xxl: 52px;
 
+// Font Weights
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-semibold: 600;
 
+// Line Heights
 $lh-sm: 20px;
 $lh-md: 24px;
 $lh-lg: 28px;

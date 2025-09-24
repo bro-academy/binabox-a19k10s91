@@ -3,8 +3,9 @@
 .link {
     font-size: 12px;
     line-height: 16px;
+    text-decoration: dashed;
 
-    &--simple {
+    &--primary {
         color: $marina400-color;
         text-decoration: none;
 
@@ -31,7 +32,7 @@
         }
     }
 
-    &--dashed {
+    &--secondary {
         text-decoration: dashed;
         color: $marina400-color;
 
@@ -57,7 +58,7 @@
         }
     }
 
-    &--white {
+    &--tertiary {
         color: $main-color;
         text-decoration: none;
 
