@@ -5,7 +5,7 @@
     <ul class="personal-card__social-list social-list">
         {% for social in member.social %}
         <li>
-            <a class="social-list__link" href="{{ social.link}}">
+            <a class="button button--ghost button--small social-list__link" href="{{ social.link}}">
                 <img class="social-list__personal-icon" src="{{ social.icon }}" alt="{{ social.alt }}">
             </a>
         </li>
