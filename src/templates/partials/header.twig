@@ -4,7 +4,7 @@
         <ul class="header__nav-list">
             {% for link in header.links %}
             <li>
-                <a class="link--tertiary header__nav-item {% if link.active %} header__nav-item--active {% endif %}" href="{{ link.href }} ">{{ link.label }}</a>
+                <a class="link link--tertiary header__nav-item {% if link.active %} header__nav-item--active {% endif %}" href="{{ link.href }} ">{{ link.label }}</a>
             </li>
             {% endfor %}
         </ul>

@@ -2,6 +2,7 @@
 
 .button {
     font-weight:$fw-semibold;
+    border: none;
 
     &--large {
         font-size: $fontsize-md;
@@ -39,7 +40,7 @@
 
         &:active {
             background-color: $seporator-color;
-            box-shadow: 0 0 0 2px $seporator-color inset;
+            //box-shadow: 0 0 0 2px $seporator-color inset;//
         }
 
         &:disabled {

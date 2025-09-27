@@ -4,7 +4,7 @@
         <ul class="sidebar__list">
             {% for link in blog.sidebar.categories %}
             <li>
-                <a href="{{ link.href }}" class="link--tertiary sidebar__list-item">{{ link.label }}</a>
+                <a href="{{ link.href }}" class="link link--tertiary sidebar__list-item">{{ link.label }}</a>
             </li>
             {% endfor %}
         </ul>
@@ -14,7 +14,7 @@
         <ul class="sidebar__tags">
             {% for tag in blog.sidebar.tags %}
             <li>
-                <a href="{{ tag.href }}" class="sidebar__tags-item">{{ tag.label }}</a>
+                <a href="{{ tag.href }}" class="sidebar__tags-item tags__button button--primary button--small">{{ tag.label }}</a>
             </li>
             {% endfor %}
         </ul>
