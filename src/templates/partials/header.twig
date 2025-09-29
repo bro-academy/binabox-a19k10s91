@@ -4,17 +4,17 @@
         <ul class="header__nav-list">
             {% for link in header.links %}
             <li>
-                <a class="header__nav-item {% if link.active %} header__nav-item--active {% endif %}" href="{{ link.href }} ">{{ link.label }}</a>
+                <a class="link link--tertiary header__nav-item {% if link.active %} header__nav-item--active {% endif %}" href="{{ link.href }} ">{{ link.label }}</a>
             </li>
             {% endfor %}
         </ul>
     </nav>
     <input type="search">
-    <a href="#" class="button">
+    <a href="#" class="button button--primary button--large">
         <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}">
         <span>{{ header.default_button.text }}</span>
     </a>
-    <a class="button button--secondary">
+    <a class="button button--secondary button--large">
         <img src="{{ header.primary_button.icon }}" alt=" {{ .header.primary_button.alt }}">
         <span>{{ header.primary_button.text }}</span>
     </a>

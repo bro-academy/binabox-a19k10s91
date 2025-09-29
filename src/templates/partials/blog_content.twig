@@ -4,7 +4,7 @@
         <figcaption class="article-picture__description">{{ blog.content.block_1.description }}</figcaption>
     </figure>
     <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
-    <button class="button button--secondary blog-content__button">{{ blog.content.button }}</button>
+    <button class="button button--secondary button--large blog-content__button">{{ blog.content.button }}</button>
     <div>
         <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}" alt="{{ blog.content.alt_contact }}">
         <span class="blog-content__author">{{ blog.content.author }}</span>
@@ -49,7 +49,7 @@
         <ul>
             {% for tag in blog.content.block_3.tags %}
             <li>
-                <a href="{{ tag.href }}" class="tags__link">{{ tag.label }}</a>
+                <a href="{{ tag.href }}" class="tags__button button button--primary button--small">{{ tag.label }}</a>
             </li>
             {% endfor %}
         </ul>
@@ -59,7 +59,7 @@
         <ul class="social__list">
             {% for social in blog.content.block_3.socials %}
             <li>
-                <a class="social__list-item" href="{{ social.href }}">
+                <a class="button button--primary button--small social__list-item" href="{{ social.href }}">
                     <img class="social__list-item-logo" src="{{ social.icon }}" alt="{{ social.alt }}">
                 </a>
             </li>

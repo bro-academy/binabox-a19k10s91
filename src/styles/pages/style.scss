@@ -8,8 +8,9 @@
 @use "../components/personal-card";
 @use "../components/sidebar";
 @use "../components/blockquote";
-@use "../components/tags-link";
+@use "../components/tags-button";
 @use "../components/faq-info";
+@use "../components/link";
 
 @use "../layout/header";
 @use "../layout/banner";
