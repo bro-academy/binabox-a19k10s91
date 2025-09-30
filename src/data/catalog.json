@@ -1,0 +1,25 @@
+{
+    "catalog": {
+    "url": "catalog.html",
+    "title": "Catalog",
+    "hero": {
+        "title": "Exlore catalog",
+        "links": [
+                {
+                    "label": "Home",
+                    "href": "index.html"
+                },
+                {
+                    "label": "Catalog",
+                    "href": "catalog.html"
+                },
+                {
+                    "label": "The Basilisks NFT",
+                    "href": "#",
+                    "active": true
+                }
+            ]
+
+    }
+}
+}

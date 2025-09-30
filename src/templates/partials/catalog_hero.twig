@@ -1,0 +1,12 @@
+<section class="catalog-hero">
+    <h1 class="catalog-hero__title">{{ catalog.hero.title }}</h1>
+    <nav class="catalog-hero__nav">
+        <ul class="catalog-hero__nav-list">
+            {% for link in catalog.hero.links %}
+            <li>
+                <a href="{{ link.href }}" class="link link--tertiary catalog-hero__nav-item {% if link.active %} catalog-hero__nav-item--active {% endif %}">{{ link.label }}</a>
+            </li>
+              {% endfor %} 
+        </ul>
+    </nav>
+</section>

@@ -1,0 +1,92 @@
+{
+    "contact": {
+        "url": "contact.html",
+        "title": "Contact",
+        "hero": {
+            "title": "Contact Us",
+            "links": [
+                {
+                    "label": "Home",
+                    "href": "index.html"
+                },
+                {
+                    "label": "Contact Us",
+                    "href": "#",
+                    "active": true
+                }
+            ]
+        },
+        "info": {
+            "cards": [
+                {
+                    "link": "#",
+                    "image_icon": "map-pin.png",
+                    "image_alt": "icon_map",
+                    "title": "Location",
+                    "subtitle": "2163 Phillips gap Rd"
+                },
+                {
+                    "link": "#",
+                    "image_icon": "mail.png",
+                    "image_alt": "icon-mail",
+                    "title": "Email",
+                    "subtitle": "info.avitex@gmail.com"
+                },
+                {
+                    "link": "#",
+                    "image_icon": "phone.png",
+                    "image_alt": "icon-phone",
+                    "title": "Call Us",
+                    "subtitle": "+1 666 8888"
+                }
+            ]
+        },
+        "form": {
+            "title": "Get in Touch",
+            "subtitle": "Browse through the most frequently asked questions",
+            "fields": [
+                {
+                    "type": "text",
+                    "name": "name",
+                    "label": "Name",
+                    "placeholder": "Enter your name",
+                    "required": true
+
+                },
+
+
+
+
+
+
+                {
+                    "type": "text",
+                    "name": "Last name",
+                    "placeholder": "Enter your last name"
+                },
+                
+                {
+                    "type": "date",
+                    "name": "Date of birth",
+                    "placeholder": "dd/mm/yyyy"
+                },
+                {
+                    "type": "text",
+                    "name": "Email",
+                    "placeholder": "Enter your email"
+                },
+                {
+                    "type": "phone",
+                    "name": "Phone Number",
+                    "placeholder": "Enter your number"
+                },
+                {
+                    "type": "textarea",
+                    "name": "Message",
+                    "placeholder": "Text your message here"
+                }
+            ],
+            "button_text": "Send Message"
+        }
+    }
+}

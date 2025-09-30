@@ -1,0 +1,25 @@
+<form method="post" action="url" class="contact-form">
+     <h2 class="contact-form__title">{{ contact.form.title }}</h2>
+    <p class="contact-form__subtitle">{{ contact.form.subtitle }}</p>
+    {% for field in contact.form.fields %}
+
+    <label for="name">{{ field.name }}</label>
+    <input id="name" type="text" placeholder="{{ field.placeholder }}" required>
+
+    <label for="dob">Date of birth</label>
+    <input id="dob" type="date" placeholder="dd/mm/yyyy" required>
+
+
+
+
+
+    <label for="name" class="contact-form__name">{{ field.name }}</label>
+    <input id="name" type="{{ field.type }}" placeholder="{{ field.placeholder}}" />
+    {% endfor %} 
+
+       
+
+
+    
+        <button type="submit" class="contact-form__button button button--primary button--large">{{ contact.form.submit_text }}</button>
+    </form>
