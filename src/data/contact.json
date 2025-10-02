@@ -51,42 +51,64 @@
                     "label": "Name",
                     "placeholder": "Enter your name",
                     "required": true
-
                 },
-
-
-
-
-
-
                 {
                     "type": "text",
-                    "name": "Last name",
-                    "placeholder": "Enter your last name"
+                    "name": "last_name",
+                    "label": "Last name",
+                    "placeholder": "Enter your last name",
+                    "required": true
                 },
-                
                 {
                     "type": "date",
-                    "name": "Date of birth",
-                    "placeholder": "dd/mm/yyyy"
+                    "name": "dob",
+                    "label": "Date of birth",
+                    "required": true
                 },
                 {
-                    "type": "text",
-                    "name": "Email",
-                    "placeholder": "Enter your email"
+                    "type": "radio",
+                    "name": "sex",
+                    "label": "Sex",
+                    "options": [
+                        {
+                            "value": "male",
+                            "name": "male",
+                            "label": "Male",
+                            "checked": true
+                        },
+                        {
+                            "value": "female",
+                            "name": "female",
+                            "label": "Female"
+                        }
+                    ]
                 },
                 {
-                    "type": "phone",
-                    "name": "Phone Number",
-                    "placeholder": "Enter your number"
+                    "type": "email",
+                    "name": "email",
+                    "label": "E-mail",
+                    "placeholder": "Enter your email",
+                    "required": true
+                },
+                {
+                    "type": "tel",
+                    "name": "phone",
+                    "label": "Phone Number",
+                    "placeholder": "Enter your phone number",
+                    "pattern": "[0-9]*"
                 },
                 {
                     "type": "textarea",
-                    "name": "Message",
+                    "name": "message",
+                    "label": "Message",
                     "placeholder": "Text your message here"
                 }
             ],
-            "button_text": "Send Message"
+            "submit": {
+                "name": "agree",
+                "label": "By clicking on the ‘Send Message’ button I agree to all the terms of the security policy",
+                "button": "Send Message"
+            }
         }
     }
 }

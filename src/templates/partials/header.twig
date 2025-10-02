@@ -1,4 +1,6 @@
 <header class="header">
+    {% from 'ui/icon.twig' import icon %}
+            {{ icon('','logo') }}
     <img class="header__logo" src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}">
     <nav class="header__nav">
         <ul class="header__nav-list">
@@ -9,8 +11,12 @@
             {% endfor %}
         </ul>
     </nav>
-    <input type="search">
+    <div>
+        <input type="search" placeholder="Search">
+    </div>
     <a href="#" class="button button--primary button--large">
+        {% from 'ui/icon.twig' import icon %}
+        {{ icon( 'discord', 24, 24) }}
         <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}">
         <span>{{ header.default_button.text }}</span>
     </a>

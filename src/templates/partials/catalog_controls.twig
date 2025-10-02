@@ -1,0 +1,15 @@
+<form class="catalog-controls__search" action="/search">
+    <label for="choose-select" class="catalog-controls__choose"></label>
+    <select name="{{ catalog.controls.name }}" id="{{ catalog.controls.select }}">
+        <option value="">Sort by</option>
+        <option value="newest">Newest</option>
+        <option value="most popular">Most popular</option>
+        <option value="increasing in price">Increasing in price</option>
+        <option value="lowering the price">Lowering the price</option>
+    </select>
+    <label class="">
+        <input type="{{ catalog.controls.search.type }}" class="search__input" name="{{ catalog.controls.search.name }}"
+            placeholder="{{ catalog.controls.search.placeholder }}">
+        <span class="search__icon"></span>
+    </label>
+</form>

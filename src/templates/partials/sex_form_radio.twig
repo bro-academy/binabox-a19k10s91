@@ -1,0 +1,6 @@
+<span class="contact-form__name">{{ field.label }}</span>
+{% for option in field.options %}
+  <input type="radio" name="{{ field.name }}" value="{{ option.value }}" id="{{ option.name }}" class="radio"
+   {% if option.checked %}checked{% endif %} />
+   <label for="{{ option.name }}" class="contact-form__label">{{ option.label }}</label>
+{% endfor %}

@@ -1,3 +1,21 @@
 <aside class="catalog-sidebar">
-    
+    <form>
+    {% for filter in catalog.sidebar.filters %}
+        <details class="catalog-sidebar__list" {% if filter.open %}open{% endif %}>
+            <summary class="catalog-sidebar__option">{{ filter.title }}</summary>
+            {% for option in filter.options %}
+                <input class="catalog-sidebar__option-choose"
+                    name="{{ filter.name }}"
+                    id="{{ option.value }}"
+                    type="{{ filter.type }}"
+                    {% if option.checked %}checked{% endif %}>
+                <label for="{{ option.value }}" class="catalog-sidebar__label">{{ option.label }}</label>
+                <br />
+            {% endfor %}
+        </details>
+    {% endfor %}
+        <label for="{{ catalog.sidebar.submit.name }}">{{ catalog.sidebar.submit.label }}</label>
+        <button type="submit" class="contact-sidebar__button button button--secondary button--large">
+            {{ catalog.sidebar.submit.button }}
+    </form>
 </aside>
