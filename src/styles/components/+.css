@@ -10,5 +10,6 @@
 @import "./_label.scss";
 @import "./_link.scss";
 @import "./_personal-card.scss";
+@import "./_select.scss";
 @import "./_sidebar.scss";
 @import "./_tags-button.scss";

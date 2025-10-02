@@ -190,8 +190,7 @@
             },
             "select": {
                 "id": "select",
-                "name": "",
-                "label": "Sort by",
+                "name": "sortby",
                 "options": [
                     {
                         "value": "",
