@@ -3,15 +3,19 @@
      <p class="contact-form__subtitle">{{ contact.form.subtitle }}</p>
      {% for field in contact.form.fields %}
           {% if field.type == "radio" %}
-               {% include "../partials/sex_form_radio.twig" %}
+               {% include "../partials/form_radio.twig" %}
+          {% elseif field.type == "textarea" %}
+               {% include "../partials/form_textarea.twig" %}
           {% else %}
-               {% include "../partials/reqistration_form.twig" %}
+               {% include "../partials/form_edit.twig" %}
           {% endif %}
+          <br/>
      {% endfor %}
 
-     <input type="checkbox" id="{{ contact.form.submit.name }}" class="contact-form__checkbox" />
-     <label for="{{ contact.form.submit.name }}" class="contact-form__label">{{ contact.form.submit.label }}</label>
-     <button type="submit" class="contact-form__button button button--secondary button--large">
+     <input type="checkbox" id="{{ contact.form.submit.name }}" class="input-checkbox--primary" />
+     <label for="{{ contact.form.submit.name }}" class="input-checkbox__label">{{ contact.form.submit.label }}</label>
+     <br/>
+     <button type="submit" class="registration__button button button--secondary button--large">
           {{ contact.form.submit.button }}
      </button>
 </form>

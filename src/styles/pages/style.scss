@@ -1,8 +1,11 @@
 @use "../base/global";
+@use "../base/base";
 
 @use "../components/button";
 @use "../components/label";
 @use "../components/catalog-item";
+@use "../components/contact-info-card";
+@use "../components/contact-form";
 @use "../components/blog-item";
 @use "../components/counted-list";
 @use "../components/personal-card";
@@ -11,11 +14,14 @@
 @use "../components/tags-button";
 @use "../components/faq-info";
 @use "../components/link";
+@use "../components/inputs";
 
 @use "../layout/header";
 @use "../layout/banner";
 @use "../layout/footer";
 @use "../layout/catalog";
+@use "../layout/catalog-page";
+@use "../layout/contact-page";
 @use "../layout/blog";
 @use "../layout/about";
 @use "../layout/team";

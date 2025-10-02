@@ -1,10 +1,10 @@
-<section class="contact-hero">
-    <h1 class="contact-hero__title">{{ contact.hero.title }}</h1>
-    <nav class="contact-hero__nav">
-        <ul class="contact-hero__nav-list">
+<section class="contact-page">
+    <h1 class="contact-page__title">{{ contact.hero.title }}</h1>
+    <nav class="contact-page__nav">
+        <ul class="contact-page__nav-list">
             {% for link in contact.hero.links %}
             <li>
-                <a href="{{ link.href }}" class="link link--tertiary contact-hero__nav-item {% if link.active %} contact-hero__nav-item--active {% endif %}">{{ link.label }}</a>
+                <a href="{{ link.href }}" class="link link--tertiary contact-page__nav-item {% if link.active %} contact-page__nav-item--active {% endif %}">{{ link.label }}</a>
             </li>
               {% endfor %} 
         </ul>
