@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+
+.contact-form {
+    text-align: center;
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xl;
+        line-height: $lh-xxl;
+    }
+
+    &__subtitle {
+        font-family: $font-primary;
+        font-weight: $fw-medium;
+        font-size: 20px;
+        line-height: $lh-lg;
+    }
+
+   
+}
