@@ -1,0 +1,19 @@
+<section class="catalog-content">
+    <h2 class="catalog-content__title">{{ catalog.hero.subtitle }}</h2>
+    <div>
+        <ul class="">
+            {% for tag in catalog.tags %}
+            <li>
+                <button class="button button--primary button--large">{{ tag }}</button>
+            </li>
+            {% endfor %}
+            <li>
+                <button class="button button--tertiary button--large">{{ catalog.tags_clear }}</button>
+            </li>
+        </ul>
+    </div>
+    {% for item in catalog.items %}
+        {% include 'catalog_item.twig' %}
+    {% endfor %}`
+    <a class="button button--primary button--large" href="#">{{ catalog.button_load }}</a>
+</section>

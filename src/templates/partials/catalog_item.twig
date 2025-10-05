@@ -1,7 +1,9 @@
 <article class="catalog-item">
     <div>
-        <img class="catalog-item__image" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
+        <picture>
 
+            <img class="catalog-item__image" src="{{ item.image_link }}" alt="{{ item.image_alt }}" width="253px" height="324px">
+        </picture>
         {% if item.status == "new" %}
         <span class="label label--available">
             {{ index.catalog.items_status_new }}
