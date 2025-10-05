@@ -1,6 +1,8 @@
 <section class="blog-content">
     <figure class="article-picture">
-        <img class="article-picture__image" src="{{ blog.content.block_1.image }}" alt="{{ blog.content.block_1.alt }}">
+        <picture>
+            <img class="article-picture__image" src="{{ blog.content.block_1.image }}" alt="{{ blog.content.block_1.alt }}" width="1024px" height="560px">
+        </picture>
         <figcaption class="article-picture__description">{{ blog.content.block_1.description }}</figcaption>
     </figure>
     <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
@@ -33,7 +35,9 @@
     </blockquote>
 {%for block in blog.content.block_2.blocks %}
     <figure class="article-picture">
-        <img class="article-picture__image" src="{{ block.image }}" alt="{{ block.alt }}">
+        <picture>
+        <img class="article-picture__image" src="{{ block.image }}" alt="{{ block.alt }}" width="500px" height="394px">
+        </picture>
         <figcaption class="article-picture__description">{{ block.description }}
         </figcaption>
     </figure>

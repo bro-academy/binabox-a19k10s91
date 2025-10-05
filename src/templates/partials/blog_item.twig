@@ -1,6 +1,8 @@
 <article class="blog-item">
     <div>
-        <img class="blog-item__picture" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
+        <picture> 
+            <img class="blog-item__picture" src="{{ item.image_link }}" alt="{{ item.image_alt }}" width="736px" height="664px">
+        </picture>
         <span class="label label--available">{{ item.category }}</span>
     </div>
     <span class="blog-item__author">{{ item.author }}</span>

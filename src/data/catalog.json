@@ -4,6 +4,7 @@
         "title": "Catalog",
         "hero": {
             "title": "Exlore catalog",
+            "subtitle": "All item",
             "links": [
                 {
                     "label": "Home",
@@ -214,7 +215,22 @@
                     }
                 ]
             }
-        }
+        },
+        "tags": [
+            "NFT",
+            "ICO",
+            "Crypto"
+        ],
+        "tags_clear": "Clear all",
+        "items": [
+            {
+                "image_link": "/src/assets/images/cards/skeleton_4x.png",
+                "image_alt": "пlass skeleton glowing blue amid swirling smoke",
+                "price": "$1990",
+                "name": "Echo of Bones",
+                "status": "new"
+            }
+        ],
+        "button_load": "Load more"
     }
 }
-    
