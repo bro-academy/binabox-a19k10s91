@@ -4,6 +4,11 @@
     font-weight: $fw-medium;
     font-size: 20px;
     line-height: $lh-lg;
+    background-color: $main-bg-color;
+    background-image: 
+    (circle at top right,
+    $marina800-color,0%
+    $marina800-color, 100%);
 
     &__title {
         font-family: $font-secondary;
