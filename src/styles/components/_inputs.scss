@@ -1,61 +1,5 @@
 @use "../base/variables" as *;
 
-.input-radio {
-    &--primary {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        width: 20px;
-        height: 20px;
-        border: 2px solid $seporatorbold-color;
-        border-radius: 50%;
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        vertical-align: middle;
-        transition: all 0.2s ease;
-        background-color: $main-bg-color;
-
-        &:hover {
-            background-color: $alternative2;
-        }
-
-        &:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px $marina600-color;
-        }
-
-        &:disabled {
-            color: $seporatorbold-color;
-            cursor: not-allowed;
-        }
-
-        &:checked {
-            border-color: $marina800-color;
-            background: $marina800-color;
-
-            &::after {
-                content: "";
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                top: 4px;
-                left: 4px;
-                background: $main-bg-color;
-                border-radius: 50%;
-            }
-        }
-
-        &.invalid {
-            border-color: $negative-color;
-
-            &:hover {
-                background-color: $alternative2;
-            }
-        }
-    }
-}
-
 .input-checkbox {
     &--primary {
         appearance: none;
@@ -97,26 +41,6 @@
                 font-size: 14px;
                 color: $main-color;
             }
-        }
-    }
-}
-
-.input-field-edit {
-    &__label {
-        text-align: left;
-    }
-
-    &__field {
-        font-family: $font-primary;
-        font-weight: $fw-regular;
-        font-size: $fontsize-sm;
-        line-height: $lh-sm;
-        color: $main-color;
-        background-color: transparent;
-        border: 2px solid $seporatorbold-color;
-
-        &:placeholder {
-            color: $secondary2white-color;
         }
     }
 }

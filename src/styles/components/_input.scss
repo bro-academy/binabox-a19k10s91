@@ -1,0 +1,31 @@
+@use "../base/variables" as *;
+
+.input {
+  font-family: $font-primary;
+  font-weight: $fw-regular;
+  font-size: $fontsize-sm;
+  line-height: $lh-sm;
+  color: $main-color;
+  background-color: transparent;
+  border: 2px solid $seporatorbold-color;
+  outline: none;
+  padding: 8px;
+
+  &:hover {
+    border-color: $marina800-color;
+  }
+
+  &:focus {
+    border-color: $marina800-color;
+    outline: 1px solid $marina800-color;
+  }
+
+  &:disabled {
+    border-color: $seporatorbold-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $secondary2white-color;
+  }
+}

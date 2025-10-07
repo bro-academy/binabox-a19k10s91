@@ -3,11 +3,11 @@
      <p class="contact-form__subtitle">{{ contact.form.subtitle }}</p>
      {% for field in contact.form.fields %}
           {% if field.type == "radio" %}
-               {% include "../partials/form_radio.twig" %}
+               {% include "../ui/form/radio.twig" %}
           {% elseif field.type == "textarea" %}
-               {% include "../partials/form_textarea.twig" %}
+               {% include "../ui/form/textarea.twig" %}
           {% else %}
-               {% include "../partials/form_edit.twig" %}
+               {% include "../ui/form/input.twig" %}
           {% endif %}
           <br/>
      {% endfor %}
