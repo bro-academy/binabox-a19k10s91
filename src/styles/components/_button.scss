@@ -3,6 +3,8 @@
 .button {
     font-weight:$fw-semibold;
     border: none;
+    cursor: pointer;
+    ;
 
     &--large {
         font-size: $fontsize-md;
@@ -33,9 +35,10 @@
             box-shadow: 0 0 0 2px $seporator-color inset;
         }
 
-        &:focus {
+        &:focus-visible {
             background-color: $seporator-color;
             box-shadow: 0 0 0 4px $marina600-color inset;
+            outline: none;
         }
 
         &:active {
@@ -60,9 +63,10 @@
             box-shadow: 0 0 0 2px $marina600-color inset;
         }
 
-        &:focus {
+        &:focus-visible {
             background-color: $marina800-color;
             box-shadow: 0 0 0 4px $marina600-color inset;
+            outline: none;
         }
 
         &:active {
@@ -85,9 +89,10 @@
             color: $baseicon-color;
         }
 
-        &:focus {
+        &:focus-visible {
             background-color: $main-bg-color;
             box-shadow: 0 0 0 4px $marina600-color inset;
+            outline: none;
             color: $baseicon-color;
         }
 
@@ -112,9 +117,10 @@
             box-shadow: 0 0 0 1px $marina600-color inset;
         }
 
-        &:focus {
+        &:focus-visible {
             background-color: $seporator-color;
             box-shadow: 0 0 0 4px $marina600-color inset;
+            outline: none;
         }
 
         &:active {

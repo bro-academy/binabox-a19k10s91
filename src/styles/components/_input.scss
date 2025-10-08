@@ -9,23 +9,37 @@
   background-color: transparent;
   border: 2px solid $seporatorbold-color;
   outline: none;
-  padding: 8px;
+  padding: 10px 12px;
+
 
   &:hover {
-    border-color: $marina800-color;
+    border-color: $marina600-color;
+
   }
 
   &:focus {
-    border-color: $marina800-color;
-    outline: 1px solid $marina800-color;
+    border-color: $marina600-color;
+    outline: 1px solid $marina600-color;
+  }
+
+  //   &:invalid {
+  //   border-color: $negative-color;
+  //   outline: none;
+  // }
+
+  &:valid {
+    border-color: $seporatorbold-color;
+
   }
 
   &:disabled {
     border-color: $seporatorbold-color;
     outline: none;
+    background-color: $seporator-color;
   }
 
   &::placeholder {
     color: $secondary2white-color;
+    background-color: transparent;
   }
 }

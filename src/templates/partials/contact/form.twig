@@ -9,13 +9,13 @@
           {% else %}
                {% include "../ui/form/input.twig" %}
           {% endif %}
-          <br/>
      {% endfor %}
 
-     <input type="checkbox" id="{{ contact.form.submit.name }}" class="input-checkbox--primary" required />
-     <label for="{{ contact.form.submit.name }}" class="input-checkbox__label">{{ contact.form.submit.label }}</label>
-     <br/>
-     <button type="submit" class="registration__button button button--secondary button--large">
-          {{ contact.form.submit.button }}
-     </button>
+     <input type="checkbox" id="{{ contact.form.submit.name }}" class="checkbox--primary" required />
+     <label for="{{ contact.form.submit.name }}" class="checkbox__label">{{ contact.form.submit.label }}</label>
+    <div>
+          <button type="submit" class="registration__button button button--secondary button--large">
+               {{ contact.form.submit.button }}
+          </button>
+     </div>
 </form>
