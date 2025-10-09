@@ -44,6 +44,11 @@
             background: transparent;
             outline: 2px $negative-color;
         }
+        
+        &:invalid :hover {
+            background: $seporator-color;
+            outline: 2px $negative-color;
+        }
 
 
         /* Checked */
@@ -85,6 +90,11 @@
             }
 
             &:invalid {
+                background-color: $marina800-color;
+                outline: 2px $negative-color;
+            }
+
+            &:invalid :hover {
                 background-color: $marina600-color;
                 outline: 2px $negative-color;
             }
@@ -129,6 +139,11 @@
             }
 
             &:invalid {
+                background-color: $marina600-color;
+                outline: 2px $negative-color;
+            }
+
+            &:invalid :hover {
                 background-color: $marina600-color;
                 outline: 2px $negative-color;
             }
