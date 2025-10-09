@@ -1,0 +1,16 @@
+<form class="catalog-controls__search" action="/search">
+    <label for="choose-select" class="catalog-controls__choose"></label>
+    <select name="{{ catalog.controls.select.name }}" id="{{ catalog.controls.select.id }}"
+        class="select"
+    >
+        {% for option in catalog.controls.select.options %}
+        <option value="{{ option.value }}">{{ option.text }}</option>
+        {% endfor %}
+    </select>
+
+    <input type="{{ catalog.controls.search.type }}"
+        class="input-field-edit__field"
+        name="{{ catalog.controls.search.name }}"
+        placeholder="{{ catalog.controls.search.placeholder }}">
+    <span class="search__icon"></span>
+</form>
