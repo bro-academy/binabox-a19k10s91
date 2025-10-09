@@ -4,7 +4,9 @@
 @import "./_blog-content.scss";
 @import "./_blog-page.scss";
 @import "./_blog.scss";
+@import "./_catalog-page.scss";
 @import "./_catalog.scss";
+@import "./_contact-page.scss";
 @import "./_faq.scss";
 @import "./_features-list.scss";
 @import "./_footer.scss";
