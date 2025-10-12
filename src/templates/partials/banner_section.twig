@@ -10,9 +10,9 @@
                 <span class="banner__subtext">{{ index.banner.counter_2.text }}</span>
             </p>
             <picture>
-                <source srcset="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_src_small }}" type="image/png">
-                <source srcset="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_src_big }}" type="image/png">
-                <img src="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_src_small }}" width="534px" height="642px" alt="{{ index.banner.promo.image_alt }}">
+                <source class="banner__image" srcset="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_avif }}" type="image/avif">
+                <source class="banner__image" srcset="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_wepb }}" type="image/webp">
+                <img class="banner__image" src="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_png  }}" alt="{{ index.banner.promo.image_alt }}">
             </picture>
             <a href="#" class="button button--secondary button--large">{{ index.banner.connect_button }}</a>
             <a href="#" class="button button--primary button--large">{{ index.banner.whitelist_button }}</a>

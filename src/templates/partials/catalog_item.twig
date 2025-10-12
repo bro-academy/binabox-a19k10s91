@@ -1,9 +1,12 @@
 <article class="catalog-item">
     <div>
+        <div class="">
         <picture>
-
-            <img class="catalog-item__image" src="{{ item.image_link }}" alt="{{ item.image_alt }}" width="253px" height="324px">
+            <source class="catalog-item__image catalog-item__image--{{size}}" srcset="{{ item.image_path }}{{ item.image_avif }}" type="image/avif">
+            <source class="catalog-item__image catalog-item__image--{{size}}" srcset="{{ item.image_path }}{{ item.image_wepb }}" type="image/webp">
+            <img class="catalog-item__image catalog-item__image--{{size}}" src="{{ item.image_path }}{{ item.image_png }}" alt="{{ item.image_alt }}" width="253px" height="324px">
         </picture>
+        </div>
         {% if item.status == "new" %}
         <span class="label label--available">
             {{ index.catalog.items_status_new }}

@@ -1,10 +1,28 @@
 @use "../base/variables" as *;
 
 .article-picture {
+   
     
     &__description {
         font-weight: $fw-medium;
         line-height: $lh-sm;
         color: $title-color;
     }
+
+    &__image {
+        object-fit: over;
+
+        &--big {
+            background-color: darkcyan;
+            width: 1024px;
+            height: 560px;
+        }
+
+        &--small{
+            background-color: darkcyan;
+            width: 500px;
+            height: 394px;
+        }
+    }
+
 }

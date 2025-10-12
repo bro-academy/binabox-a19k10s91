@@ -5,11 +5,12 @@
     font-size: 20px;
     line-height: $lh-lg;
     background-color: $main-bg-color;
-    background-image: 
-    (circle at top right,
-    $marina800-color,0%
-    $marina800-color, 100%);
-
+    background-image: radial-gradient(
+        42.5% 42.5% at 22.28% -4.22%,
+            rgba(2, 101, 220, 0.5) 0%,
+            rgba(2, 101, 220, 0) 100%
+        );
+    
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -38,4 +39,11 @@
     &__subtitle {
         color: $secondary-color;
     }
+
+    &__image {
+        width: 534px;
+        height: 642px;
+        object-fit: cover;
+    }
+
 }

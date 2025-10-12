@@ -82,7 +82,10 @@
     },
     "content": {
       "block_1": {
-        "image": "/src/assets/images/blog_content/big_dragon_4x.png",
+        "image_path": "/src/assets/images/blog_content/",
+        "image_png": "big_dragon_4x.png",
+        "image_avif": "big_dragon_4x.avif",
+        "image_webp": "big_dragon_4x.wepb",
         "alt": "giant glowing green dragon facing a lone figure in a futuristic arena",
         "description": "A Basilisk enters the arena — its emerald scales shimmer with encoded rage."
       },
@@ -123,12 +126,18 @@
       "block_2": {
         "blocks":[
           {
-            "image": "/src/assets/images/blog_content/left_dragon_4x.png",
+            "image_path": "/src/assets/images/blog_content/",
+            "image_png": "left_dragon_4x.png",
+            "image_avif": "left_dragon_4x.avif",
+            "image_webp": "left_dragon_4x.wepb",
             "alt": "close-up of a glowing green dragon’s head with shimmering scales.",
             "description": "Close-up of a Gen-3 Basilisk. Eyes trained by code."
           },
           {
-            "image": "/src/assets/images/blog_content/right_dragon_4x.png",
+            "image_path": "/src/assets/images/blog_content/",
+            "image_png": "right_dragon_4x.png",
+            "image_avif": "right_dragon_4x.avif",
+            "image_webp": "right_dragon_4x.wepb",
             "alt": "massive glowing green dragon standing beside its summoner in a futuristic setting",
             "description": "A bonded Basilisk with its summoner. Loyalty is minted — not earned."
           }
