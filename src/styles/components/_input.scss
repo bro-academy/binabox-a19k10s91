@@ -22,15 +22,15 @@
     outline: 1px solid $marina600-color;
   }
 
-  &:required{
+  &:required {
     border-color: $seporatorbold-color;
   }
 
-  &:optional{
+  &:optional {
      border-color: $seporatorbold-color;
   }
 
-  &:invalid:not(:placeholder-shown){
+  &:invalid:not(:placeholder-shown) {
     border-color: $negative-color;
     outline: none;
   }
