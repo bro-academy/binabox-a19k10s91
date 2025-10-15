@@ -11,8 +11,10 @@
           {% endif %}
      {% endfor %}
 
-     <input type="checkbox" id="{{ contact.form.submit.name }}" class="checkbox" required />
-     <label for="{{ contact.form.submit.name }}" class="checkbox__label">{{ contact.form.submit.label }}</label>
+     <p class="checkbox">
+          <input type="checkbox" id="{{ contact.form.submit.name }}" class="checkbox__input" required />
+          <label for="{{ contact.form.submit.name }}" class="checkbox__label">{{ contact.form.submit.label }}</label>
+     </p>
     <div>
           <button type="submit" class="registration__button button button--secondary button--large">
                {{ contact.form.submit.button }}
