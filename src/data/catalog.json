@@ -182,6 +182,7 @@
         },
         "controls": {
             "search": {
+                "id": "search",
                 "type": "search",
                 "name": "",
                 "icon": "",

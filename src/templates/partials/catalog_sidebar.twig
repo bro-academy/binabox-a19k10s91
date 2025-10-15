@@ -1,5 +1,5 @@
 <aside class="catalog-sidebar">
-    <form>
+    <form action="/filter_catalog" method="get">
     {% for filter in catalog.sidebar.filters %}
         <details class="catalog-sidebar__list" {% if filter.open %}open{% endif %}>
             <summary class="catalog-sidebar__option">{{ filter.title }}</summary>

@@ -1,7 +1,7 @@
 <header class="header">
-    <div class="content-wrapper" >
-    {% from 'ui/icon.twig' import icon %} {{ icon('','logo') }} <img class="header__logo"
-        src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}">
+    <div class="content-wrapper">
+        {% from 'ui/icon.twig' import icon %} {{ icon('','logo') }} <img class="header__logo"
+            src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}">
         <nav class="header__nav">
             <ul class="header__nav-list">
                 {% for link in header.links %}
@@ -13,18 +13,25 @@
             </ul>
         </nav>
         <div>
-            <input type="search" class="input input--search" placeholder="Search">
-        
-        <a href="#" class="button button--primary button--large">
-            {% from 'ui/icon.twig' import icon %}
-            {{ icon( 'discord', 24, 24) }}
-            <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}">
-            <span>{{ header.default_button.text }}</span>
-        </a>
-        <a class="button button--secondary button--large">
-            <img src="{{ header.primary_button.icon }}" alt=" {{ .header.primary_button.alt }}">
-            <span>{{ header.primary_button.text }}</span>
-        </a>
+            <form action="/search" method="get">
+                <div class="form-field">
+                    <label>
+                        <input type="search" class="form-field__element" placeholder="Search">
+                        <span class="form-field__icon form-field__icon--search"></span>
+                    </label>
+                </div>
+            </form>
+
+            <a href="#" class="button button--primary button--large">
+                {% from 'ui/icon.twig' import icon %}
+                {{ icon( 'discord', 24, 24) }}
+                <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}">
+                <span>{{ header.default_button.text }}</span>
+            </a>
+            <a class="button button--secondary button--large">
+                <img src="{{ header.primary_button.icon }}" alt=" {{ .header.primary_button.alt }}">
+                <span>{{ header.primary_button.text }}</span>
+            </a>
         </div>
     </div>
 </header>
