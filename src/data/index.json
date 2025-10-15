@@ -18,10 +18,7 @@
         "text": "Profiles whitelisted"
       },
       "promo":{
-        "image_path": "/src/assets/images/banner/",
-        "image_png": "cube_4x.png",
-        "image_avif": "cube_4x.avif",
-        "image_wepb": "cube_4x.webp",
+        "image": "banner/cube_4x.png",
         "image_alt": "glowing neon-blue holographic cube with the word 'BINABOX' on it, floating on a dark background"
       },
       "connect_button": "Connect wallet",
@@ -38,50 +35,35 @@
       "items_status_sold": "Sold out",
       "items": [
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"skeleton_4x.png",
-          "image_avif":"skeleton_4x.avif",
-          "image_webp":"skeleton_4x.webp",
+          "image":"cards/skeleton_4x.png",
           "image_alt": "glass skeleton glowing blue amid swirling smoke",
           "price": "$1990",
           "name": "Echo of Bones",
           "status": "new"
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"cat_4x.png",
-          "image_avif":"cat_4x.avif",
-          "image_webp":"cat_4x.webp",
+          "image":"cards/cat_4x.png",
           "image_alt": "black cat with glowing green eyes in blue light",
           "price": "$299.99",
           "name": "Nyx the Watcher",
           "status": "new"
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"scissors_4x.png",
-          "image_avif":"scissors_4x.avif",
-          "image_webp":"scissors_4x.webp",
+          "image":"cards/scissors_4x.png",
           "image_alt": "metal scissors on dark blue fabric",
           "price": "$20",
           "name": "Blade of Silence",
           "status": "sold"
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"card_4x.png",
-          "image_avif":"card_4x.avif",
-          "image_webp":"card_4x.webp",
+          "image":"cards/card_4x.png",
           "image_alt": "futuristic glowing green card with digital circuit design",
           "price": "$1.000.000",
           "name": "Data Core: Alpha",
           "status": ""
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"frame_4x.png",
-          "image_avif":"frame_4x.avif",
-          "image_webp":"frame_4x.webp",
+          "image":"cards/frame_4x.png",
           "image_alt": "futuristic transparent game console glowing with green light.",
           "price": "$199.5",
           "name": "Phantom Concole",
@@ -93,10 +75,7 @@
       "title": "Our blog",
       "items": [
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"face_4x.png",
-          "image_avif":"face_4x.avif",
-          "image_webp":"face_4x.webp",
+          "image":"cards/face_4x.png",
           "image_alt": "abstract blue face with closed eyes surrounded by swirling shapes",
           "category": "NFT",
           "author": "NOVA RIVEN",
@@ -105,10 +84,7 @@
           "text": "I woke up inside the void. My body stayed in the past - only thoughts were allowed through..."
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"skeleton_4x.png",
-          "image_avif":"skeleton_4x.avif",
-          "image_webp":"skeleton_4x.webp",
+          "image":"cards/skeleton_4x.png",
           "image_alt": "transparent glass-like human skeleton illuminated in blue light with swirling smoke in the background",
           "category": "DROP",
           "author": "Kairo Null",
@@ -117,10 +93,7 @@
           "text": "He just stood there, waiting. Not for a person — for a signal. Like the memory of the network took shape."
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"cat_4x.png",
-          "image_avif":"cat_4x.avif",
-          "image_webp":"cat_4x.webp",
+          "image":"cards/cat_4x.png",
           "image_alt": "black cat with glowing green eyes in blue light",
           "category": "NFT",
           "author": "Synthya Void",
@@ -129,10 +102,7 @@
           "text": "Cats always knew more than they showed. Especially the ones that vanish into code."
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"monkey_4x.png",
-          "image_avif":"monkey_4x.avif",
-          "image_webp":"monkey_4x.webp",
+          "image":"cards/monkey_4x.png",
           "image_alt": "close-up of a chimpanzee face in blue light with glowing particles",
           "category": "RARE",
           "author": "Dr. Wex Omega",
@@ -141,10 +111,7 @@
           "text": "We tried to resurrect the past. What we got was rage compressed into an algorithm."
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"duck_4x.png",
-          "image_avif":"duck_4x.avif",
-          "image_webp":"duck_4x.webp",
+          "image":"cards/duck_4x.png",
           "image_alt": "futuristic blue duck statue with digital background",
           "category": "NFT",
           "author": "Tony Nguyer",
@@ -153,10 +120,7 @@
           "text": "At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive."
         },
         {
-          "image_path": "/src/assets/images/cards/",
-          "image_png":"frame_4x.png",
-          "image_avif":"frame_4x.avif",
-          "image_webp":"frame_4x.webp",
+          "image":"cards/frame_4x.png",
           "image_alt": "futuristic transparent game console glowing with green light",
           "category": "ARTIFACT",
           "author": "Echo Zero",
@@ -194,7 +158,7 @@
       "title": "Our team",
       "members": [
         {
-          "image_path": "/src/assets/images/avatars/nova_riven_4x.jpg",
+          "image": "avatars/nova_riven_4x.jpg",
           "image_alt": "nova riven's avatar",
           "name": "Nova Riven",
           "position": "Creative Architect",
@@ -222,7 +186,7 @@
           ]
         },
         {
-          "image_path": "/src/assets/images/avatars/echo_zero_4x.jpg",
+          "image": "avatars/echo_zero_4x.jpg",
           "image_alt": "echo zero's avatar",
           "name": "Echo Zero",
           "position": "Tech Whisperer",
@@ -250,7 +214,7 @@
           ]
         },
         {
-          "image_path": "/src/assets/images/avatars/kairo_null_4x.jpg",
+          "image": "avatars/kairo_null_4x.jpg",
           "image_alt": "kairo null's avatar",
           "name": "Kairo Null",
           "position": "Lore Engineer",
@@ -278,7 +242,7 @@
           ]
         },
         {
-          "image_path": "/src/assets/images/avatars/dr_wex_omega_4x.jpg",
+          "image": "avatars/dr_wex_omega_4x.jpg",
           "image_alt": "doctor wex omega's avatar",
           "name": "Dr. Wex Omega",
           "position": "Visual Disruptor",
@@ -311,7 +275,7 @@
           ]
         },
         {
-          "image_path": "/src/assets/images/avatars/synthya_void_4x.jpg",
+          "image": "avatars/synthya_void_4x.jpg",
           "image_alt": "synthya void's avatar",
           "name": "Synthya Void",
           "position": "UX Seer",
@@ -324,7 +288,7 @@
           ]
         },
         {
-          "image_path": "/src/assets/images/avatars/mirlo_drift_4x.jpg",
+          "image": "avatars/mirlo_drift_4x.jpg",
           "image_alt": "mirlo drift's avatar",
           "name": "Mirlo Drift",
           "position": "Community Catalyst",
@@ -357,7 +321,7 @@
           ]
         },
         {
-          "image_path": "/src/assets/images/avatars/axon_rune_4x.jpg",
+          "image": "avatars/axon_rune_4x.jpg",
           "image_alt": "axon rune's avatar",
           "name": "Axon Rune",
           "position": "Security Ghost",

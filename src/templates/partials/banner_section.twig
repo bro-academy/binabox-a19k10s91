@@ -1,20 +1,23 @@
- <section class="banner">
-            <h1 class="banner__title">{{ index.banner.heading.part_1 }} <span class="banner__title-highlighted">{{ index.banner.heading.part_2 }}</span> {{ index.banner.heading.part_3 }}</h1>
-            <p class="banner__description">{{ index.banner.text }}</p>
-            <p>
-                <span class="banner__counter">{{ index.banner.counter_1.number }}</span>
-                <span class="banner__subtext">{{ index.banner.counter_1.text }}</span>
-            </p>
-            <p>
-                <span class="banner__counter">{{ index.banner.counter_2.number }}</span>
-                <span class="banner__subtext">{{ index.banner.counter_2.text }}</span>
-            </p>
-            <picture>
-                <source class="banner__image" srcset="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_avif }}" type="image/avif">
-                <source class="banner__image" srcset="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_wepb }}" type="image/webp">
-                <img class="banner__image" src="{{ index.banner.promo.image_path }}{{ index.banner.promo.image_png  }}" alt="{{ index.banner.promo.image_alt }}">
-            </picture>
-            <a href="#" class="button button--secondary button--large">{{ index.banner.connect_button }}</a>
-            <a href="#" class="button button--primary button--large">{{ index.banner.whitelist_button }}</a>
-        </section>
-        
+{% from '../macro/macro_picture.twig' import picture %}
+<section class="banner">
+    <h1 class="banner__title">{{ index.banner.heading.part_1 }} <span class="banner__title-highlighted">{{
+            index.banner.heading.part_2 }}</span> {{ index.banner.heading.part_3 }}</h1>
+    <p class="banner__description">{{ index.banner.text }}</p>
+    <p>
+        <span class="banner__counter">{{ index.banner.counter_1.number }}</span>
+        <span class="banner__subtext">{{ index.banner.counter_1.text }}</span>
+    </p>
+    <p>
+        <span class="banner__counter">{{ index.banner.counter_2.number }}</span>
+        <span class="banner__subtext">{{ index.banner.counter_2.text }}</span>
+    </p>
+    {{ picture(
+    'banner__image',
+    index.banner.promo.image,
+    index.banner.promo.image_alt,
+    534,
+    642
+    ) }}
+    <a href="#" class="button button--secondary button--large">{{ index.banner.connect_button }}</a>
+    <a href="#" class="button button--primary button--large">{{ index.banner.whitelist_button }}</a>
+</section>

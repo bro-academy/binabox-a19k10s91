@@ -1,16 +1,21 @@
+{% from '../macro/macro_picture.twig' import picture %}
+
 <section class="blog-content">
     <figure class="article-picture">
-        <picture>
-            <source class="article-picture article-picture__image--big" srcset="{{ blog.content.block_1.image_path }}{{ blog.content.block_1.image_avif }}" type="image/avif">
-            <source class="article-picture article-picture__image--big" srcset="{{ blog.content.block_1.image_path }}{{ blog.content.block_1.image_webp }}" type="image/webp">
-            <img class="article-picture__image--big" src="{{ blog.content.block_1.image_path }} {{ log.content.block_1.image_png}}" alt="{{ blog.content.block_1.alt }}">
-        </picture>
+        {{ picture(
+        'article-picture__image',
+        blog.content.block_1.image,
+        blog.content.block_1.alt,
+        1024,
+        560
+        ) }}
         <figcaption class="article-picture__description">{{ blog.content.block_1.description }}</figcaption>
     </figure>
     <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
     <button class="button button--secondary button--large blog-content__button">{{ blog.content.button }}</button>
     <div>
-        <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}" alt="{{ blog.content.alt_contact }}">
+        <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}"
+            alt="{{ blog.content.alt_contact }}">
         <span class="blog-content__author">{{ blog.content.author }}</span>
         <img class="blog-content__calendar-icon" src="{{ blog.content.icon_date }}" alt="{{ blog.content.alt_date }}">
         <time class="blog-content__time">{{ blog.content.date }}</time>
@@ -35,24 +40,25 @@
         <span class="blockquote__rating">{{ blog.blockquote.rating }}</span>
         <span class="blockquote__company">{{ blog.blockquote.author }}</span>
     </blockquote>
-{%for block in blog.content.block_2.blocks %}
+    {% for block in blog.content.block_2.blocks %}
     <figure class="article-picture">
-        <picture>
-            {% set size = "small" %}
-            <source class="article-picture article-picture__image--small" srcset="{{ block.image_path }}{{ block.image_avif }}" type="image/avif">
-            <source class="article-picture article-picture__image--small" srcset="{{ block.image_path }}{{ block.image_avif }}" type="image/webp">
-            <img class="article-picture__image--small" src="{{ block.image_path }}{{ block.image_png}}" alt="{{ block.alt }}">
-        </picture>
+        {{ picture(
+        'article-picture__image',
+        block.image,
+        block.alt,
+        500,
+        394
+        ) }}
         <figcaption class="article-picture__description">{{ block.description }}
         </figcaption>
     </figure>
-{% endfor %}
-{%for topic in blog.content.topics %}
+    {% endfor %}
+    {% for topic in blog.content.topics %}
     <h3 class="blog-page__topic">{{ topic.title }}</h3>
     <p class="blog-page__topic-info">{{ topic.paragraph_1 }}</p>
     <p class="blog-page__topic-info">{{ topic.paragraph_2 }}</p>
     <p class="blog-page__topic-info">{{ topic.paragraph_3 }}</p>
-{% endfor %}  
+    {% endfor %}
     <div class="tags">
         <span class="tags__description">{{ blog.content.block_3.text_1 }}</span>
         <ul>

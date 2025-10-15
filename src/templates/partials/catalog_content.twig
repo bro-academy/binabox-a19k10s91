@@ -13,9 +13,8 @@
         </ul>
     </div>
     <div>
-        {% set size = "big" %}
         {% for item in catalog.items %}
-            {% include 'catalog_item.twig' %}
+        {% include 'catalog_item.twig' %}
         {% endfor %}`
     </div>
     <a class="button button--primary button--large" href="#">{{ catalog.button_load }}</a>

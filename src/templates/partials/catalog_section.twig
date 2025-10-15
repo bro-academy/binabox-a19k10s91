@@ -7,9 +7,8 @@
         <button class="button button--secondary button--large">{{ index.catalog.slider.button_right }}</button>
     </div>
     <div>
-        {% set size = "small" %}
         {% for item in index.catalog.items %}
-            {% include "../partials/catalog_item.twig" %}
+        {% include "../partials/catalog_item.twig" %}
         {% endfor %}
     </div>
 </section>

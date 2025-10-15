@@ -1,12 +1,13 @@
+{% from '../macro/macro_picture.twig' import picture %}
 <article class="catalog-item">
     <div>
-        <div class="">
-        <picture>
-            <source class="catalog-item__image catalog-item__image--{{size}}" srcset="{{ item.image_path }}{{ item.image_avif }}" type="image/avif">
-            <source class="catalog-item__image catalog-item__image--{{size}}" srcset="{{ item.image_path }}{{ item.image_wepb }}" type="image/webp">
-            <img class="catalog-item__image catalog-item__image--{{size}}" src="{{ item.image_path }}{{ item.image_png }}" alt="{{ item.image_alt }}" width="253px" height="324px">
-        </picture>
-        </div>
+        {{ picture(
+        'catalog-item__image catalog-item__image',
+        item.image,
+        item.image_alt,
+        253,
+        324
+        ) }}
         {% if item.status == "new" %}
         <span class="label label--available">
             {{ index.catalog.items_status_new }}
@@ -18,7 +19,6 @@
             {{ index.catalog.items_status_sold }}
         </span>
         {% endif %}
-
     </div>
     <p class="catalog-item__price">{{ item.price }}</p>
     <p class="catalog-item__name">{{ item.name }}</p>
