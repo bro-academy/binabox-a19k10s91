@@ -1,155 +1,152 @@
 @use "../base/variables" as *;
 
 .checkbox {
-    &--primary {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        width: 16px;
-        height: 16px;
-        border: 2px solid $seporatorbold-color;
-        border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $seporatorbold-color;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: $alternative2;
+        border-color: $line;
+        outline: $line
+    }
+
+    &:active {
+        background: $marina200-color;
+        outline: none;
+
+    }
+
+    &:focus-visible {
+        background: $alternative;
+        border: 2px solid $marina600-color;
+        outline: none
+    }
+
+    &:disabled {
+        background: $seporatorbold-color;
+        outline: none
+    }
+
+    &:invalid {
         background: transparent;
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        vertical-align: middle;
-        transition: all 0.2s ease;
+        outline: 2px $negative-color;
+    }
+
+    &:invalid :hover {
+        background: $seporator-color;
+        outline: 2px $negative-color;
+    }
+
+
+    /* Checked */
+    &:checked {
+        background: $marina800-color;
+        border-color: $marina800-color;
+
+        &::after {
+            content: url(/src/assets/icons/mark.svg);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -52%);
+            font-size: 14px;
+            color: $main-color;
+            padding: 5px 4px;
+        }
 
         &:hover {
-            background: $alternative2;
-            border-color: $line;
-            outline: $line
+            background-color: $marina600-color;
+            outline: none;
         }
 
         &:active {
-            background: $marina200-color;
+            background-color: $marina200-color;
             outline: none;
-
+            color: $marina800-color
         }
 
-       &:focus-visible {
-            background: $alternative;
-            border: 2px solid $marina600-color;
-            outline: none
-
+        &:focus-visible {
+            background-color: $marina800-color;
+            outline: 2px $marina600-color;
         }
 
         &:disabled {
-            background: $seporatorbold-color;
-            outline: none
+            background-color: $seporatorbold-color;
+            color: $disabled-color;
+            outline: none;
         }
 
         &:invalid {
-            background: transparent;
+            background-color: $marina800-color;
             outline: 2px $negative-color;
         }
-        
+
         &:invalid :hover {
-            background: $seporator-color;
+            background-color: $marina600-color;
             outline: 2px $negative-color;
         }
 
-
-        /* Checked */
-        &:checked {
-            background: $marina800-color;
-            border-color: $marina800-color;
-
-            &::after {
-                content: url(/src/assets/icons/mark.svg);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-45%, -52%);
-                font-size: 14px;
-                color: $main-color;
-                padding: 5px 4px;
-            }
-
-            &:hover {
-                background-color: $marina600-color;
-                outline: none;
-            }
-
-            &:active {
-                background-color: $marina200-color;
-                outline: none;
-                color: $marina800-color
-            }
-            
-            &:focus-visible {
-                background-color: $marina800-color;
-                outline: 2px $marina600-color;
-            }
-
-            &:disabled {
-                background-color: $seporatorbold-color;
-                color: $disabled-color;
-                outline: none;
-            }
-
-            &:invalid {
-                background-color: $marina800-color;
-                outline: 2px $negative-color;
-            }
-
-            &:invalid :hover {
-                background-color: $marina600-color;
-                outline: 2px $negative-color;
-            }
-
-        }
-
-        &:indeterminate {
-            background: $marina800-color;
-            border-color: $marina800-color;
-
-            &::after {
-                content: url(/src/assets/icons/minus.svg);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -55%);
-                font-size: 14px;
-                color: $main-color;
-                padding: 7px 4px;
-            }
-
-            &:hover {
-                background-color: $marina600-color;
-                outline: none;
-            }
-
-            &:active {
-                background-color: $marina200-color;
-                outline: none;
-                color: $marina800-color
-            }
-            
-            &:focus-visible {
-                background-color: $marina800-color;
-                outline: 2px $marina600-color;
-            }
-
-            &:disabled {
-                background-color: $seporatorbold-color;
-                color: $disabled-color;
-                outline: none;
-            }
-
-            &:invalid {
-                background-color: $marina600-color;
-                outline: 2px $negative-color;
-            }
-
-            &:invalid :hover {
-                background-color: $marina600-color;
-                outline: 2px $negative-color;
-            }
-
-        }
-
-            
-        }
     }
+
+    &:indeterminate {
+        background: $marina800-color;
+        border-color: $marina800-color;
+
+        &::after {
+            content: url(/src/assets/icons/minus.svg);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+            font-size: 14px;
+            color: $main-color;
+            padding: 7px 4px;
+        }
+
+        &:hover {
+            background-color: $marina600-color;
+            outline: none;
+        }
+
+        &:active {
+            background-color: $marina200-color;
+            outline: none;
+            color: $marina800-color
+        }
+
+        &:focus-visible {
+            background-color: $marina800-color;
+            outline: 2px $marina600-color;
+        }
+
+        &:disabled {
+            background-color: $seporatorbold-color;
+            color: $disabled-color;
+            outline: none;
+        }
+
+        &:invalid {
+            background-color: $marina600-color;
+            outline: 2px $negative-color;
+        }
+
+        &:invalid :hover {
+            background-color: $marina600-color;
+            outline: 2px $negative-color;
+        }
+
+    }
+
+
+}
