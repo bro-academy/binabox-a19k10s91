@@ -3,17 +3,17 @@
     <legend class="form-field__label">{{ field.label }}</legend>
     {% endif %}
     {% for option in field.options %}
-    <p class="radio">
+    <p class="checkbox">
         <input 
-            type="radio" 
+            type="checkbox" 
             name="{{ field.name }}" 
             value="{{ option.value }}" 
             id="{{ option.name }}" 
-            class="radio__input"
+            class="checkbox__input"
             {% if option.disabled %}disabled{% endif %}
             {% if option.checked %}checked{% endif %} 
         />
-        <label for="{{ option.name }}" class="radio__label">
+        <label for="{{ option.name }}" class="checkbox__label">
             {{ option.label }}
         </label>
     </p>
