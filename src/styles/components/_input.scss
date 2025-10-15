@@ -1,53 +1,5 @@
 @use "../base/variables" as *;
 
 .input {
-  font-family: $font-primary;
-  font-weight: $fw-regular;
-  font-size: $fontsize-sm;
-  line-height: $lh-sm;
-  color: $main-color;
-  background-color: transparent;
-  border: 2px solid $seporatorbold-color;
-  outline: none;
-  padding: 10px 12px;
-
-
-  &:hover {
-    border-color: $marina600-color;
-
-  }
-
-  &:focus {
-    border-color: $marina600-color;
-    outline: 1px solid $marina600-color;
-  }
-
-  &:required {
-    border-color: $seporatorbold-color;
-  }
-
-  &:optional {
-     border-color: $seporatorbold-color;
-  }
-
-  &:invalid:not(:placeholder-shown) {
-    border-color: $negative-color;
-    outline: none;
-  }
-
-  &:valid {
-    border-color: $seporatorbold-color;
-
-  }
-
-  &:disabled {
-    border-color: $seporatorbold-color;
-    outline: none;
-    background-color: $seporator-color;
-  }
-
-  &::placeholder {
-    color: $secondary2white-color;
-    background-color: transparent;
-  }
+  
 }

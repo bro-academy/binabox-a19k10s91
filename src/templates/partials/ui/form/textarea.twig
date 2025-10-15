@@ -1,15 +1,8 @@
-<div>
-    <label for="{{ field.label }}" class="input-field-edit__label">
+<div class="form-field">
+    <label for="{{ field.label }}" class="form-field__label">
         {{ field.label }}
     </label>
-    <div>
-        <textarea 
-            class="form-field__element input"
-            name="{{ field.name }}"
-            id="{{ field.name }}"
-            placeholder="{{ field.placeholder }}"
-            rows="8"
-            required>
+    <textarea class="form-field__element" name="{{ field.name }}" id="{{ field.name }}"
+        placeholder="{{ field.placeholder }}" rows="8" required>
 </textarea>
-    </div>
 </div>

@@ -2,15 +2,8 @@
     <label for="{{ field.name }}" class="form-field__label">
         {{ field.label }}
     </label>
-    <div>
-        <input
-                class="form-field__element input"
-                name="{{ field.name }}"
-                id="{{ field.name }}"
-                type="{{ field.type }}"
-                placeholder="{{ field.placeholder }}"
-                {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %}
-                {% if field.required == true %} required {% endif %}
-        >
-    </div>
+    <input class="form-field__element" name="{{ field.name }}" id="{{ field.name }}" type="{{ field.type }}"
+        placeholder="{{ field.placeholder }}"
+        {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %}
+        {% if field.required==true %} required {% endif %}>
 </div>
