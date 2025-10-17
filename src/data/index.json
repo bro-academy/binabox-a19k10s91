@@ -17,6 +17,10 @@
         "number": "1000+",
         "text": "Profiles whitelisted"
       },
+      "promo":{
+        "image": "banner/cube_4x.png",
+        "image_alt": "glowing neon-blue holographic cube with the word 'BINABOX' on it, floating on a dark background"
+      },
       "connect_button": "Connect wallet",
       "whitelist_button": "Whitelist now"
     },
@@ -31,36 +35,36 @@
       "items_status_sold": "Sold out",
       "items": [
         {
-          "image_link": "/echo_of_bones.png",
-          "image_alt": "echo of bones",
+          "image":"cards/skeleton_4x.png",
+          "image_alt": "glass skeleton glowing blue amid swirling smoke",
           "price": "$1990",
           "name": "Echo of Bones",
           "status": "new"
         },
         {
-          "image_link": "/nyx_the_watcher.png",
-          "image_alt": "nyx the watcher",
+          "image":"cards/cat_4x.png",
+          "image_alt": "black cat with glowing green eyes in blue light",
           "price": "$299.99",
           "name": "Nyx the Watcher",
           "status": "new"
         },
         {
-          "image_link": "/blade_of_silence.png",
-          "image_alt": "blade of silence",
+          "image":"cards/scissors_4x.png",
+          "image_alt": "metal scissors on dark blue fabric",
           "price": "$20",
           "name": "Blade of Silence",
           "status": "sold"
         },
         {
-          "image_link": "/data_core.png",
-          "image_alt": "data core",
+          "image":"cards/card_4x.png",
+          "image_alt": "futuristic glowing green card with digital circuit design",
           "price": "$1.000.000",
           "name": "Data Core: Alpha",
           "status": ""
         },
         {
-          "image_link": "/phantome_concole.png",
-          "image_alt": "phantome concole",
+          "image":"cards/frame_4x.png",
+          "image_alt": "futuristic transparent game console glowing with green light.",
           "price": "$199.5",
           "name": "Phantom Concole",
           "status": ""
@@ -71,8 +75,8 @@
       "title": "Our blog",
       "items": [
         {
-          "image_link": "/neutral_drift.png",
-          "image_alt": "neutral_drift",
+          "image":"cards/face_4x.png",
+          "image_alt": "abstract blue face with closed eyes surrounded by swirling shapes",
           "category": "NFT",
           "author": "NOVA RIVEN",
           "date": "04 Dec 2022",
@@ -80,8 +84,8 @@
           "text": "I woke up inside the void. My body stayed in the past - only thoughts were allowed through..."
         },
         {
-          "image_link": "/deadframe.png",
-          "image_alt": "deadframe",
+          "image":"cards/skeleton_4x.png",
+          "image_alt": "transparent glass-like human skeleton illuminated in blue light with swirling smoke in the background",
           "category": "DROP",
           "author": "Kairo Null",
           "date": "04 Dec 2022",
@@ -89,8 +93,8 @@
           "text": "He just stood there, waiting. Not for a person — for a signal. Like the memory of the network took shape."
         },
         {
-          "image_link": "/glitch_panther.png",
-          "image_alt": "glitch panther",
+          "image":"cards/cat_4x.png",
+          "image_alt": "black cat with glowing green eyes in blue light",
           "category": "NFT",
           "author": "Synthya Void",
           "date": "07 Dec 2022",
@@ -98,8 +102,8 @@
           "text": "Cats always knew more than they showed. Especially the ones that vanish into code."
         },
         {
-          "image_link": "/primal.png",
-          "image_alt": "primal",
+          "image":"cards/monkey_4x.png",
+          "image_alt": "close-up of a chimpanzee face in blue light with glowing particles",
           "category": "RARE",
           "author": "Dr. Wex Omega",
           "date": "08 Dec 2022",
@@ -107,8 +111,8 @@
           "text": "We tried to resurrect the past. What we got was rage compressed into an algorithm."
         },
         {
-          "image_link": "/white_photocol.png",
-          "image_alt": "white photocol",
+          "image":"cards/duck_4x.png",
+          "image_alt": "futuristic blue duck statue with digital background",
           "category": "NFT",
           "author": "Tony Nguyer",
           "date": "20 Jun 2022",
@@ -116,8 +120,8 @@
           "text": "At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive."
         },
         {
-          "image_link": "/retrocore.png",
-          "image_alt": "retrocore",
+          "image":"cards/frame_4x.png",
+          "image_alt": "futuristic transparent game console glowing with green light",
           "category": "ARTIFACT",
           "author": "Echo Zero",
           "date": "09 Dec 2022",
@@ -154,8 +158,8 @@
       "title": "Our team",
       "members": [
         {
-          "image_link": "/team_member_1.png",
-          "image_alt": "team member_1",
+          "image": "avatars/nova_riven_4x.jpg",
+          "image_alt": "nova riven's avatar",
           "name": "Nova Riven",
           "position": "Creative Architect",
           "social": [
@@ -182,8 +186,8 @@
           ]
         },
         {
-          "image_link": "/team_member_2.png",
-          "image_alt": "team member_2",
+          "image": "avatars/echo_zero_4x.jpg",
+          "image_alt": "echo zero's avatar",
           "name": "Echo Zero",
           "position": "Tech Whisperer",
           "social": [
@@ -210,8 +214,8 @@
           ]
         },
         {
-          "image_link": "/team_member_3.png",
-          "image_alt": "team member_3",
+          "image": "avatars/kairo_null_4x.jpg",
+          "image_alt": "kairo null's avatar",
           "name": "Kairo Null",
           "position": "Lore Engineer",
           "social": [
@@ -238,8 +242,8 @@
           ]
         },
         {
-          "image_link": "/team_member_4.png",
-          "image_alt": "team member_4",
+          "image": "avatars/dr_wex_omega_4x.jpg",
+          "image_alt": "doctor wex omega's avatar",
           "name": "Dr. Wex Omega",
           "position": "Visual Disruptor",
           "social": [
@@ -271,8 +275,8 @@
           ]
         },
         {
-          "image_link": "/team_member_5.png",
-          "image_alt": "team member_5",
+          "image": "avatars/synthya_void_4x.jpg",
+          "image_alt": "synthya void's avatar",
           "name": "Synthya Void",
           "position": "UX Seer",
           "social": [
@@ -284,8 +288,8 @@
           ]
         },
         {
-          "image_link": "/team_member_6.png",
-          "image_alt": "team member_6",
+          "image": "avatars/mirlo_drift_4x.jpg",
+          "image_alt": "mirlo drift's avatar",
           "name": "Mirlo Drift",
           "position": "Community Catalyst",
           "social": [
@@ -317,8 +321,8 @@
           ]
         },
         {
-          "image_link": "/team_member_7.png",
-          "image_alt": "team member_7",
+          "image": "avatars/axon_rune_4x.jpg",
+          "image_alt": "axon rune's avatar",
           "name": "Axon Rune",
           "position": "Security Ghost",
           "social": [

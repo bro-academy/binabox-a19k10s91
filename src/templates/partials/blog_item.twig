@@ -1,6 +1,13 @@
+{% from '../macro/macro_picture.twig' import picture %}
 <article class="blog-item">
     <div>
-        <img class="blog-item__picture" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
+        {{ picture(
+        'blog-item__picture',
+        item.image,
+        item.image_alt,
+        736,
+        664
+        ) }}
         <span class="label label--available">{{ item.category }}</span>
     </div>
     <span class="blog-item__author">{{ item.author }}</span>
