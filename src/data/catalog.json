@@ -68,11 +68,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -92,11 +92,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -116,11 +116,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -140,11 +140,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -164,12 +164,12 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix",
+                            "value": "mix",
                             "checked": true
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 }

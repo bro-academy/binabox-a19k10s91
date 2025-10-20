@@ -1,21 +1,14 @@
-<fieldset class="form-field">
-    {% if field.label %}
-    <legend class="form-field__label">{{ field.label }}</legend>
-    {% endif %}
-    {% for option in field.options %}
-    <p class="radio">
-        <input 
-            type="radio" 
-            name="{{ field.name }}" 
-            value="{{ option.value }}" 
-            id="{{ option.name }}" 
-            class="radio__input"
-            {% if option.disabled %}disabled{% endif %}
-            {% if option.checked %}checked{% endif %} 
-        />
-        <label for="{{ option.name }}" class="radio__label">
-            {{ option.label }}
-        </label>
-    </p>
-    {% endfor %}
-</fieldset>
+<p class="radio">
+    <input
+        type="radio"
+        name="{{ field.name }}"
+        value="{{ option.value }}"
+        id="{{ field.name }}_{{ option.value }}"
+        class="radio__input"
+        {% if option.disabled %}disabled{% endif %}
+        {% if option.checked %}checked{% endif %}
+    />
+    <label for="{{ field.name }}_{{ option.value }}" class="radio__label">
+        {{ option.label }}
+    </label>
+</p>

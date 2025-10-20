@@ -3,19 +3,17 @@
      <p class="contact-form__subtitle">{{ contact.form.subtitle }}</p>
      {% for field in contact.form.fields %}
           {% if field.type == "radio" %}
-               {% include "../ui/form/radio.twig" %}
+               {% include "../ui/form/radio_set.twig" %}
           {% elseif field.type == "textarea" %}
                {% include "../ui/form/textarea.twig" %}
           {% else %}
-               {% include "../ui/form/form_field.twig" %}
+               {% include "../ui/form/input.twig" %}
           {% endif %}
      {% endfor %}
 
-     {% include "../ui/form/checkbox.twig" with { field: contact.form.submit } %}
+     {% include "../ui/form/checkbox.twig" with { field: contact.form.submit, option: contact.form.submit.option } %}
 
-     <div>
-          <button type="submit" class="registration__button button button--secondary button--large">
-               {{ contact.form.submit.button }}
-          </button>
-     </div>
+     <button type="submit" class="registration__button button button--secondary button--large">
+          {{ contact.form.submit.button }}
+     </button>
 </form>

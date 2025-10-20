@@ -17,7 +17,6 @@
 
     &:hover {
       border-color: $marina600-color;
-
     }
 
     &:focus {
@@ -25,15 +24,11 @@
       outline: 1px solid $marina600-color;
     }
 
-    &:required {
-      border-color: $seporatorbold-color;
-    }
-
     &:optional {
       border-color: $seporatorbold-color;
     }
 
-    &:invalid:not(:placeholder-shown) {
+    &:user-invalid:not(:placeholder-shown) {
       border-color: $negative-color;
       outline: none;
     }

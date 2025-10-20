@@ -5,9 +5,9 @@
             <summary class="catalog-sidebar__option">{{ field.title }}</summary>
 
             {% if field.type == 'radio' %}
-                {% include "ui/form/radio.twig" %}
+                {% include "ui/form/radio_set.twig" %}
             {% elseif field.type == 'checkbox' %}
-                {% include "ui/form/checkbox.twig" %}
+                {% include "ui/form/checkbox_set.twig" %}
             {% endif %}
 
         </details>

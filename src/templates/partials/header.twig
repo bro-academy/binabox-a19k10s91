@@ -1,6 +1,7 @@
+{% from 'ui/icon.twig' import icon %}
 <header class="header">
     <div class="content-wrapper">
-        {% from 'ui/icon.twig' import icon %} {{ icon('','logo') }} <img class="header__logo"
+         {{ icon('','logo') }} <img class="header__logo"
             src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}">
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -20,10 +21,10 @@
                         <span class="form-field__icon form-field__icon--search"></span>
                     </label>
                 </div>
+                <button type="submit" hidden></button>
             </form>
 
             <a href="#" class="button button--primary button--large">
-                {% from 'ui/icon.twig' import icon %}
                 {{ icon( 'discord', 24, 24) }}
                 <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}">
                 <span>{{ header.default_button.text }}</span>

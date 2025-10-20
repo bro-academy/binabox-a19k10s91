@@ -2,7 +2,13 @@
     <label for="{{ field.label }}" class="form-field__label">
         {{ field.label }}
     </label>
-    <textarea class="form-field__element" name="{{ field.name }}" id="{{ field.name }}"
-        placeholder="{{ field.placeholder }}" rows="8" required>
-</textarea>
+    <label for="{{ field.name }}"></label>
+    <textarea
+        class="form-field__element"
+        name="{{ field.name }}"
+        id="{{ field.name }}"
+        placeholder="{{ field.placeholder }}"
+        rows="8"
+        required>
+    </textarea>
 </div>
