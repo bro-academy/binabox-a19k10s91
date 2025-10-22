@@ -82,8 +82,8 @@
     },
     "content": {
       "block_1": {
-        "image": "/dragon.png",
-        "alt": "dragon",
+        "image": "blog_content/big_dragon_4x.png",
+        "alt": "giant glowing green dragon facing a lone figure in a futuristic arena",
         "description": "A Basilisk enters the arena — its emerald scales shimmer with encoded rage."
       },
       "button": "Gaming",
@@ -123,13 +123,13 @@
       "block_2": {
         "blocks":[
           {
-            "image": "/dragon_small.png",
-            "alt": "dragon left",
+            "image": "blog_content/left_dragon_4x.png",
+            "alt": "close-up of a glowing green dragon’s head with shimmering scales.",
             "description": "Close-up of a Gen-3 Basilisk. Eyes trained by code."
           },
           {
-            "image": "/dragon_small2.png",
-            "alt": "dragon right",
+            "image": "blog_content/right_dragon_4x.png",
+            "alt": "massive glowing green dragon standing beside its summoner in a futuristic setting",
             "description": "A bonded Basilisk with its summoner. Loyalty is minted — not earned."
           }
         ]

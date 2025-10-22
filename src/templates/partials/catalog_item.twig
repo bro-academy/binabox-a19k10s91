@@ -1,7 +1,13 @@
+{% from '../macro/macro_picture.twig' import picture %}
 <article class="catalog-item">
     <div>
-        <img class="catalog-item__image" src="{{ item.image_link }}" alt="{{ item.image_alt }}">
-
+        {{ picture(
+        'catalog-item__image catalog-item__image',
+        item.image,
+        item.image_alt,
+        253,
+        324
+        ) }}
         {% if item.status == "new" %}
         <span class="label label--available">
             {{ index.catalog.items_status_new }}
@@ -13,7 +19,6 @@
             {{ index.catalog.items_status_sold }}
         </span>
         {% endif %}
-
     </div>
     <p class="catalog-item__price">{{ item.price }}</p>
     <p class="catalog-item__name">{{ item.name }}</p>

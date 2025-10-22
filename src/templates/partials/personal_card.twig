@@ -1,5 +1,12 @@
+{% from '../macro/macro_picture.twig' import picture %}
 <li class="team__item personal-card">
-    <img class="personal-card__picture" src="{{ member.image_link }}" alt="{{ member.image_alt }}">
+    {{ picture(
+    'personal-card__picture',
+    member.image,
+    member.image_alt,
+    120,
+    120
+    ) }}
     <p class="personal-card__name"><strong>{{ member.name }}</strong></p>
     <p class="personal-card__position">{{ member.position }}</p>
     <ul class="personal-card__social-list social-list">
