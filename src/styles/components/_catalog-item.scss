@@ -16,4 +16,10 @@
         line-height: $lh-lg;
         color: $subtitle-color;
     }
+
+    &__image {
+        background-color: darkcyan;
+        object-fit: cover;
+
+    }
 }

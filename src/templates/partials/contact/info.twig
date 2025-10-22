@@ -1,0 +1,9 @@
+
+<section class="contact-info">
+    <div class="contact-info__card">
+        {% for card in contact.info.cards %}
+            {% include "./card.twig" %}
+        {% endfor %}  
+    </div>
+    
+</section>

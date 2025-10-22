@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+
+.catalog-page {
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xxl;
+        line-height: $lh-huge;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: $title-color;
+    }
+
+    &__nav-item {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        text-align: center;
+        color: $main-color;
+
+        &--active {
+            color: $secondary2white-color;
+        }
+    }
+
+    &__topic {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: 28px;
+        line-height: 36px;
+        color: $main-color;
+    }
+
+    &__topic-info {
+        font-weight: $fw-regular;
+        line-height: $lh-sm;
+        color: $main-color;
+    }
+}

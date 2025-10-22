@@ -1,0 +1,114 @@
+{
+    "contact": {
+        "url": "contact.html",
+        "title": "Contact",
+        "hero": {
+            "title": "Contact Us",
+            "links": [
+                {
+                    "label": "Home",
+                    "href": "index.html"
+                },
+                {
+                    "label": "Contact Us",
+                    "href": "#",
+                    "active": true
+                }
+            ]
+        },
+        "info": {
+            "cards": [
+                {
+                    "link": "#",
+                    "image_icon": "map-pin.png",
+                    "image_alt": "icon_map",
+                    "title": "Location",
+                    "subtitle": "2163 Phillips gap Rd"
+                },
+                {
+                    "link": "#",
+                    "image_icon": "mail.png",
+                    "image_alt": "icon-mail",
+                    "title": "Email",
+                    "subtitle": "info.avitex@gmail.com"
+                },
+                {
+                    "link": "#",
+                    "image_icon": "phone.png",
+                    "image_alt": "icon-phone",
+                    "title": "Call Us",
+                    "subtitle": "+1 666 8888"
+                }
+            ]
+        },
+        "form": {
+            "title": "Get in Touch",
+            "subtitle": "Browse through the most frequently asked questions",
+            "fields": [
+                {
+                    "type": "text",
+                    "name": "name",
+                    "label": "Name",
+                    "placeholder": "Enter your name",
+                    "required": true
+                },
+                {
+                    "type": "text",
+                    "name": "last_name",
+                    "label": "Last name",
+                    "placeholder": "Enter your last name",
+                    "required": true
+                },
+                {
+                    "type": "date",
+                    "name": "dob",
+                    "label": "Date of birth",
+                    "required": true
+                },
+                {
+                    "type": "radio",
+                    "name": "sex",
+                    "label": "Sex",
+                    "options": [
+                        {
+                            "value": "male",
+                            "name": "male",
+                            "label": "Male",
+                            "checked": true
+                        },
+                        {
+                            "value": "female",
+                            "name": "female",
+                            "label": "Female"
+                        }
+                    ]
+                },
+                {
+                    "type": "email",
+                    "name": "email",
+                    "label": "E-mail",
+                    "placeholder": "Enter your email",
+                    "required": true
+                },
+                {
+                    "type": "tel",
+                    "name": "phone",
+                    "label": "Phone Number",
+                    "placeholder": "Enter your phone number",
+                    "pattern": "[0-9]*"
+                },
+                {
+                    "type": "textarea",
+                    "name": "message",
+                    "label": "Message",
+                    "placeholder": "Text your message here"
+                }
+            ],
+            "submit": {
+                "name": "agree",
+                "label": "By clicking on the ‘Send Message’ button I agree to all the terms of the security policy",
+                "button": "Send Message"
+            }
+        }
+    }
+}

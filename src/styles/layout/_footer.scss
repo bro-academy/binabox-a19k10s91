@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 
 .footer {
+    background: $alternative;
     &__slogan {
         font-weight: $fw-regular;
         font-size: $fontsize-sm;

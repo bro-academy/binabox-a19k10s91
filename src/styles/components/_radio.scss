@@ -1,0 +1,105 @@
+@use "../base/variables" as *;
+
+.radio {
+  &--primary {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $line;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $alternative2;
+    }
+
+    &:active {
+      border: 5px solid $marina200-color;
+    }
+
+    &:focus-visible {
+      border-color: $secondary2white-color;
+      outline: 2px solid $marina600-color;
+      outline-offset: 1px;
+      box-shadow: 0 0 0 2px $main-bg-color;
+    }
+
+    &:disabled {
+      background-color: $seporatorbold-color;
+      border: none;
+      cursor: not-allowed;
+    }
+
+    &:checked {
+      border-color: $main-bg-color;
+      background-color: $marina800-color;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        top: 4px;
+        left: 4px;
+        background-color: $main-bg-color;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+      }
+
+      &:hover {
+        background-color: $marina600-color;
+      }
+
+      &:active {
+        background-color: $marina400-color;
+        border-color: $marina400-color;
+
+        &::after {
+          width: 6px;
+          height: 6px;
+          top: 3px;
+          left: 3px;
+        }
+      }
+
+      &:focus-visible {
+        background-color: $marina600-color;
+        border-color: $marina600-color;
+        outline: 2px solid $marina600-color;
+        outline-offset: 1px;
+        box-shadow: 0 0 0 2px $main-bg-color;
+
+         &::after {
+          width: 6px;
+          height: 6px;
+          top: 3px;
+          left: 3px;
+        }
+      }
+
+      &:disabled {
+        background-color: $line;
+        &::after {
+          background-color: $secondary2white-color;
+          width: 6px;
+          height: 6px;
+          top: 5px;
+          left: 5px;
+        }
+      }
+    }
+
+    &.invalid {
+      border-color: $negative-color;
+
+      &:hover {
+        background-color: $alternative2;
+      }
+    }
+  }
+}

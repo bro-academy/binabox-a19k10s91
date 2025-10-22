@@ -1,0 +1,21 @@
+<form method="post" action="url" class="contact-form">
+     <h2 class="contact-form__title">{{ contact.form.title }}</h2>
+     <p class="contact-form__subtitle">{{ contact.form.subtitle }}</p>
+     {% for field in contact.form.fields %}
+          {% if field.type == "radio" %}
+               {% include "../ui/form/radio.twig" %}
+          {% elseif field.type == "textarea" %}
+               {% include "../ui/form/textarea.twig" %}
+          {% else %}
+               {% include "../ui/form/input.twig" %}
+          {% endif %}
+     {% endfor %}
+
+     <input type="checkbox" id="{{ contact.form.submit.name }}" class="checkbox--primary" required />
+     <label for="{{ contact.form.submit.name }}" class="checkbox__label">{{ contact.form.submit.label }}</label>
+    <div>
+          <button type="submit" class="registration__button button button--secondary button--large">
+               {{ contact.form.submit.button }}
+          </button>
+     </div>
+</form>

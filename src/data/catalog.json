@@ -1,0 +1,239 @@
+{
+    "catalog": {
+        "url": "catalog.html",
+        "title": "Catalog",
+        "hero": {
+            "title": "Exlore catalog",
+            "subtitle": "All item",
+            "links": [
+                {
+                    "label": "Home",
+                    "href": "index.html"
+                },
+                {
+                    "label": "Catalog",
+                    "href": "catalog.html"
+                },
+                {
+                    "label": "The Basilisks NFT",
+                    "href": "#",
+                    "active": true
+                }
+            ]
+        },
+        "sidebar": {
+            "filters": [
+                {
+                    "title": "Clothing",
+                    "name": "clothing",
+                    "type": "checkbox",
+                    "open": true,
+                    "options": [
+                        {
+                            "label": "Combatant",
+                            "value": "combatant"
+                        },
+                        {
+                            "label": "Ninja",
+                            "value": "ninja"
+                        },
+                        {
+                            "label": "King",
+                            "value": "king",
+                            "checked": true
+                        },
+                        {
+                            "label": "Queen",
+                            "value": "queen"
+                        },
+                        {
+                            "label": "Robot",
+                            "value": "robot"
+                        }
+                    ]
+                },
+                {
+                    "title": "Eyes",
+                    "name": "eyes",
+                    "type": "radio",
+                    "open": true,
+                    "options": [
+                        {
+                            "label": "Yellow",
+                            "value": "yellow"
+                        },
+                        {
+                            "label": "Green",
+                            "value": "green",
+                            "checked": true
+                        },
+                        {
+                            "label": "Mix",
+                            "nvalueame": "mix"
+                        },
+                        {
+                            "label": "Orange",
+                            "nvalueame": "orange"
+                        }
+                    ]
+                },
+                {
+                    "title": "Face",
+                    "name": "face",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Yellow",
+                            "value": "yellow"
+                        },
+                        {
+                            "label": "Green",
+                            "value": "green",
+                            "checked": true
+                        },
+                        {
+                            "label": "Mix",
+                            "nvalueame": "mix"
+                        },
+                        {
+                            "label": "Orange",
+                            "nvalueame": "orange"
+                        }
+                    ]
+                },
+                {
+                    "title": "Skin",
+                    "name": "face",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Yellow",
+                            "value": "yellow"
+                        },
+                        {
+                            "label": "Green",
+                            "value": "green",
+                            "checked": true
+                        },
+                        {
+                            "label": "Mix",
+                            "nvalueame": "mix"
+                        },
+                        {
+                            "label": "Orange",
+                            "nvalueame": "orange"
+                        }
+                    ]
+                },
+                {
+                    "title": "Background",
+                    "name": "face",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Yellow",
+                            "value": "yellow"
+                        },
+                        {
+                            "label": "Green",
+                            "value": "green",
+                            "checked": true
+                        },
+                        {
+                            "label": "Mix",
+                            "nvalueame": "mix"
+                        },
+                        {
+                            "label": "Orange",
+                            "nvalueame": "orange"
+                        }
+                    ]
+                },
+                {
+                    "title": "Special",
+                    "name": "special",
+                    "type": "checkbox",
+                    "open": true,
+                    "options": [
+                        {
+                            "label": "Yellow",
+                            "value": "yellow"
+                        },
+                        {
+                            "label": "Green",
+                            "value": "green"
+                        },
+                        {
+                            "label": "Mix",
+                            "nvalueame": "mix",
+                            "checked": true
+                        },
+                        {
+                            "label": "Orange",
+                            "nvalueame": "orange"
+                        }
+                    ]
+                }
+            ],
+            "submit": {
+                "name": "apply",
+                "label": "",
+                "button": "Apply"
+            }
+        },
+        "controls": {
+            "search": {
+                "type": "search",
+                "name": "",
+                "icon": "",
+                "placeholder": "Search NFT",
+                "required": true
+            },
+            "select": {
+                "id": "select",
+                "name": "sortby",
+                "options": [
+                    {
+                        "value": "",
+                        "text": "Sort by"
+                    },
+                    {
+                        "value": "newest",
+                        "text": "Newest"
+                    },
+                    {
+                        "value": "most popular",
+                        "text": "Most popular"
+                    },
+                    {
+                        "value": "increasing in price",
+                        "text": "Increasing in price"
+                    },
+                    {
+                        "value": "lowering the price",
+                        "text": "Lowering the price"
+                    }
+                ]
+            }
+        },
+        "tags": [
+            "NFT",
+            "ICO",
+            "Crypto"
+        ],
+        "tags_clear": "Clear all",
+        "items": [
+            {
+                "image_path": "/src/assets/images/cards/",
+                "image_png":"face_4x.png",
+                "image_avif":"face_4x.avif",
+                "image_webp":"face_4x.webp",
+                "image_alt": "glass skeleton glowing blue amid swirling smoke",
+                "price": "$1990",
+                "name": "Echo of Bones",
+                "status": "new"
+            }
+        ],
+        "button_load": "Load more"
+    }
+}
