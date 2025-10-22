@@ -15,12 +15,7 @@
         </nav>
         <div>
             <form action="/search" method="get">
-                <div class="form-field">
-                    <label>
-                        <input type="search" class="form-field__element" placeholder="Search">
-                        <span class="form-field__icon form-field__icon--search"></span>
-                    </label>
-                </div>
+                {% include "ui/form/input.twig" with {field: header.search} %}
                 <button type="submit" hidden></button>
             </form>
 

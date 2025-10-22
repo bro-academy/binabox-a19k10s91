@@ -4,7 +4,7 @@
         name="{{ field.name }}"
         value="{{ option.value }}"
         id="{{ field.name }}_{{ option.value }}"
-        class="radio__input"
+        class="radio__input visually-hidden"
         {% if option.disabled %}disabled{% endif %}
         {% if option.checked %}checked{% endif %}
     />

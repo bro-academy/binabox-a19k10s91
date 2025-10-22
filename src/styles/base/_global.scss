@@ -10,7 +10,8 @@ body {
 
 a {
     text-decoration: none;
-    &:visited{
+
+    &:visited {
         color: $main-color;
     }
 }
@@ -29,3 +30,14 @@ ul {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+//input[type="search"].form-field__element {
+//  -webkit-appearance: none;
+//  appearance: none;
+//}
+//
+//input[type="search"].form-field__element:focus {
+//  /* whatever you already use for text inputs */
+//  border-color: #3b82f6;
+//  box-shadow: 0 0 0 3px rgba(59,130,246,.25);
+//}

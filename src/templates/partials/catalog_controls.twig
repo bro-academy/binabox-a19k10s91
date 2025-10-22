@@ -10,13 +10,7 @@
         </label>
     </div>
 
-    <div class="form-field">
-        <label>
-            <input id="{{ catalog.controls.search.id }}" type="{{ catalog.controls.search.type }}"
-                class="form-field__element" name="{{ catalog.controls.search.name }}"
-                placeholder="{{ catalog.controls.search.placeholder }}">
-            <span class="form-field__icon form-field__icon--search"></span>
-        </label>
-    </div>
+    {% include "ui/form/input.twig" with {field: catalog.controls.search} %}
+
     <button type="submit" hidden></button>
 </form>

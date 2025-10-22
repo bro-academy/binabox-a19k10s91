@@ -3,7 +3,7 @@
         "url": "catalog.html",
         "title": "Catalog",
         "hero": {
-            "title": "Exlore catalog",
+            "title": "Explore catalog",
             "links": [
                 {
                     "label": "Home",
@@ -182,12 +182,11 @@
         },
         "controls": {
             "search": {
-                "id": "search",
+                "id": "search_catalog",
                 "type": "search",
-                "name": "",
-                "icon": "",
-                "placeholder": "Search NFT",
-                "required": true
+                "name": "search_catalog",
+                "icon": true,
+                "placeholder": "Search NFT"
             },
             "select": {
                 "id": "select",
@@ -218,4 +217,3 @@
         }
     }
 }
-    
