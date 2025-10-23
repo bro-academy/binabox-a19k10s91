@@ -14,45 +14,29 @@
     outline: none;
     padding: 10px 12px;
 
-
-    &:hover {
-      border-color: $marina600-color;
-
-    }
-
-    &:focus {
-      border-color: $marina600-color;
-      outline: 1px solid $marina600-color;
-    }
-
-    &:required {
-      border-color: $seporatorbold-color;
-    }
-
-    &:optional {
-      border-color: $seporatorbold-color;
-    }
-
-    &:invalid:not(:placeholder-shown) {
-      border-color: $negative-color;
-      outline: none;
-    }
-
-    &:valid {
-      border-color: $seporatorbold-color;
-
-    }
-
-    &:disabled {
-      border-color: $seporatorbold-color;
-      outline: none;
-      background-color: $seporator-color;
-    }
-
     &::placeholder {
       color: $secondary2white-color;
       background-color: transparent;
     }
+
+    &:disabled {
+      border-color: $seporatorbold-color;
+      background-color: $seporator-color;
+    }
+
+    &:user-invalid:not(:placeholder-shown) {
+      border-color: $negative-color;
+    }
+
+    &:hover:not(:disabled) {
+      border-color: $marina600-color;
+    }
+
+    &:focus:not(:disabled) {
+      border-color: $marina600-color;
+      box-shadow: 0 0 0 2px $marina600-color;
+    }
+
   }
 
   &__label {

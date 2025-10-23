@@ -15,6 +15,13 @@
       "icon": "log_in.svg",
       "alt": "Log In Icon"
     },
+    "search": {
+      "id": "search",
+      "type": "search",
+      "name": "search",
+      "icon": true,
+      "placeholder": "Search"
+    },
     "links": [
       {
         "label": "Home",

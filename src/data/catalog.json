@@ -3,7 +3,8 @@
         "url": "catalog.html",
         "title": "Catalog",
         "hero": {
-            "title": "Exlore catalog",
+            "title": "Explore catalog",
+            "subtitle": "All item",
             "links": [
                 {
                     "label": "Home",
@@ -68,11 +69,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -92,11 +93,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -116,11 +117,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -140,11 +141,11 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix"
+                            "value": "mix"
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 },
@@ -164,12 +165,12 @@
                         },
                         {
                             "label": "Mix",
-                            "nvalueame": "mix",
+                            "value": "mix",
                             "checked": true
                         },
                         {
                             "label": "Orange",
-                            "nvalueame": "orange"
+                            "value": "orange"
                         }
                     ]
                 }
@@ -182,12 +183,11 @@
         },
         "controls": {
             "search": {
-                "id": "search",
+                "id": "search_catalog",
                 "type": "search",
-                "name": "",
-                "icon": "",
-                "placeholder": "Search NFT",
-                "required": true
+                "name": "search_catalog",
+                "icon": true,
+                "placeholder": "Search NFT"
             },
             "select": {
                 "id": "select",
@@ -215,7 +215,22 @@
                     }
                 ]
             }
-        }
+        },
+        "tags": [
+            "NFT",
+            "ICO",
+            "Crypto"
+        ],
+        "tags_clear": "Clear all",
+        "items": [
+            {
+                "image": "cards/face_4x.png",
+                "image_alt": "glass skeleton glowing blue amid swirling smoke",
+                "price": "$1990",
+                "name": "Echo of Bones",
+                "status": "new"
+            }
+        ],
+        "button_load": "Load more"
     }
 }
-    
