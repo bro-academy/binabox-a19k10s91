@@ -1,4 +1,44 @@
+@use "../base/variables" as *;
+
 .form-field {
+  border-width: 0;
+
+  &__element {
+    font-family: $font-primary;
+    font-weight: $fw-regular;
+    font-size: $fontsize-sm;
+    line-height: $lh-sm;
+    color: $main-color;
+    background-color: transparent;
+    border: 2px solid $seporatorbold-color;
+    outline: none;
+    padding: 10px 12px;
+
+    &::placeholder {
+      color: $secondary2white-color;
+      background-color: transparent;
+    }
+
+    &:disabled {
+      border-color: $seporatorbold-color;
+      background-color: $seporator-color;
+    }
+
+    &:user-invalid:not(:placeholder-shown) {
+      border-color: $negative-color;
+    }
+
+    &:hover:not(:disabled) {
+      border-color: $marina600-color;
+    }
+
+    &:focus:not(:disabled) {
+      border-color: $marina600-color;
+      box-shadow: 0 0 0 2px $marina600-color;
+    }
+
+  }
+
   &__label {
     display: block;
     text-align: left;

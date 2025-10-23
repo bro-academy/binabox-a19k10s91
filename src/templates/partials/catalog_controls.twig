@@ -1,16 +1,16 @@
-<form class="catalog-controls__search" action="/search">
-    <label for="choose-select" class="catalog-controls__choose"></label>
-    <select name="{{ catalog.controls.select.name }}" id="{{ catalog.controls.select.id }}"
-        class="select"
-    >
-        {% for option in catalog.controls.select.options %}
-        <option value="{{ option.value }}">{{ option.text }}</option>
-        {% endfor %}
-    </select>
+<form action="/search_catalog" method="get">
+    <div class="form-field">
+        <label>
+            <select name="{{ catalog.controls.select.name }}" id="{{ catalog.controls.select.id }}" class="select">
+                {% for option in catalog.controls.select.options %}
+                <option value="{{ option.value }}">{{ option.text }}</option>
+                {% endfor %}
+            </select>
+            <span class="form-field__icon form-field__icon--arrow"></span>
+        </label>
+    </div>
 
-    <input type="{{ catalog.controls.search.type }}"
-        class="input-field-edit__field"
-        name="{{ catalog.controls.search.name }}"
-        placeholder="{{ catalog.controls.search.placeholder }}">
-    <span class="search__icon"></span>
+    {% include "ui/form/input.twig" with {field: catalog.controls.search} %}
+
+    <button type="submit" hidden></button>
 </form>

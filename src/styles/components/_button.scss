@@ -35,10 +35,18 @@
             box-shadow: 0 0 0 2px $seporator-color inset;
         }
 
-        &:focus-visible {
+        &:focus {
             background-color: $seporator-color;
-            box-shadow: 0 0 0 4px $marina600-color inset;
-            outline: none;
+            box-shadow: 0 0 0 2px $marina600-color inset;
+            outline: 2px $marina600-color solid;
+            outline-offset: -2px;
+        }
+
+        &:focus-visible {
+           background-color: $seporator-color;
+            box-shadow: 0 0 0 2px $marina600-color inset;
+            outline: 2px $marina600-color solid;
+            outline-offset: -2px;
         }
 
         &:active {

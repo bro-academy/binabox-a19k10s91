@@ -106,7 +106,12 @@
             ],
             "submit": {
                 "name": "agree",
-                "label": "By clicking on the ‘Send Message’ button I agree to all the terms of the security policy",
+                "option":
+                    {
+                        "value": "agree",
+                        "name": "agree",
+                        "label": "By clicking on the 'Send Message' button I agree to all the terms of the security policy"
+                    },
                 "button": "Send Message"
             }
         }

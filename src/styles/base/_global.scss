@@ -10,7 +10,8 @@ body {
 
 a {
     text-decoration: none;
-    &:visited{
+
+    &:visited {
         color: $main-color;
     }
 }
@@ -18,3 +19,25 @@ a {
 ul {
     list-style: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+//input[type="search"].form-field__element {
+//  -webkit-appearance: none;
+//  appearance: none;
+//}
+//
+//input[type="search"].form-field__element:focus {
+//  /* whatever you already use for text inputs */
+//  border-color: #3b82f6;
+//  box-shadow: 0 0 0 3px rgba(59,130,246,.25);
+//}
