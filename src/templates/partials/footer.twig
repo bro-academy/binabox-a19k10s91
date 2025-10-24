@@ -1,6 +1,9 @@
+{% from '../macro/icon.twig' import icon %}
+
 <footer class="footer">
     <a class="footer-logo" href="#">
-        <img class="footer-logo__picture" src="{{ footer.logo.icon }}" alt="{{ footer.logo.alt }}">
+        {{ icon("footer-logo__picture", "logo_blue", 188, 42) }}
+        {# <img class="footer-logo__picture" src="{{ footer.logo.icon }}" alt="{{ footer.logo.alt }}"> #}
     </a>
     <p class="footer__slogan">{{ footer.logo.slogan }}</p>
     <nav>
@@ -20,7 +23,7 @@
             {% for link in footer.social %}
             <li>
                 <a class="button button--ghost button--small footer-social__icon" href="{{ link.href }}">
-                    <img class="footer-social__logo" src="{{ link.icon }}" alt="{{ link.alt }}">
+                    {{ icon("footer-social__logo", link.icon, 24,24) }}
                 </a>
             </li>
             {% endfor %}

@@ -1,0 +1,13 @@
+@use "../base/variables" as *;
+
+.social-list {
+    &__personal-icon {
+        background: transparent;
+        fill: $main-color;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: $marina600-color;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 {% from '../macro/macro_picture.twig' import picture %}
+{% from '../macro/icon.twig' import icon %}
 <article class="blog-item">
     <div>
         {{ picture(
@@ -10,9 +11,15 @@
         ) }}
         <span class="label label--available">{{ item.category }}</span>
     </div>
-    <span class="blog-item__author">{{ item.author }}</span>
-    <time class="blog-item__time">{{ item.date }}</time>
+    <span class="blog-item__author">
+        {{ icon("blog-item__icon","men", 16,16) }}
+        {{ item.author }}
+    </span>
+    <time class="blog-item__time">
+        {{ icon("blog-item__icon","calendar", 16,16) }}
+        {{ item.date }}
+    </time>
     <p class="blog-item__title"><strong>{{ item.title }}</strong></p>
     <p class="blog-item__text">{{ item.text }}</p>
-    <a class="button button--primary button--medium" href="#">{{ index.blog.button_primary }} ></a>
+    <a class="button button--primary button--medium" href="#">{{ index.blog.button_primary }}  {{ icon("","arrow_right", 24,24) }}></a>
 </article>

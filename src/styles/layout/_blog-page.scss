@@ -35,4 +35,11 @@
         line-height: $lh-sm;
         color: $main-color;
     }
+
+    &__hero {
+        background: transparent;
+        color: $secondary;
+
+    
+    }
 }

@@ -7,6 +7,9 @@
         text-transform: uppercase;
         color: $subtitle-color;
     }
+    &__author-icon {
+        fill: white;
+    }
 
     &__time {
         font-weight: $fw-semibold;
@@ -28,4 +31,12 @@
         line-height: $lh-sm;
         color: $subtitle-color;
     }
+
+    &__icon {
+        background: transparent;
+        fill: $main-color;
+        transition: fill 0.3s ease;
+
+    }
+
 }

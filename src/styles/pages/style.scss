@@ -22,6 +22,7 @@
 @use "../layout/header";
 @use "../layout/banner";
 @use "../layout/footer";
+@use "../layout/footer_social";
 @use "../layout/catalog";
 @use "../layout/catalog-page";
 @use "../layout/contact-page";
@@ -33,3 +34,7 @@
 @use "../layout/blog-content";
 @use "../layout/features-list";
 @use "../layout/faq";
+@use "../layout/social-list";
+
+
+
