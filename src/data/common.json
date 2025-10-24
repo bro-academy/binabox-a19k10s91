@@ -16,7 +16,7 @@
       "id": "search",
       "type": "search",
       "name": "search",
-      "icon": true,
+      "icon": "search",
       "placeholder": "Search"
     },
     "links": [

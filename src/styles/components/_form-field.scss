@@ -2,6 +2,7 @@
 
 .form-field {
   border-width: 0;
+  position: relative;
 
   &__element {
     font-family: $font-primary;
@@ -37,6 +38,13 @@
       box-shadow: 0 0 0 2px $marina600-color;
     }
 
+  }
+
+  &__icon {
+    fill: $main-color;
+    position: absolute;
+    left: 12px;
+    top: 12px;
   }
 
   &__label {

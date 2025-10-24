@@ -30,9 +30,7 @@
       "slider": {
         "button_all": "See all",
         "button_left": "",
-        "icon": "arrow_left",
-        "button_right": "",
-        "icon": "arrow_right"
+        "button_right": ""
       },
       "items_status_new": "New",
       "items_status_sold": "Sold out",
