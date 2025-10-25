@@ -31,7 +31,10 @@
     <ul class="features-list">
         {% for list in blog.content.lists %}
         <li>
-            {{ icon("features-list__icon", list.icon_logo, 24, 24) }} 
+            <svg class="features-list__icon" width="24" height="24">
+            <use href="/src/assets/icons/graph_logo.svg" />
+            </svg>
+            {# {{ icon("features-list__icon", list.icon_logo, 24, 24) }}  #}
             {# <img class="features-list__icon" src="{{ list.icon_logo }}" alt="{{ list.alt_logo }}"> #}
             <span class="features-list__text">{{ list.text }}</span>
         </li>

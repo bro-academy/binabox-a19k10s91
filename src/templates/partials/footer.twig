@@ -1,7 +1,10 @@
 {% from '../macro/icon.twig' import icon %}
 <footer class="footer">
     <a class="footer-logo" href="#">
-        {{ icon("footer-logo__picture", "logo_blue", 188, 42) }}
+        <svg class="icon footer-logo__picture" width="182" height="42">
+            <use href="/src/assets/icons/blue_logo.svg" />
+        </svg>
+        {# {{ icon("footer-logo__picture", "blue_logo", 188, 42) }} #}
         {# <img class="footer-logo__picture" src="{{ footer.logo.icon }}" alt="{{ footer.logo.alt }}"> #}
     </a>
     <p class="footer__slogan">{{ footer.logo.slogan }}</p>
