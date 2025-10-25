@@ -88,11 +88,9 @@
       },
       "button": "Gaming",
       "title": "The Basilisks NFT",
-      "icon_contact": "/personal_icon",
-      "alt_contact": "icon for contact",
+      "icon_contact": "men",
       "author": "Tony Nguyen",
-      "icon_date": "/calendar_icon",
-      "alt_date": "calendar icon",
+      "icon_date": "calendar",
       "date": "Jan 20, 2022",
       "subtitle": "Basilisks aren’t just creatures — they’re digital apex predators. Forged on the Ethereum chain and raised in a metaverse colosseum, they live to dominate, duel, and devour.Every one of them is an NFT with unique DNA, traits, and bloodlust.",
       "paragraph_1": "In this game, your Basilisk is your warrior. You breed it. You name it. You train it. And when you’re ready, you send it into the arena — not to play, but to survive.",
@@ -100,23 +98,19 @@
       "paragraph_3": "The game’s AI learns from every move. If your Basilisk gets too strong — it becomes a target. If it dies? It's burned forever. If it wins? You earn crypto, glory, and power.",
       "lists": [
         {
-          "icon_logo": "/binabox_icon",
-          "alt_logo": "abel of Binabox",
+          "icon_logo": "logo_graph",
           "text": "Unique DNA structure"
         },
         {
-          "icon_logo": "/binabox_icon",
-          "alt_logo": "abel of Binabox",
+          "icon_logo": "logo_graph",
           "text": "PvP-enabled arenas"
         },
         {
-          "icon_logo": "/binabox_icon",
-          "alt_logo": "abel of Binabox",
+          "icon_logo": "logo_graph",
           "text": "Permanent death mode"
         },
         {
-          "icon_logo": "/binabox_icon",
-          "alt_logo": "label of Binabox",
+          "icon_logo": "logo_graph",
           "text": "Metaverse integration"
         }
       ],
@@ -167,18 +161,15 @@
         "text_2": "Share:",
         "socials": [
           {
-            "icon": "twitter.svg",
-            "alt": "twitter icon",
+            "icon": "twitter",
             "href": "twitter.com"
           },
           {
-            "icon": "facebook.svg",
-            "alt": "facebook icon",
+            "icon": "facebook",
             "href": "facebook.com"
           },
           {
-            "icon": "/instagram.svg",
-            "alt": "instagram icon",
+            "icon": "instagram",
             "href": "instagram.com"
           }
         ]
@@ -186,8 +177,7 @@
     },
     "blockquote": {
       "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
-      "icon_rating": "/rating_icon",
-      "alt_rating": "rating icon",
+      "icon": "star",
       "rating": "8,5/10",
       "author": "Markout Corporation"
     }

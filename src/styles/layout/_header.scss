@@ -6,4 +6,27 @@
     &__nav {
         line-height: $lh-sm;
     }
+
+    &__nav-icon {
+        background: transparent;
+        fill: $main-color;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: $marina600-color;
+        }
+    }
+
+    &__nav-icon-login {
+        background: transparent;
+        fill: $main-color;
+        transition: fill 0.3s ease;
+
+    }
+
+    &__logo {
+        background: transparent;
+        fill: $marina800-color;
+        transition: fill 0.3s ease;
+    }
 }

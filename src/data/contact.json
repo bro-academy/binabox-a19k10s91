@@ -20,22 +20,19 @@
             "cards": [
                 {
                     "link": "#",
-                    "image_icon": "map-pin.png",
-                    "image_alt": "icon_map",
+                    "image_icon": "location",
                     "title": "Location",
                     "subtitle": "2163 Phillips gap Rd"
                 },
                 {
                     "link": "#",
-                    "image_icon": "mail.png",
-                    "image_alt": "icon-mail",
+                    "image_icon": "letter",
                     "title": "Email",
                     "subtitle": "info.avitex@gmail.com"
                 },
                 {
                     "link": "#",
-                    "image_icon": "phone.png",
-                    "image_alt": "icon-phone",
+                    "image_icon": "call",
                     "title": "Call Us",
                     "subtitle": "+1 666 8888"
                 }

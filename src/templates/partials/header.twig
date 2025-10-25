@@ -1,14 +1,16 @@
-{% from 'ui/icon.twig' import icon %}
+{% from '../macro/icon.twig' import icon %}
 <header class="header">
     <div class="content-wrapper">
-         {{ icon('','logo') }} <img class="header__logo"
-            src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}">
+         {{ icon("header__logo", "logo_white", 188, 42) }} 
+         {# <img class="header__logo" src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}"> #}
         <nav class="header__nav">
             <ul class="header__nav-list">
                 {% for link in header.links %}
                 <li>
                     <a class="link link--tertiary header__nav-item {% if link.active %} header__nav-item--active {% endif %}"
-                        href="{{ link.href }} ">{{ link.label }}</a>
+                        href="{{ link.href }} ">{{ link.label }}
+                    {{ icon("header__nav-icon", "down", 24, 24) }} 
+                </a>
                 </li>
                 {% endfor %}
             </ul>
@@ -20,12 +22,13 @@
             </form>
 
             <a href="#" class="button button--primary button--large">
-                {{ icon( 'discord', 24, 24) }}
-                <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}">
+                {{ icon("header__nav-icon", "discord", 24, 24) }}
+                {# <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}"> #}
                 <span>{{ header.default_button.text }}</span>
             </a>
             <a class="button button--secondary button--large">
-                <img src="{{ header.primary_button.icon }}" alt=" {{ .header.primary_button.alt }}">
+                {{ icon( "header__nav-icon-login", "men", 24, 24) }}
+                {# <img src="{{ header.primary_button.icon }}" alt=" {{ .header.primary_button.alt }}"> #}
                 <span>{{ header.primary_button.text }}</span>
             </a>
         </div>

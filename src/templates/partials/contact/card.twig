@@ -1,6 +1,7 @@
+{% from '../../macro/icon.twig' import icon %}
 <div class="contact-info__card">
     <a href="{{ card.link }}" class="contact-info__link">
-        <img class="contact-info__icon" src="{{ card.image_icon }}" alt="{{ card.image_alt }}">
+        {{ icon("contact-info__icon", card.image_icon, 56, 56) }}
         <p class="contact-info__title">{{ card.title }}</p>
         <p class="contact-info__subtitle">{{ card.subtitle }}</p>
     </a>

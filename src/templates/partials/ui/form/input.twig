@@ -1,10 +1,16 @@
+
 <div class="form-field">
     <label for="{{ field.name }}" class="form-field__label">
         {{ field.label }}
     </label>
+
+    {% if field.icon != "" %}
+            {# <span class="form-field__icon form-field__icon--{{ field.name }}"></span> #}
+            {{ icon("form-field__icon", field.icon, 20, 20) }} 
+        {% endif %}
+
     <input class="form-field__element" name="{{ field.name }}" id="{{ field.name }}" type="{{ field.type }}"
         placeholder="{{ field.placeholder }}"
         {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %}
-        {% if field.required==true %} required {% endif %}>
-        {% if field.icon==true %}<span class="form-field__icon form-field__icon--{{ field.name }}"></span>{% endif %}
+        {% if field.required==true %} required {% endif %} />        
 </div>

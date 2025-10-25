@@ -1,13 +1,16 @@
 <section class="blog-section">
     <h2 class="blog-section__title">{{ index.blog.title }}</h2>
-    <ul class="blog-section__list">  
+    <ul class="blog-section__list">
         {% for item in index.blog.items %}
         <li class="blog-section__item">
             {% include "../partials/blog_item.twig" %}
         </li>
+
+        {% endfor %}
+
         <li>
             <a href="#" class="button button--primary button--large">{{ index.blog.button_primary }}</a>
         </li>
-         {% endfor %}
+
     </ul>
-</section> 
+</section>

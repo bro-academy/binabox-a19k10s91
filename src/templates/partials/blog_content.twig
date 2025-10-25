@@ -1,4 +1,5 @@
 {% from '../macro/macro_picture.twig' import picture %}
+{% from '../macro/icon.twig' import icon %}
 
 <section class="blog-content">
     <figure class="article-picture">
@@ -14,10 +15,11 @@
     <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
     <button class="button button--secondary button--large blog-content__button">{{ blog.content.button }}</button>
     <div>
-        <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}"
-            alt="{{ blog.content.alt_contact }}">
+        {{ icon("blog-content__icon", blog.content.icon_contact, 16, 16) }} 
+        {# <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}" alt="{{ blog.content.alt_contact }}"> #}
         <span class="blog-content__author">{{ blog.content.author }}</span>
-        <img class="blog-content__calendar-icon" src="{{ blog.content.icon_date }}" alt="{{ blog.content.alt_date }}">
+        {{ icon("blog-content__icon", blog.content.icon_date, 16, 16) }} 
+        {# <img class="blog-content__icon" src="{{ blog.content.icon_date }}" alt="{{ blog.content.alt_date }}"> #}
         <time class="blog-content__time">{{ blog.content.date }}</time>
     </div>
     <p class="blog-content__text">{{ blog.content.subtitle }}</p>
@@ -29,14 +31,16 @@
     <ul class="features-list">
         {% for list in blog.content.lists %}
         <li>
-            <img class="features-list__icon" src="{{ list.icon_logo }}" alt="{{ list.alt_logo }}">
+            {{ icon("features-list__icon", list.icon_logo, 24, 24) }} 
+            {# <img class="features-list__icon" src="{{ list.icon_logo }}" alt="{{ list.alt_logo }}"> #}
             <span class="features-list__text">{{ list.text }}</span>
         </li>
         {% endfor %}
     </ul>
     <blockquote class="blockquote">
         <p class="blockquote__text">{{ blog.blockquote.text }}</p>
-        <img class="blockquote__icon" src="{{ blog.blockquote.icon_rating }}" alt="{{ blog.blockquote.alt_rating }}">
+        {{ icon("blockquote__icon", blog.blockquote.icon, 24, 24) }} 
+        {# <img class="blockquote__icon" src="{{ blog.blockquote.icon }}" alt="{{ blog.blockquote.alt_rating }}"> #}
         <span class="blockquote__rating">{{ blog.blockquote.rating }}</span>
         <span class="blockquote__company">{{ blog.blockquote.author }}</span>
     </blockquote>
@@ -75,7 +79,8 @@
             {% for social in blog.content.block_3.socials %}
             <li>
                 <a class="button button--primary button--small social__list-item" href="{{ social.href }}">
-                    <img class="social__list-item-logo" src="{{ social.icon }}" alt="{{ social.alt }}">
+                      {{ icon("social-list__personal-icon", social.icon, 24, 24) }} 
+                    {# <img class="social-list__personal-icon" src="{{ social.icon }}" alt="{{ social.alt }}"> #}
                 </a>
             </li>
             {% endfor %}

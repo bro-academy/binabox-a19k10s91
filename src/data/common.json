@@ -2,50 +2,50 @@
   "siteTitle": "BINABOX",
   "header": {
     "logo": {
-      "icon": "logo.svg",
-      "alt": "BINABOX Logo"
+      "icon": "logo_white"
     },
     "default_button": {
       "text": "Discord",
-      "icon": "discord.svg",
-      "alt": "Discord Icon"
+      "icon": "discord"
     },
     "primary_button": {
       "text": "Log In",
-      "icon": "log_in.svg",
-      "alt": "Log In Icon"
+      "icon": "men"
     },
     "search": {
       "id": "search",
       "type": "search",
       "name": "search",
-      "icon": true,
+      "icon": "search",
       "placeholder": "Search"
     },
     "links": [
       {
         "label": "Home",
         "href": "index.html",
+        "icon": "down",
         "active": true
       },
       {
         "label": "Blog",
-        "href": "blog.html"
+        "href": "blog.html",
+        "icon": "down"
       },
       {
         "label": "Catalog",
-        "href": "catalog.html"
+        "href": "catalog.html",
+        "icon": "down"
       },
       {
         "label": "Contact Us",
-        "href": "contact.html"
+        "href": "contact.html",
+        "icon": "down"
       }
     ]
   },
   "footer": {
     "logo": {
-      "icon": "logo.svg",
-      "alt": "BINABOX Logo",
+      "icon": "logo_blue",
       "slogan": "We are the best way to check the rarity of NFT collection."
     },
     "nav": {
@@ -88,33 +88,27 @@
     "text_rights": "BINABOX 2025. All rights reserved",
     "social": [
       {
-        "icon": "twitter.svg",
-        "alt": "Twitter",
+        "icon": "twitter",
         "href": "twitter.com"
       },
       {
-        "icon": "facebook.svg",
-        "alt": "Facebook",
+        "icon": "facebook",
         "href": "https://facebook.com"
       },
       {
-        "icon": "telegram.svg",
-        "alt": "Telegram",
+        "icon": "telegram",
         "href": "https://telegram.com"
       },
       {
-        "icon": "youtube.svg",
-        "alt": "YouTube",
+        "icon": "youtube",
         "href": "https://youtube.com"
       },
       {
-        "icon": "tiktok.svg",
-        "alt": "TitTok",
+        "icon": "tiktok",
         "href": "https://tiktok.com"
       },
       {
-        "icon": "discord.svg",
-        "alt": "Discord",
+        "icon": "discord",
         "href": "https://discord.com"
       }
     ]
