@@ -1,5 +1,12 @@
+@use "../base/variables" as *;
+
 .content-wrapper{
     max-width: 1600px;
     padding: 0 64px;
     margin-inline: auto;
+}
+
+.hero-section {
+    background-image: url('/src/assets/images/big_circular_lines.svg');
+    fill: $secondary;
 }
