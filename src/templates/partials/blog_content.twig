@@ -78,11 +78,11 @@
     </div>
     <div class="social">
         <span class="social__description">{{ blog.content.block_3.text_2 }}</span>
-        <ul class="social__list">
+        <ul class="social-list">
             {% for social in blog.content.block_3.socials %}
             <li>
-                <a class="button button--primary button--small social__list-item" href="{{ social.href }}">
-                      {{ icon("social-list__personal-icon", social.icon, 24, 24) }} 
+                <a class="button button--primary button--small social-list__link" href="{{ social.href }}">
+                      {{ icon("social-list__logo", social.icon, 24, 24) }} 
                     {# <img class="social-list__personal-icon" src="{{ social.icon }}" alt="{{ social.alt }}"> #}
                 </a>
             </li>

@@ -12,9 +12,9 @@
         fill: $main-color;
         transition: fill 0.3s ease;
 
-        &:hover {
-            fill: $marina600-color;
-        }
+        // &:hover {
+        //     fill: $marina600-color;
+        // }
     }
 
     &__nav-icon-login {
@@ -24,9 +24,9 @@
 
     }
 
-    &__logo {
+    &__logo-name {
         background: transparent;
-        fill: $marina800-color;
+        fill: $basewhite-color;
         transition: fill 0.3s ease;
     }
 }
