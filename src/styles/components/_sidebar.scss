@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 
 .sidebar {
+    background: $alternative2;
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;

@@ -2,6 +2,7 @@
 
 
 .catalog-sidebar {
+    background: $alternative2;
 
     &__list {
         >summary {
@@ -9,11 +10,10 @@
             cursor: pointer;
 
             &::after {
+                content: "";
                 width: 16px;
                 height: 16px;
-                content: "";
                 display: inline-block;
-                margin-left: 8px;
                 background-color: $main-color;
                 mask: url('/src/assets/icons/plus.svg') no-repeat center / contain
             }

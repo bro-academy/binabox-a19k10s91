@@ -10,4 +10,23 @@
         letter-spacing: -0.5px;
         text-align: center;
     }
+    &__phrase {
+        >summary {
+            list-style: none;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-color: $main-color;
+                mask: url('/src/assets/icons/plus.svg') no-repeat center / contain
+            }
+        }
+
+        &[open]>summary::after {
+            mask: url('/src/assets/icons/minus.svg') no-repeat center / contain;
+        }
+    }
 }
