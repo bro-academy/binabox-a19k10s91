@@ -1,10 +1,11 @@
+{% from '../macro/icon.twig' import icon %}
 <section class="catalog-content">
     <h2 class="catalog-content__title">{{ catalog.hero.subtitle }}</h2>
     <div>
         <ul class="">
             {% for tag in catalog.tags %}
             <li>
-                <button class="button button--primary button--large">{{ tag }}</button>
+                <button class="button button--primary button--large">{{ tag }} {{ icon("catalog-content__tag-delete", "delete", 16, 16) }} </button>
             </li>
             {% endfor %}
             <li>

@@ -186,7 +186,7 @@
                 "id": "search_catalog",
                 "type": "search",
                 "name": "search_catalog",
-                "icon": true,
+                "icon": "search",
                 "placeholder": "Search NFT"
             },
             "select": {
