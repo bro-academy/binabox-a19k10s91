@@ -1,12 +1,9 @@
 @use "../base/variables" as *;
+@use "../mixin/icon_hover" as *;
 
 .social-list {
     &__link {
-        &:hover {
-            .icon {
-                fill: $marina600-color;
-            }
-        }
+        @include icon_hover();
     }
 
     &__logo {

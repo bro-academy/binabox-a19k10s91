@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+
+@mixin icon_hover() {
+    &:hover {
+        .icon {
+            fill: $marina600-color;
+        }
+    }
+}
