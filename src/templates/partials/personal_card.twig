@@ -13,7 +13,7 @@
     <ul class="personal-card__social-list social-list">
         {% for social in member.social %}
         <li>
-            <a class="button button--ghost button--small social-list__link" href="{{ social.link}}">
+            <a class="social-list__link" href="{{ social.link}}">
                 {{ icon("social-list__logo", social.icon, 24,24) }}
                 {# <img class="social-list__personal-icon" src="{{ social.icon }}" alt="{{ social.alt }}"> #}
             </a>
