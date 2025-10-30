@@ -18,12 +18,14 @@
 @use "../components/form-field";
 @use "../components/radio";
 @use "../components/select";
+@use "../components/catalog-sidebar";
 
 @use "../layout/header";
 @use "../layout/banner";
 @use "../layout/footer";
 @use "../layout/catalog";
 @use "../layout/catalog-page";
+@use "../layout/catalog-content";
 @use "../layout/contact-page";
 @use "../layout/blog";
 @use "../layout/about";
@@ -33,3 +35,7 @@
 @use "../layout/blog-content";
 @use "../layout/features-list";
 @use "../layout/faq";
+@use "../layout/social-list";
+
+
+

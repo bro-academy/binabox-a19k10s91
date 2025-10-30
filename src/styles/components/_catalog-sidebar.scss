@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+@use "../mixin/summary" as *;
+
+
+.catalog-sidebar {
+    background: $alternative2;
+
+    &__list {
+        @include summary();
+    }
+}

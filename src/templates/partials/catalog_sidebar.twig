@@ -2,7 +2,7 @@
     <form action="/filter_catalog" method="get">
         {% for field in catalog.sidebar.filters %}
         <details class="catalog-sidebar__list" {% if field.open %}open{% endif %}>
-            <summary class="catalog-sidebar__option">{{ field.title }}</summary>
+            <summary>{{ field.title }}</summary>
 
             {% if field.type == 'radio' %}
                 {% include "ui/form/radio_set.twig" %}

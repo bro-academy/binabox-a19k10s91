@@ -24,4 +24,10 @@
         font-size: 12px;
         line-height: 16px;
     }
+
+    &__logo-name {
+        background: transparent;
+        fill: $marina800-color;
+        transition: fill 0.3s ease;
+    }
 }

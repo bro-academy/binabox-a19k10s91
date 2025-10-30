@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
+@use "../mixin/summary" as *;
 
 .faq {
-
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -9,5 +9,9 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         text-align: center;
+    }
+
+    &__phrase {
+        @include summary();
     }
 }

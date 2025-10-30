@@ -26,6 +26,7 @@
     },
     "catalog": {
       "title": "Catalog",
+      "icon": "folder",
       "slider": {
         "button_all": "See all",
         "button_left": "",
@@ -164,24 +165,20 @@
           "position": "Creative Architect",
           "social": [
             {
-              "icon": "facebook.svg",
-              "link": "#",
-              "alt": "facebook"
+              "icon": "facebook",
+              "link": "#"
             },
             {
-              "icon": "telegram.svg",
-              "link": "#",
-              "alt": "telegram"
+              "icon": "telegram",
+              "link": "#"
             },
             {
-              "icon": "linkedin.svg",
-              "link": "#",
-              "alt": "linkedin"
+              "icon": "linkedin",
+              "link": "#"
             },
             {
-              "icon": "instagram.svg",
-              "link": "#",
-              "alt": "instagram"
+              "icon": "instagram",
+              "link": "#"
             }
           ]
         },
@@ -192,24 +189,20 @@
           "position": "Tech Whisperer",
           "social": [
             {
-              "icon": "twitter.svg",
-              "link": "#",
-              "alt": "twitter"
+              "icon": "twitter",
+              "link": "#"
             },
             {
-              "icon": "telegram.svg",
-              "link": "#",
-              "alt": "telegram"
+              "icon": "telegram",
+              "link": "#"
             },
             {
-              "icon": "linkedin.svg",
-              "link": "#",
-              "alt": "linkedin"
+              "icon": "linkedin",
+              "link": "#"
             },
             {
-              "icon": "instagram.svg",
-              "link": "#",
-              "alt": "instagram"
+              "icon": "instagram",
+              "link": "#"
             }
           ]
         },
@@ -220,24 +213,20 @@
           "position": "Lore Engineer",
           "social": [
             {
-              "icon": "twitter.svg",
-              "link": "#",
-              "alt": "twitter"
+              "icon": "twitter",
+              "link": "#"
             },
             {
-              "icon": "facebook.svg",
-              "link": "#",
-              "alt": "facebook"
+              "icon": "facebook",
+              "link": "#"
             },
             {
-              "icon": "telegram.svg",
-              "link": "#",
-              "alt": "telegram"
+              "icon": "telegram",
+              "link": "#"
             },
             {
-              "icon": "linkedin.svg",
-              "link": "#",
-              "alt": "linkedin"
+              "icon": "linkedin",
+              "link": "#"
             }
           ]
         },
@@ -248,29 +237,24 @@
           "position": "Visual Disruptor",
           "social": [
             {
-              "icon": "twitter.svg",
-              "link": "#",
-              "alt": "twitter"
+              "icon": "twitter",
+              "link": "#"
             },
             {
-              "icon": "facebook.svg",
-              "link": "#",
-              "alt": "facebook"
+              "icon": "facebook",
+              "link": "#"
             },
             {
-              "icon": "telegram.svg",
-              "link": "#",
-              "alt": "telegram"
+              "icon": "telegram",
+              "link": "#"
             },
             {
-              "icon": "linkedin.svg",
-              "link": "#",
-              "alt": "linkedin"
+              "icon": "linkedin",
+              "link": "#"
             },
             {
-              "icon": "instagram.svg",
-              "link": "#",
-              "alt": "instagram"
+              "icon": "instagram",
+              "link": "#"
             }
           ]
         },
@@ -281,9 +265,8 @@
           "position": "UX Seer",
           "social": [
             {
-              "icon": "twitter.svg",
-              "link": "#",
-              "alt": "twitter"
+              "icon": "twitter",
+              "link": "#"
             }
           ]
         },
@@ -294,29 +277,24 @@
           "position": "Community Catalyst",
           "social": [
             {
-              "icon": "twitter.svg",
-              "link": "#",
-              "alt": "twitter"
+              "icon": "twitter",
+              "link": "#"
             },
             {
-              "icon": "facebook.svg",
-              "link": "#",
-              "alt": "facebook"
+              "icon": "facebook",
+              "link": "#"
             },
             {
-              "icon": "telegram.svg",
-              "link": "#",
-              "alt": "telegram"
+              "icon": "telegram",
+              "link": "#"
             },
             {
-              "icon": "linkedin.svg",
-              "link": "#",
-              "alt": "linkedin"
+              "icon": "linkedin",
+              "link": "#"
             },
             {
-              "icon": "instagram.svg",
-              "link": "#",
-              "alt": "instagram"
+              "icon": "instagram",
+              "link": "#"
             }
           ]
         },
@@ -327,29 +305,24 @@
           "position": "Security Ghost",
           "social": [
             {
-              "icon": "twitter.svg",
-              "link": "#",
-              "alt": "twitter"
+              "icon": "twitter",
+              "link": "#"
             },
             {
-              "icon": "facebook.svg",
-              "link": "#",
-              "alt": "facebook"
+              "icon": "facebook",
+              "link": "#"
             },
             {
-              "icon": "telegram.svg",
-              "link": "#",
-              "alt": "telegram"
+              "icon": "telegram",
+              "link": "#"
             },
             {
-              "icon": "linkedin.svg",
-              "link": "#",
-              "alt": "linkedin"
+              "icon": "linkedin",
+              "link": "#"
             },
             {
-              "icon": "instagram.svg",
-              "link": "#",
-              "alt": "instagram"
+              "icon": "instagram",
+              "link": "#"
             }
           ]
         }
