@@ -12,6 +12,8 @@
     }
 
     &__phrase {
+        background: $alternative2;
         @include summary();
+
     }
 }

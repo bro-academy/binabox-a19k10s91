@@ -17,6 +17,7 @@
       "type": "search",
       "name": "search",
       "icon": "search",
+      "class": "header__search",
       "placeholder": "Search"
     },
     "links": [
