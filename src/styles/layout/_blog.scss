@@ -9,5 +9,11 @@
         letter-spacing: -0.5px;
         text-align: center;
         color: $title-color;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        gap: 24px;
     }
 }
