@@ -6,6 +6,9 @@
     text-align: right;
     border: none;
     padding: 8px 10px;
+    margin-top: 16px;
+    margin-right: 16px;
+    position: absolute;
 
     &--available {
         color: $link-color;
