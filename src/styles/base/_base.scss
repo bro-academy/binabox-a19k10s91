@@ -1,9 +1,13 @@
 @use "../base/variables" as *;
 
 .content-wrapper{
-    max-width: 1600px;
-    padding: 0 64px;
+    max-width: 1728px;
+    max-height: 112px;
+    padding: 35px 32px;
     margin-inline: auto;
+
+    
+    
 }
 
 .hero-section {

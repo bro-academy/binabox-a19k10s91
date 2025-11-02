@@ -3,8 +3,11 @@
 .header {
     font-weight: $fw-semibold;
 
+    
+
     &__nav {
         line-height: $lh-sm;
+        padding: 0 16px;
     }
 
     &__nav-icon {
