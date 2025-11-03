@@ -1,6 +1,8 @@
 @use "../base/variables" as *;
 
 .blog-content {
+    width: 1024px;
+    
     &__subtitle {
         font-family: $font-secondary;
         font-weight: $fw-regular;

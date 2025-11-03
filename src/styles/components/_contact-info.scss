@@ -2,23 +2,37 @@
 @use "../mixin/icon_hover" as *;
 
 .contact-info {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 64px;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
-        line-height: $lh-xxl;
+        // line-height: $lh-xxl;
     }
 
     &__subtitle {
         font-family: $font-primary;
         font-weight: $fw-regular;
         font-size: $fontsize-base;
-        line-height: $lh-md
+        // line-height: $lh-md
     }
 
     &__card {
         border: 1px solid $line;
         @include icon_hover();
+        width: 264px;
+        height: 232px;
+        padding-block: 40px;
+        padding-inline: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__icon {
