@@ -11,4 +11,20 @@
         color: $title-color;
 
     }
+
+    &__item {
+        background: $alternative2;
+        width: 293px;
+        height: 316px;
+        // // padding-inline: 32px;
+        // // padding-bottom: 32px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px;
+
+    }
 }

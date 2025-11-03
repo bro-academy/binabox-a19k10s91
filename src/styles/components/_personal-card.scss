@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 
 .personal-card {
+
     &__name {
         font-family: $font-secondary;
         font-weight: $fw-regular;
