@@ -11,9 +11,12 @@
     }
 
     &__description {
+        font-family: $font-primary;
         font-weight: $fw-medium;
         font-size: 20px;
         line-height: $lh-lg;
         text-align: center;
+        white-space: normal;
+        margin-top: 16px;
     }
 }

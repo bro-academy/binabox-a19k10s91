@@ -1,11 +1,25 @@
 @use "../base/variables" as *;
 
 .counted-list {
+
+    &__item{
+        background: $alternative;
+        padding: 32px;
+        width: 376px;
+        height: 234px;
+        margin-inline: auto;
+        margin-block: 40px;
+        display: grid;
+        gap: 32px;
+    }
+
+    
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
         line-height: $lh-xl;
+        margin-top: 62px;
     }
 
     &__text {
