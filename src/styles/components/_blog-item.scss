@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 .blog-item {
-    width: 784px;
+    width: 736px;
     height: 900px;
     background: $alternative2;
     padding: 24px;
@@ -41,6 +41,15 @@
         background: transparent;
         fill: $main-color;
         transition: fill 0.3s ease;
+    }
+
+    &__image-wrapper {
+        position: relative;
+
+    }
+
+    &__button {
+        display: inline-block;
     }
 
 }

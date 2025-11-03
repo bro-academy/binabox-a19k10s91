@@ -146,4 +146,8 @@
             color: $disabled-color;
         }
     }
+
+    &--pagination{
+        padding-inline: 12px;
+    }
 }

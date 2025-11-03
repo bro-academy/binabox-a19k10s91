@@ -2,6 +2,10 @@
 @use "../mixin/summary" as *;
 
 .faq {
+
+    display: grid;
+    gap: 24px;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;

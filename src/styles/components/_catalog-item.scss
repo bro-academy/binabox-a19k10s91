@@ -2,24 +2,29 @@
 
 .catalog-item {
     width: 300px;
-    height: 480px;
+    height: 432px;
     background: $alternative2;
     padding: 24px;
-
 
     &__price {
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
-        line-height: $lh-xxl;
+        line-height: 0px;
+        padding: 10px 0 8px 0;
+        // line-height: $lh-sm;
         letter-spacing: -0.5px;
         color: $main-color;
+        // display: inline;
+        // vertical-align: bottom;
     }
 
     &__name {
         font-weight: $fw-medium;
         font-size: 20px;
-        line-height: $lh-lg;
+        line-height: 0px;
+        // margin-top: 12px;
+        // line-height: $lh-lg;
         color: $subtitle-color;
     }
 
@@ -27,5 +32,9 @@
         background-color: darkcyan;
         object-fit: cover;
 
+    }
+
+    &__image-wrapper {
+        position: relative;
     }
 }

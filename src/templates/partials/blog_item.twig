@@ -1,7 +1,7 @@
 {% from '../macro/macro_picture.twig' import picture %}
 {% from '../macro/icon.twig' import icon %}
 <article class="blog-item">
-    <div>
+    <div class="blog-item__image-wrapper">
         {{ picture(
         'blog-item__picture',
         item.image,
@@ -21,5 +21,10 @@
     </time>
     <p class="blog-item__title"><strong>{{ item.title }}</strong></p>
     <p class="blog-item__text">{{ item.text }}</p>
-    <a class="button button--primary button--medium" href="#">{{ index.blog.button_primary }}  {{ icon("blog-item__icon", "arrow_right", 24, 24) }}</a>
+    
+    <div class="blog-item__button">
+        <a class="button button--primary button--medium" href="#">{{ index.blog.button_primary }}  {{ icon("blog-item__icon", "arrow_right", 24, 24) }}</a>
+        <div class="filler"></div>
+    </div>
+
 </article>
