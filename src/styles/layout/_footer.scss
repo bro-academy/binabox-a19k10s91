@@ -6,6 +6,19 @@
     &__wrapper {
         font-weight: $fw-semibold;
         align-items: center;
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__left {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__slogan {
@@ -13,13 +26,16 @@
         font-size: $fontsize-sm;
         margin-top: $margin-xs;
     }
-    //&__nav{
-    //    display: flex;
-    //    flex-direction: row;
-    //    flex-wrap: wrap;
-    //    justify-items: center;
-    //
-    //}
+    &__nav{
+        max-width: 328px;
+        display: flex;
+        //flex-direction: row;
+        flex-wrap: wrap;
+        //gap:8px;
+        //justify-items: center;
+
+
+    }
 
     &__nav-subtitle {
         font-weight: $fw-medium;
@@ -32,8 +48,12 @@
     &__nav-list {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        flex-wrap: wrap;
+        //flex: 0 0 50%;
 
+        gap: 8px;
+        padding-block:4px;
+        padding-left: 8px;
 
         font-weight: $fw-semibold;
         font-size: 12px;

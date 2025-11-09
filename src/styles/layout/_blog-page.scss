@@ -28,13 +28,16 @@
         font-size: 28px;
         line-height: 36px;
         color: $main-color;
+        //padding: 0;
+        //margin: 0;
     }
 
     &__topic-info {
         font-weight: $fw-regular;
-        line-height: $lh-sm;
         color: $main-color;
+        //padding: 0;
+        margin: 0;
     }
 
-   
+
 }

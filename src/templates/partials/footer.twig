@@ -1,38 +1,42 @@
 {% from '../macro/icon.twig' import icon %}
 <footer class="footer">
     <div class="content-wrapper footer__wrapper">
-        <a class="footer__logo" href="#">
-            <svg class="icon footer__logo-picture" width="36" height="40">
-                <use href="/src/assets/icons/graph_logo.svg" />
-            </svg>
-            <svg class="icon footer__logo-name" width="134" height="21">
-                <use href="/src/assets/icons/binabox.svg" />
-            </svg>
-            {# {{ icon("footer-logo__picture", "blue_logo", 188, 42) }} #}
-            {# <img class="footer-logo__picture" src="{{ footer.logo.icon }}" alt="{{ footer.logo.alt }}"> #}
-        </a>
-        <p class="footer__slogan">{{ footer.logo.slogan }}</p>
-        <nav class="footer--nav">
-            <h2 class="footer__nav-subtitle">{{ footer.nav.title }}</h2>
-            <ul class="footer__nav-list">
-                {% for link in footer.nav.links %}
-                <li>
-                    <a class="link link--tertiary" href="{{ link.href }}">{{ link.label }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
+        <div class="footer__content">
+            <div class="footer__left">
+                <a class="footer__logo" href="#">
+                    <svg class="icon footer__logo-picture" width="36" height="40">
+                        <use href="/src/assets/icons/graph_logo.svg" />
+                    </svg>
+                    <svg class="icon footer__logo-name" width="134" height="21">
+                        <use href="/src/assets/icons/binabox.svg" />
+                    </svg>
+                    {# {{ icon("footer-logo__picture", "blue_logo", 188, 42) }} #}
+                    {# <img class="footer-logo__picture" src="{{ footer.logo.icon }}" alt="{{ footer.logo.alt }}"> #}
+                </a>
+                <p class="footer__slogan">{{ footer.logo.slogan }}</p>
+            </div>
+            <nav class="footer--nav">
+                <h2 class="footer__nav-subtitle">{{ footer.nav.title }}</h2>
+                <ul class="footer__nav-list">
+                    {% for link in footer.nav.links %}
+                        <li>
+                            <a class="link link--tertiary" href="{{ link.href }}">{{ link.label }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
         <hr>
         <p class="footer__rights">{{ footer.text_rights }}</p>
         <div>
             <ul class="footer__social social-list">
                 {% for link in footer.social %}
-                <li>
-                    <a class="social-list__link" href="{{ link.href }}">
-                        {{ icon("social-list__logo", link.icon, 24,24) }}
-                    </a>
-                </li>
+                    <li>
+                        <a class="social-list__link" href="{{ link.href }}">
+                            {{ icon("social-list__logo", link.icon, 24,24) }}
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
-    </div>
+        </div>
 </footer>

@@ -2,11 +2,15 @@
 
 .sidebar {
     background: $alternative2;
-    width: 191px;
+    width: 280px;
+    //height: 100%;
+    padding-bottom: 12px;
     padding-inline: $padding-lg;
     margin-left: 108px;
+    //display: flex;
 
     &__title {
+        padding-top: 24px;
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
@@ -14,18 +18,41 @@
         color: $main-color;
     }
 
+    &__seporator {
+        padding-block: 16px;
+    }
+
+    &__list {
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
     &__list-item {
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         color: $main-color;
+        padding: 6px 12px;
         display: flex;
-
-        &__tags-item {
-            font-weight: $fw-semibold;
-            font-size: $fontsize-sm;
-            text-align: center;
-            color: $main-color;
-            border: 2px solid $seporatorbold-color;
-        }
     }
-}
+
+    &__tags {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-content: flex-start;
+        //justify-content: ;
+    }
+    &__tags-item {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        text-align: center;
+        color: $main-color;
+        border: 2px solid $seporatorbold-color;
+        display: flex;
+        //flex-direction: column;
+    }
+    }

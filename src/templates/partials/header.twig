@@ -23,7 +23,7 @@
         </nav>
         <div class="header__user-nav">
             <form action="/search" method="get">
-                {% include "ui/form/input.twig" with {field: header.search, extra_class: "header__search"} %}
+                {% include "ui/form/input.twig" with {field: header.search, modificator: "search"} %}
                 <button type="submit" hidden></button>
             </form>
 

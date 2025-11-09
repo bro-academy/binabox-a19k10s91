@@ -1,0 +1,19 @@
+
+.blog-box {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+
+    &__sidebar {
+        display: flex;
+
+    }
+
+    &__content {
+        display: flex;
+    }
+
+
+}

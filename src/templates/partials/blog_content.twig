@@ -1,95 +1,98 @@
 {% from '../macro/macro_picture.twig' import picture %}
 {% from '../macro/icon.twig' import icon %}
 
-<section class="blog-content content-wrapper">
-    <figure class="article-picture">
-        {{ picture(
-        'article-picture__image',
-        blog.content.block_1.image,
-        blog.content.block_1.alt,
-        1024,
-        560
-        ) }}
-        <figcaption class="article-picture__description">{{ blog.content.block_1.description }}</figcaption>
-    </figure>
-    <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
-    <button class="button button--secondary button--large blog-content__button">
-        {{ blog.content.button }}
-    </button>
-    <div>
-        {{ icon("blog-content__icon", blog.content.icon_contact, 16, 16) }} 
-        {# <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}" alt="{{ blog.content.alt_contact }}"> #}
-        <span class="blog-content__author">{{ blog.content.author }}</span>
-        {{ icon("blog-content__icon", blog.content.icon_date, 16, 16) }} 
-        {# <img class="blog-content__icon" src="{{ blog.content.icon_date }}" alt="{{ blog.content.alt_date }}"> #}
-        <time class="blog-content__time">{{ blog.content.date }}</time>
-    </div>
-    <p class="blog-content__text">{{ blog.content.subtitle }}</p>
-    <ul class="blog-content__list">
-        <li class="blog-content__list-description">{{ blog.content.paragraph_1 }}</li>
-        <li class="blog-content__list-description">{{ blog.content.paragraph_2 }}</li>
-        <li class="blog-content__list-description">{{ blog.content.paragraph_3 }}</li>
-    </ul>
-    <ul class="features-list">
-        {% for list in blog.content.lists %}
-        <li>
-            <svg class="features-list__icon" width="24" height="24">
-            <use href="/src/assets/icons/graph_logo.svg" />
-            </svg>
-            {# {{ icon("features-list__icon", list.icon_logo, 24, 24) }}  #}
-            {# <img class="features-list__icon" src="{{ list.icon_logo }}" alt="{{ list.alt_logo }}"> #}
-            <span class="features-list__text">{{ list.text }}</span>
-        </li>
+<section class="blog-content">
+    <div class="blog-content__wrapper">
+        <figure class="article-picture">
+            {{ picture(
+                'article-picture__image',
+                blog.content.block_1.image,
+                blog.content.block_1.alt,
+                1024,
+                560
+            ) }}
+            <figcaption class="article-picture__description">{{ blog.content.block_1.description }}</figcaption>
+        </figure>
+        <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
+        <button class="button button--secondary button--large blog-content__button">
+            {{ blog.content.button }}
+        </button>
+        <div class="blog-content__created">
+            {{ icon("blog-content__icon", blog.content.icon_contact, 16, 16) }}
+            {# <img class="blog-content__author-icon" src="{{ blog.content.icon_contact }}" alt="{{ blog.content.alt_contact }}"> #}
+            <span class="blog-content__author">{{ blog.content.author }}</span>
+            {{ icon("blog-content__icon", blog.content.icon_date, 16, 16) }}
+            {# <img class="blog-content__icon" src="{{ blog.content.icon_date }}" alt="{{ blog.content.alt_date }}"> #}
+            <time class="blog-content__time">{{ blog.content.date }}</time>
+        </div>
+        <p class="blog-content__text">{{ blog.content.subtitle }}</p>
+        <ul class="blog-content__list">
+            <li class="blog-content__list-description">{{ blog.content.paragraph_1 }}</li>
+            <li class="blog-content__list-description">{{ blog.content.paragraph_2 }}</li>
+            <li class="blog-content__list-description">{{ blog.content.paragraph_3 }}</li>
+        </ul>
+        <ul class="blog-content__features">
+            {% for list in blog.content.lists %}
+                <li class="blog-content__feature-item">
+                    <svg class="features-list__icon" width="24" height="24">
+                        <use href="/src/assets/icons/graph_logo.svg" />
+                    </svg>
+                    {# {{ icon("features-list__icon", list.icon_logo, 24, 24) }}  #}
+                    {# <img class="features-list__icon" src="{{ list.icon_logo }}" alt="{{ list.alt_logo }}"> #}
+                    <span class="features-list__text">{{ list.text }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+        <blockquote class="blockquote">
+            <p class="blockquote__text">{{ blog.blockquote.text }}</p>
+            <p class="blockquote__footer">
+                {{ icon("blockquote__icon", blog.blockquote.icon, 15, 15) }}
+                <span class="blockquote__rating">{{ blog.blockquote.rating }}</span>
+                <span class="blockquote__company">{{ blog.blockquote.author }}</span>
+            </p>
+        </blockquote>
+        <div class="blog-content__pictures">
+            {% for block in blog.content.block_2.blocks %}
+                <figure class="article-picture">
+                    {{ picture(
+                        'article-picture__image',
+                        block.image,
+                        block.alt,
+                        500,
+                        394
+                    ) }}
+                    <figcaption class="article-picture__description">{{ block.description }}
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+        {% for topic in blog.content.topics %}
+            <h3 class="blog-page__topic">{{ topic.title }}</h3>
+            <p class="blog-page__topic-info">{{ topic.paragraph_1 }}</p>
+            <p class="blog-page__topic-info">{{ topic.paragraph_2 }}</p>
+            <p class="blog-page__topic-info">{{ topic.paragraph_3 }}</p>
         {% endfor %}
-    </ul>
-    <blockquote class="blockquote">
-        <p class="blockquote__text">{{ blog.blockquote.text }}</p>
-        {{ icon("blockquote__icon", blog.blockquote.icon, 24, 24) }} 
-        {# <img class="blockquote__icon" src="{{ blog.blockquote.icon }}" alt="{{ blog.blockquote.alt_rating }}"> #}
-        <span class="blockquote__rating">{{ blog.blockquote.rating }}</span>
-        <span class="blockquote__company">{{ blog.blockquote.author }}</span>
-    </blockquote>
-    {% for block in blog.content.block_2.blocks %}
-    <figure class="article-picture">
-        {{ picture(
-        'article-picture__image',
-        block.image,
-        block.alt,
-        500,
-        394
-        ) }}
-        <figcaption class="article-picture__description">{{ block.description }}
-        </figcaption>
-    </figure>
-    {% endfor %}
-    {% for topic in blog.content.topics %}
-    <h3 class="blog-page__topic">{{ topic.title }}</h3>
-    <p class="blog-page__topic-info">{{ topic.paragraph_1 }}</p>
-    <p class="blog-page__topic-info">{{ topic.paragraph_2 }}</p>
-    <p class="blog-page__topic-info">{{ topic.paragraph_3 }}</p>
-    {% endfor %}
-    <div class="tags">
-        <span class="tags__description">{{ blog.content.block_3.text_1 }}</span>
-        <ul>
-            {% for tag in blog.content.block_3.tags %}
-            <li>
-                <a href="{{ tag.href }}" class="tags__button button button--primary button--small">
-                    {{ tag.label }}
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="social">
-        <span class="social__description">{{ blog.content.block_3.text_2 }}</span>
-        <ul class="social-list">
-            {% for social in blog.content.block_3.socials %}
-            <li>
-                <a class="button button--primary button--small social-list__link" href="{{ social.href }}">
-                    {{ icon("social-list__logo", social.icon, 24, 24) }} 
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
+        <div class="blog-content__footer">
+            <div class="blog-content__tags">
+                <span class="tags__description">{{ blog.content.block_3.text_1 }}</span>
+
+                {% for tag in blog.content.block_3.tags %}
+
+                    <a href="{{ tag.href }}" class="tags__button button button--primary button--small">
+                        {{ tag.label }}
+                    </a>
+
+                {% endfor %}
+
+            </div>
+            <div class="blog-content__social">
+                <span class="social__description">{{ blog.content.block_3.text_2 }}</span>
+                {% for social in blog.content.block_3.socials %}
+                    <a class="blog-content__social-button button button--primary button--small social-list__link" href="{{ social.href }}">
+                        {{ icon("social-list__logo", social.icon, 16, 16) }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>
