@@ -8,12 +8,15 @@
     justify-content: center;
     gap: 16px;
     margin-top: $margin-4xl;
+    //margin-inline: $margin-xl;
+    //margin-bottom: $margin-3xl;
 
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
         // line-height: $lh-xxl;
+        margin-bottom: 0;
     }
 
     &__subtitle {
@@ -27,7 +30,7 @@
         border: 1px solid $line;
         @include icon_hover();
         width: 264px;
-        height: 232px;
+        max-height: 232px;
         padding-block: $padding-3xl;
         padding-inline: $padding-xl;
         display: flex;

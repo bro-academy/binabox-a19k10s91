@@ -2,7 +2,9 @@
     <h2 class="team__title">{{ index.team.title }}</h2>
     <ul class="team__list">
         {% for member in index.team.members %}
-            {% include "../partials/personal_card.twig" %}
-        {% endfor %}    
+            <li class="team__item personal-card">
+                {% include "../partials/personal_card.twig" %}
+            </li>
+        {% endfor %}
     </ul>
 </section>

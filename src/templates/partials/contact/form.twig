@@ -2,7 +2,9 @@
 <form method="post" action="/send" class="contact-form">
      <h2 class="contact-form__title">{{ contact.form.title }}</h2>
      <p class="contact-form__subtitle">{{ contact.form.subtitle }}</p>
-     {% for field in contact.form.fields %}
+
+    <div class="contact-form__wrapper">
+    {% for field in contact.form.fields %}
           {% if field.type == "radio" %}
                {% include "../ui/form/radio_set.twig" %}
           {% elseif field.type == "textarea" %}
@@ -14,7 +16,10 @@
 
      {% include "../ui/form/checkbox.twig" with { field: contact.form.submit, option: contact.form.submit.option } %}
 
-     <button type="submit" class="registration__button button button--secondary button--large">
+     <button type="submit" class="contact-form__button button button--secondary button--large">
           {{ contact.form.submit.button }}
      </button>
+    </div>
+
+
 </form>
