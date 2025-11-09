@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 16px;
-    margin-top: 64px;
+    margin-top: $margin-4xl;
 
     &__title {
         font-family: $font-secondary;

@@ -9,7 +9,7 @@
     white-space: nowrap;
 
     &__content {
-        margin: auto 0px;
+        margin: auto $margin-zero;
         vertical-align: middle;
         display: inline-block;
     }
@@ -163,7 +163,7 @@
 
     &--separator_left {
         position: relative;
-        margin-left: 16px;
+        margin-left: $margin-sm;
 
         &::before {
             content: "";
