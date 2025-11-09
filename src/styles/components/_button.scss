@@ -5,7 +5,7 @@
     border: none;
     cursor: pointer;
     display: inline-block;
-    padding: 0px 12px;
+    padding: $padding-zero $padding-sm;
     white-space: nowrap;
 
     &__content {
@@ -30,19 +30,19 @@
     &--large {
         font-size: $fontsize-md;
         line-height: $lh-lg;
-        padding: 10px 20px;
+        padding: $padding-xs $padding-md;
     }
 
     &--medium {
         font-size: $fontsize-base;
         line-height: $lh-md;
-        padding: 8px 20px;
+        padding: $padding-2xs $padding-md;
     }
 
     &--small {
         font-size: $fontsize-sm;
         line-height: $lh-sm;
-        padding: 6px 12px;
+        padding: $padding-3xs $padding-sm;
     }
 
     &--primary {

@@ -13,7 +13,7 @@
     background-color: transparent;
     border: 2px solid $seporatorbold-color;
     outline: none;
-    padding: 10px 12px;
+    padding: $padding-xs $padding-sm;
 
     &::placeholder {
       color: $secondary2white-color;
@@ -39,7 +39,7 @@
     }
 
     &--with-icon {
-      padding-left: 36px;
+      padding-left: $padding-2xl;
     }
 
   }

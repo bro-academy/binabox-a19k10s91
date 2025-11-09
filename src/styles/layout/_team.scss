@@ -16,9 +16,7 @@
         background: $alternative2;
         width: 293px;
         height: 316px;
-        // // padding-inline: 32px;
-        // // padding-bottom: 32px;
-        padding: 32px;
+        padding: $padding-xl;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

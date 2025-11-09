@@ -28,8 +28,8 @@
         @include icon_hover();
         width: 264px;
         height: 232px;
-        padding-block: 40px;
-        padding-inline: 32px;
+        padding-block: $padding-3xl;
+        padding-inline: $padding-xl;
         display: flex;
         flex-direction: column;
         align-items: center;

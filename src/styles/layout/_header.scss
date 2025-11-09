@@ -11,14 +11,14 @@
 
     &__nav {
         line-height: $lh-sm;
-        padding: 0 16px;
+        padding: $padding-zero $padding-2md;
         display: flex;
         margin-left: 213px;
     }
 
     &__nav-item {
         font-size: $fontsize-base;
-        padding: 8px 20px;
+        padding: $padding-2xs $padding-md;
 
         &:hover {
             border-bottom: 2px solid $marina800-color;
@@ -53,7 +53,7 @@
     }
 
     &__nav-icon-login {
-        padding-right: 8px;
+        padding-right: $padding-2xs;
     }
 
     &__logo-name {
