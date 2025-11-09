@@ -12,12 +12,16 @@
         <span class="banner__subtext">{{ index.banner.counter_2.text }}</span>
     </p>
     {{ picture(
-    'banner__image',
-    index.banner.promo.image,
-    index.banner.promo.image_alt,
-    534,
-    642
+        'banner__image',
+        index.banner.promo.image,
+        index.banner.promo.image_alt,
+        534,
+        642
     ) }}
-    <a href="#" class="button button--secondary button--large">{{ index.banner.connect_button }}</a>
-    <a href="#" class="button button--primary button--large">{{ index.banner.whitelist_button }}</a>
+    <a href="#" class="button button--secondary button--large">
+        {{ index.banner.connect_button }}
+    </a>
+    <a href="#" class="button button--primary button--large">
+        {{ index.banner.whitelist_button }}
+    </a>
 </section>

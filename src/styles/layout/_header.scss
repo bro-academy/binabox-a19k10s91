@@ -1,24 +1,28 @@
 @use "../base/variables" as *;
 
 .header {
-    font-weight: $fw-semibold;
     display: flex;
-    // padding: 32px;
-    align-items: center;
-    max-width: 1728px;
-    max-height: 112px;
+
+    &__wrapper {
+        font-weight: $fw-semibold;
+        display: flex;
+        align-items: center;
+    }
 
     &__nav {
         line-height: $lh-sm;
         padding: 0 16px;
         display: flex;
         margin-left: 213px;
-
     }
 
     &__nav-item {
         font-size: $fontsize-base;
         padding: 8px 20px;
+
+        &:hover {
+            border-bottom: 2px solid $marina800-color;
+        }
     }
 
     &__logo {
@@ -26,7 +30,7 @@
         margin-block: 36px;
         margin-left: 32px;
         margin-right: 20px;
-        
+
     }
 
     &__search {
@@ -41,22 +45,15 @@
     }
 
     &__nav-icon {
+        display: inline-block;
+        vertical-align: middle;
         background: transparent;
         fill: $main-color;
         transition: fill 0.3s ease;
-        padding-right: 8px;
-        // margin-block: 12px;
-        // margin-left: 24px;
-
     }
 
     &__nav-icon-login {
-        background: transparent;
-        fill: $main-color;
-        transition: fill 0.3s ease;
         padding-right: 8px;
-    
-
     }
 
     &__logo-name {

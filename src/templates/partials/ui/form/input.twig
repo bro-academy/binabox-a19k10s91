@@ -7,8 +7,9 @@
     {{ icon("form-field__icon", field.icon, 20, 20) }}
     {% endif %}
 
-    <input class="{{ field.class }} form-field__element {% if field.icon != "" %}form-field__element--with-icon{% endif %}"
+    <input class="form-field__element{{ field.icon ? " form-field__element--with-icon" }}{{ extra_class ? " " ~ extra_class }}"
         name="{{ field.name }}" id="{{ field.name }}" type="{{ field.type }}"
-        placeholder="{{ field.placeholder }}" {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %} {% if
-        field.required==true %} required {% endif %} />
+        placeholder="{{ field.placeholder }}"
+        {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %}
+        {% if field.required==true %} required {% endif %} />
 </div>

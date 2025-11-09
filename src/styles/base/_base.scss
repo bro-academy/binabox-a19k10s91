@@ -2,17 +2,15 @@
 
 .content-wrapper{
     max-width: 1600px;
-    padding: 35px 32px;
     margin-inline: auto;
-    
+    padding-inline: 64px;
+    width: 100%;   
 }
 
 .hero-section {
     background-image: url('/src/assets/images/big_circular_lines.svg');
     fill: $secondary;
-    width: 1728px;
-    height: 376px;
-
+    min-height: 376px;
 }
 
 .filler {

@@ -10,21 +10,15 @@
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
-        line-height: 0px;
-        padding: 10px 0 8px 0;
-        // line-height: $lh-sm;
+        line-height: $lh-sm;
         letter-spacing: -0.5px;
         color: $main-color;
-        // display: inline;
-        // vertical-align: bottom;
     }
 
     &__name {
         font-weight: $fw-medium;
         font-size: 20px;
-        line-height: 0px;
-        // margin-top: 12px;
-        // line-height: $lh-lg;
+        line-height: 10px;
         color: $subtitle-color;
     }
 

@@ -5,13 +5,14 @@
     height: 900px;
     background: $alternative2;
     padding: 24px;
-    
+
     &__author {
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         text-transform: uppercase;
         color: $subtitle-color;
     }
+
     &__author-icon {
         fill: white;
     }
@@ -51,5 +52,4 @@
     &__button {
         display: inline-block;
     }
-
 }

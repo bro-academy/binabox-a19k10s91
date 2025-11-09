@@ -1,11 +1,6 @@
 @use "../base/variables" as *;
 
 .separator {
-    &__vertical {
-        border-right: 2px solid ;
-        color: $seporatorbold-color;
-        height: 24px;
-    }
     &__horizontal {
         border-bottom: 2px solid;
         color: $seporatorbold-color;

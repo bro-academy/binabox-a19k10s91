@@ -5,32 +5,38 @@
     border: none;
     cursor: pointer;
     display: inline-block;
-    // justify-content: center; 
-    // align-items: center;
     padding: 0px 12px;
     white-space: nowrap;
 
-    >* {
+    &__content {
         margin: auto 0px;
         vertical-align: middle;
-        display: inline;
-        height: 100%;
+        display: inline-block;
     }
 
+    &__icon {
+        background: transparent;
+        fill: $main-color;
+
+        &--right {
+            float: right;
+        }
+
+        &--left {
+            float: left;
+        }
+    }
 
     &--large {
         font-size: $fontsize-md;
-        // line-height: $lh-lg;
-        // padding-inline: 24px;
+        line-height: $lh-lg;
         padding: 10px 20px;
-        height: 30px
     }
 
     &--medium {
         font-size: $fontsize-base;
         line-height: $lh-md;
         padding: 8px 20px;
-
     }
 
     &--small {
@@ -155,7 +161,17 @@
         }
     }
 
-    &--pagination {
-        padding-inline: 12px;
+    &--separator_left {
+        position: relative;
+        margin-left: 16px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -16px;
+            border-right: 2px solid;
+            color: $seporatorbold-color;
+            height: 24px;
+        }
     }
 }
