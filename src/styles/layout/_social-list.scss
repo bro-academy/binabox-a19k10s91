@@ -3,7 +3,7 @@
 
 .social-list {
     display: flex;
-    padding-inline: 0;
+    padding-inline: $padding-zero;
     gap: 8px;
     //width: 100%;
     justify-content: center;

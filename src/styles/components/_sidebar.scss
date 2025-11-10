@@ -4,13 +4,13 @@
     background: $alternative2;
     width: 280px;
     //height: 100%;
-    padding-bottom: 12px;
+    padding-bottom: $padding-sm;
     padding-inline: $padding-lg;
     margin-left: 108px;
     //display: flex;
 
     &__title {
-        padding-top: 24px;
+        padding-top: $padding-lg;
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
@@ -19,7 +19,7 @@
     }
 
     &__seporator {
-        padding-block: 16px;
+        padding-block: $padding-2md;
     }
 
     &__list {
@@ -33,12 +33,12 @@
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         color: $main-color;
-        padding: 6px 12px;
+        padding: $padding-3xs $padding-sm;
         display: flex;
     }
 
     &__tags {
-        padding: 0;
+        padding: $padding-zero;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

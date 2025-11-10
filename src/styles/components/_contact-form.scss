@@ -6,7 +6,7 @@
 
     &__wrapper {
         max-width: 640px;
-        margin: 0 auto;
+        margin: $margin-zero auto;
         text-align: left;
     }
 
@@ -15,7 +15,7 @@
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
         line-height: $lh-xxl;
-        margin: 64px 0 8px;
+        margin: $margin-4xl $margin-zero $margin-2xs;
     }
 
     &__subtitle {
@@ -23,7 +23,7 @@
         font-weight: $fw-medium;
         font-size: 20px;
         line-height: $lh-lg;
-        margin-bottom: 40px;
+        margin-bottom: $margin-3xl;
     }
 
     &__button {

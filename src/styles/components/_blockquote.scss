@@ -3,8 +3,8 @@
 .blockquote {
     border-radius: 16px;
     background-color: $marina1200-color;
-    padding: 16px;
-    margin: 0 0 32px;
+    padding: $padding-2md;
+    margin: $margin-zero $margin-zero $margin-xl;
 
     &__text {
         font-family: $font-secondary;
@@ -13,17 +13,17 @@
         line-height: 36px;
         vertical-align: bottom;
         color: $title-color;
-        margin: 0;
+        margin: $margin-zero;
     }
 
     &__footer {
-        margin-top: 8px;
-        margin-bottom: 0;
+        margin-top: $margin-2xs;
+        margin-bottom: $margin-zero;
         display: flex;
         flex-direction: row;
         align-content: center;
         gap: 8px;
-        margin-left: 0;
+        margin-left: $margin-zero;
         align-items: center;
 
     }

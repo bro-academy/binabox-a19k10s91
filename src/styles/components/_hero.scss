@@ -22,7 +22,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 16px;
-        padding-left: 0;
+        padding-left: $padding-zero;
     }
 
     &__nav-item {
@@ -33,7 +33,7 @@
 
         &:not(:first-child):before {
             content: '';
-            padding-left: 16px;
+            padding-left: $padding-2md;
             border-left: 1px solid $seporatorbold-color;
         }
 
