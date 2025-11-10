@@ -1,5 +1,8 @@
 {% from '../macro/icon.twig' import icon %}
-<form action="/search_catalog" method="get">
+<form action="/search_catalog" method="get" class="catalog-controls">
+
+    <h2 class="catalog-controls__title">{{ catalog.hero.subtitle }}</h2>
+
     <div class="form-field">
         <label>
             <select name="{{ catalog.controls.select.name }}" id="{{ catalog.controls.select.id }}" class="select">
@@ -11,7 +14,26 @@
         </label>
     </div>
 
-    {% include "ui/form/input.twig" with {field: catalog.controls.search} %}
+    {% include "ui/form/input.twig" with {field: catalog.controls.search, modificator: "catalog-search"} %}
 
     <button type="submit" hidden></button>
+
+    <ul class="catalog-controls__tag-list">
+        {% for tag in catalog.tags %}
+            <li class="catalog-controls__tag">
+                <button class="button button--primary button--large">
+                    <span class="button__content">
+                        {{ tag }}
+                        {{ icon("catalog-content__tag-delete", "delete", 16, 16) }}
+                    </span>
+                </button>
+            </li>
+        {% endfor %}
+        <li class="catalog-controls__tag">
+            <button class="button button--tertiary button--large">
+                {{ catalog.tags_clear }}
+            </button>
+        </li>
+    </ul>
+
 </form>

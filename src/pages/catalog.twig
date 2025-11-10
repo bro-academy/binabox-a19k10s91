@@ -1,9 +1,11 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
-  {% include 'src/templates/partials/catalog_hero.twig' %}
-  {% include 'src/templates/partials/catalog_controls.twig' %}
-  {% include 'src/templates/partials/catalog_sidebar.twig' %}
-  {% include 'src/templates/partials/catalog_content.twig' %}
+    {% include 'src/templates/partials/catalog_hero.twig' %}
+    <div class="content-wrapper">
+        {% include 'src/templates/partials/catalog_sidebar.twig' %}
+        {% include 'src/templates/partials/catalog_controls.twig' %}
+        {% include 'src/templates/partials/catalog_content.twig' %}
+    </div>
 
 {% endblock %}
