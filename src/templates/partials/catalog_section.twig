@@ -1,32 +1,33 @@
 {% from '../macro/icon.twig' import icon %}
-<section class="catalog content-wrapper">
-    <div class="catalog__control">
-        <h2 class="catalog__title">
-            {{ icon("catalog__icon", "folder", 24, 24) }}
-            {{ index.catalog.title }}</h2>
-        <div class="separator-horizontal"> </div>
-        <div class="catalog__nav catalog__nav--separator">
-            <button class="button button--primary button--large">
-                {{ index.catalog.slider.button_all }}
-            </button>
-            <button class="button button--primary button--large catalog__nav-pagination button--separator_left">
-                <p class="button__content">
-                    {{ icon("button__icon button__icon--left", "arrow_left", 24, 24) }}
-                    {{ index.catalog.slider.button_left }}
-                </p>
-            </button>
-            <button class="button button--secondary button--large catalog__nav-pagination">
-                <p class="button__content">
-                    {{ icon("button__icon button__icon--right", "arrow_right", 24, 24) }}
-                    {{ index.catalog.slider.button_right }}
-                </p>
-            </button>
+<div class="content-wrapper">
+    <section class="catalog">
+        <div class="catalog__control">
+            <h2 class="catalog__title">
+                {{ icon("catalog__icon", "folder", 24, 24) }}
+                {{ index.catalog.title }}</h2>
+            <div class="separator-horizontal"></div>
+            <div class="catalog__nav catalog__nav--separator">
+                <button class="button button--primary button--large">
+                    {{ index.catalog.slider.button_all }}
+                </button>
+                <button class="button button--primary button--large catalog__nav-pagination button--separator_left">
+                    <p class="button__content">
+                        {{ icon("button__icon button__icon--left", "arrow_left", 24, 24) }}
+                        {{ index.catalog.slider.button_left }}
+                    </p>
+                </button>
+                <button class="button button--secondary button--large catalog__nav-pagination">
+                    <p class="button__content">
+                        {{ icon("button__icon button__icon--right", "arrow_right", 24, 24) }}
+                        {{ index.catalog.slider.button_right }}
+                    </p>
+                </button>
+            </div>
         </div>
-    </div>
-    </div>
-    <div class="catalog__list">
-        {% for item in index.catalog.items %}
-        {% include "../partials/catalog_item.twig" %}
-        {% endfor %}
-    </div>
-</section>
+        <div class="catalog__list">
+            {% for item in index.catalog.items %}
+                {% include "../partials/catalog_item.twig" %}
+            {% endfor %}
+        </div>
+    </section>
+</div>

@@ -6,11 +6,16 @@
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
         line-height: $lh-xl;
+        padding: 24px;
     }
 
     &__answer {
         font-weight: $fw-regular;
         line-height: $lh-sm;
+        margin: 16px 24px 8px 24px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        border-top: 2px solid $seporatorbold-color;
     }
 
     &--highlighted {

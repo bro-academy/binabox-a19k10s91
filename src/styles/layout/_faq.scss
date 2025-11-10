@@ -2,9 +2,11 @@
 @use "../mixin/summary" as *;
 
 .faq {
-
+    width: 100%;
+    max-width: 1600px;
     display: grid;
     gap: 24px;
+    margin: 40px 0 104px;
 
     &__title {
         font-family: $font-secondary;

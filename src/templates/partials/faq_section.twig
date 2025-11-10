@@ -1,9 +1,12 @@
-<section class="faq content-wrapper">
-    <h2 class="faq__title">{{ index.faq.title }}</h2>
-     {% for qa in index.faq.questions %}
-    <details class="faq__phrase faq-info">
-        <summary class="faq-info__title">{{ qa.question }}</summary>
-        <p class="faqs-info__answer"><span class="faqs-info--highlighted">{{ qa.answer_link }} </span> {{ qa.answer }}</p>
-    </details>
-    {% endfor %}    
-</section>
+<div class="content-wrapper">
+    <section class="faq">
+        <h2 class="faq__title">{{ index.faq.title }}</h2>
+        {% for qa in index.faq.questions %}
+            <details class="faq__phrase faq-info">
+                <summary class="faq-info__title">{{ qa.question }}</summary>
+                <p class="faq-info__answer"><span
+                            class="faqs-info--highlighted">{{ qa.answer_link }} </span> {{ qa.answer }}</p>
+            </details>
+        {% endfor %}
+    </section>
+</div>
