@@ -1,0 +1,11 @@
+<section class="hero-section">
+    <h1 class="hero-section__title">{{ hero.title }}</h1>
+        <ul class="hero-section__nav-list">
+            {% for link in hero.links %}
+                <li class="hero-section__nav-item">
+                    <a href="{{ link.href }}"
+                       class="link link--tertiary hero-section__nav-item {% if link.active %} hero-section__nav-item--active {% endif %}">{{ link.label }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+</section>

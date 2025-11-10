@@ -1,21 +1,10 @@
 @use "../base/variables" as *;
 
 .catalog {
-    &__title {
-        font-family: $font-secondary;
-        font-weight: $fw-regular;
-        font-size: $fontsize-lg;
-        line-height: $lh-xl;
-        display: flex;
-        align-items: center;
-    }
-
     &__control {
-        // max-width: 48px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        // gap: 32px
         align-items: center;
     }
 
@@ -24,15 +13,6 @@
         fill: $main-color;
         transition: fill 0.3s ease;
         margin-right: $margin-xs;
-        // margin-block: 6px;
-        // margin-right: 8px;
-    }
-
-    &__nav {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-left: auto;
     }
 
     &__list {
