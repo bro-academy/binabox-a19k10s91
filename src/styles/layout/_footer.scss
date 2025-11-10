@@ -6,16 +6,16 @@
     &__wrapper {
         font-weight: $fw-semibold;
         align-items: center;
-
+        padding: 64px 0;
     }
 
-    &__content{
+    &__content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    &__left {
+    &__brand {
         max-width: 320px;
         display: flex;
         flex-direction: column;
@@ -25,16 +25,6 @@
         font-weight: $fw-regular;
         font-size: $fontsize-sm;
         margin-top: $margin-xs;
-    }
-    &__nav{
-        max-width: 328px;
-        display: flex;
-        //flex-direction: row;
-        flex-wrap: wrap;
-        //gap:8px;
-        //justify-items: center;
-
-
     }
 
     &__nav-subtitle {
@@ -46,22 +36,27 @@
     }
 
     &__nav-list {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        //flex: 0 0 50%;
-
-        gap: 8px;
-        padding-block:4px;
-        padding-left: 8px;
-
+        max-width: 328px;
+        padding-block: 4px;
         font-weight: $fw-semibold;
         font-size: 12px;
         line-height: 16px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 40px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-content: flex-start;
+    }
+
+    &__nav-item {
+        flex: 0 0 40%;
+        box-sizing: border-box;
     }
 
     &__logo-picture {
-        margin-top: $margin-4xl;
         margin-right: 18px;
     }
 
@@ -72,14 +67,24 @@
         margin: $margin-xs $margin-zero;
     }
 
+    &__copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        border-top: 2px solid $seporatorbold-color;
+    }
+
     &__rights {
         font-weight: $fw-regular;
         font-size: $fontsize-sm;
         text-align: left;
+        display: flex;
     }
 
     &__social {
         display: flex;
-        justify-content: flex-end;
+
+        //justify-content: flex-end;
     }
 }
