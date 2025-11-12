@@ -8,21 +8,25 @@
             {{ index.banner.heading.part_3 }}
         </h1>
         <p class="banner__description">{{ index.banner.text }}</p>
-        <p class="banner__counter-wrapper">
-            <span class="banner__counter">{{ index.banner.counter_1.number }}</span>
-            <span class="banner__counter">{{ index.banner.counter_2.number }}</span>
-        </p>
-        <p>
-            <span class="banner__subtext">{{ index.banner.counter_1.text }}</span>
-            <span class="banner__subtext">{{ index.banner.counter_2.text }}</span>
-        </p>
 
-        <a href="#" class="button button--secondary button--large">
-            {{ index.banner.connect_button }}
-        </a>
-        <a href="#" class="button button--primary button--large">
-            {{ index.banner.whitelist_button }}
-        </a>
+        <div class="banner__counter-wrapper">
+            <div>
+                <p class="banner__counter">{{ index.banner.counter_1.number }}</p>
+                <p class="banner__subtext">{{ index.banner.counter_1.text }}</p>
+            </div>
+            <div>
+                <p class="banner__counter">{{ index.banner.counter_2.number }}</p>
+                <p class="banner__subtext">{{ index.banner.counter_2.text }}</p>
+            </div>
+        </div>
+        <div class="banner__buttons-wrapper">
+            <a href="#" class="button button--secondary button--large">
+                {{ index.banner.connect_button }}
+            </a>
+            <a href="#" class="button button--primary button--large">
+                {{ index.banner.whitelist_button }}
+            </a>
+        </div>
     </div>
 
     {{ picture(

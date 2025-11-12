@@ -32,16 +32,18 @@
         </div>
 
         <div class="footer__copyright">
-            <p class="footer__rights">{{ footer.text_rights }}</p>
-            <ul class="footer__social social-list">
-                {% for link in footer.social %}
-                    <li>
-                        <a class="social-list__link" href="{{ link.href }}">
-                            {{ icon("social-list__logo", link.icon, 24,24) }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
+            <div class="footer__rights-wrapper">
+                <p class="footer__rights">{{ footer.text_rights }}</p>
+                <ul class="footer__social social-list">
+                    {% for link in footer.social %}
+                        <li>
+                            <a class="social-list__link" href="{{ link.href }}">
+                                {{ icon("social-list__logo", link.icon, 24,24) }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 </footer>

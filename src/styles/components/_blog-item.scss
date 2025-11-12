@@ -31,10 +31,20 @@
         font-weight: $fw-regular;
         line-height: $lh-sm;
         color: $subtitle-color;
+        margin-bottom: $margin-sm;
     }
 
     &__image-wrapper {
         position: relative;
+        margin-bottom: $margin-lg;
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-content: center;
+        margin-bottom: $margin-sm;
     }
 
     &__label {

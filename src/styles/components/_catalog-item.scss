@@ -12,6 +12,7 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         color: $main-color;
+        margin-bottom: $margin-2xs;
     }
 
     &__name {
@@ -29,6 +30,7 @@
 
     &__image-wrapper {
         position: relative;
+        margin-bottom: $margin-lg;
     }
 
     &__label {

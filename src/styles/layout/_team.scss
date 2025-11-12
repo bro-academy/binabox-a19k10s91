@@ -9,7 +9,15 @@
         letter-spacing: -0.5px;
         text-align: center;
         color: $title-color;
+        margin-bottom: $margin-3xl;
 
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     &__item {
@@ -25,4 +33,5 @@
         margin: $margin-3xl;
 
     }
+
 }

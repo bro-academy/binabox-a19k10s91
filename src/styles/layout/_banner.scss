@@ -28,6 +28,7 @@
         font-size: $fontsize-xxl;
         line-height: $lh-huge;
         letter-spacing: -0.5px;
+        margin-bottom: $margin-2xs;
     }
 
     &__title-highlighted {
@@ -36,10 +37,12 @@
 
     &__description {
         color: $secondary-color;
+        margin-bottom: $margin-xl;
     }
 
     &__counter-wrapper {
         display: flex;
+        flex-direction: row;
         gap: 64px;
     }
 
@@ -52,8 +55,9 @@
         text-shadow: 0 4px 13px $baseicon-color;
     }
 
-    &__subtitle {
+    &__subtext {
         color: $secondary-color;
+        margin-bottom: $margin-xl;
     }
 
     &__image {
@@ -62,5 +66,11 @@
         height: 642px;
         object-fit: cover;
         flex: 0 0 auto;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
     }
 }
