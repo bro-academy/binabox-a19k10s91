@@ -4,15 +4,11 @@
     font-weight: $fw-semibold;
     border: none;
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: $padding-zero $padding-sm;
     white-space: nowrap;
 
-    &__content {
-        margin: $margin-zero;
-        display: flex;
-        align-items: center;
-    }
 
     &__icon {
         &--right {

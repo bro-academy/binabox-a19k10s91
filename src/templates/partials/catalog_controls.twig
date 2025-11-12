@@ -21,16 +21,14 @@
     <ul class="catalog-controls__tag-list">
         {% for tag in catalog.tags %}
             <li class="catalog-controls__tag">
-                <button class="button button--primary button--large">
-                    <span class="button__content">
-                        {{ tag }}
-                        {{ icon("button__icon button__icon--right", "delete", 16, 16) }}
-                    </span>
+                <button class="button button--primary button--large" type="button">
+                    {{ tag }}
+                    {{ icon("button__icon button__icon--right", "delete", 16, 16) }}
                 </button>
             </li>
         {% endfor %}
         <li class="catalog-controls__tag">
-            <button class="button button--tertiary button--large">
+            <button class="button button--tertiary button--large" type="button">
                 {{ catalog.tags_clear }}
             </button>
         </li>
