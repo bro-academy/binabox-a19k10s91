@@ -9,7 +9,7 @@
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
-        line-height: $lh-sm;
+        line-height: $lh-xxl;
         letter-spacing: -0.5px;
         color: $main-color;
     }
@@ -17,7 +17,7 @@
     &__name {
         font-weight: $fw-medium;
         font-size: 20px;
-        line-height: 10px;
+        line-height: $lh-lg;
         color: $subtitle-color;
     }
 
