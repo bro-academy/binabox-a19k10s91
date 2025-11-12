@@ -17,7 +17,7 @@
         background-color: transparent;
         border: 2px solid $seporatorbold-color;
         outline: none;
-        padding: $padding-xs $padding-sm;
+        padding-inline: 10px $padding-xs;
         width: 100%;
 
         &::placeholder {

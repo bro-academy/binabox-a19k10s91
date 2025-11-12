@@ -8,6 +8,7 @@
         cursor: pointer;
         position: relative;
         padding-left: $padding-lg;
+        margin-block: $margin-lg;
         user-select: none;
 
         &::before {
