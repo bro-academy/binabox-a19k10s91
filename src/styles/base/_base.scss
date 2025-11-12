@@ -1,10 +1,14 @@
 @use "../base/variables" as *;
 
-.content-wrapper{
+.content-wrapper {
     max-width: 1600px;
     margin-inline: auto;
     padding-inline: $padding-4xl;
-    width: 100%;;
+    width: 100%;
+
+    &--narrow {
+        max-width: 866px;
+    }
 }
 
 .filler {
@@ -20,4 +24,9 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.icon {
+    background: transparent;
+    fill: $main-color;
 }

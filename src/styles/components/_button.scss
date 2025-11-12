@@ -9,21 +9,20 @@
     white-space: nowrap;
 
     &__content {
-        margin: auto $margin-zero;
-        vertical-align: middle;
-        display: inline-block;
+        margin: $margin-zero;
+        display: flex;
+        align-items: center;
     }
 
     &__icon {
-        background: transparent;
-        fill: $main-color;
-
         &--right {
-            float: right;
+            order: 2;
+            padding-left: $padding-2xs;
         }
 
         &--left {
-            float: left;
+            order: -1;
+            padding-right: $padding-2xs;
         }
     }
 
@@ -168,6 +167,7 @@
         &::before {
             content: "";
             position: absolute;
+            top: auto;
             left: -16px;
             border-right: 2px solid;
             color: $seporatorbold-color;

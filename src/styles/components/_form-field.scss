@@ -12,6 +12,7 @@
         font-weight: $fw-regular;
         font-size: $fontsize-sm;
         line-height: $lh-sm;
+        height: 48px;
         color: $main-color;
         background-color: transparent;
         border: 2px solid $seporatorbold-color;
@@ -49,7 +50,6 @@
     }
 
     &__icon {
-        fill: $main-color;
         position: absolute;
         left: 12px;
         top: 12px;

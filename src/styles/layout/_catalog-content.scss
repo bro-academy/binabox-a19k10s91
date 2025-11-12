@@ -1,13 +1,6 @@
 @use "../base/variables" as *;
 
 .catalog-content {
-    &__tag-delete {
-        position: relative;
-        fill: $main-color;
-        left: 8px;
-        top: 2px;
-    }
-
     &__button{
         margin-top: $margin-xl;
         width: 100%;

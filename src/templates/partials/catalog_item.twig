@@ -9,13 +9,13 @@
         324
         ) }}
         {% if item.status == "new" %}
-        <span class="label label--available">
+        <span class="catalog-item__label label label--available">
             {{ index.catalog.items_status_new }}
         </span>
         {% endif %}
 
         {% if item.status == "sold" %}
-        <span class="label label--sold">
+        <span class="catalog-item__label label label--sold">
             {{ index.catalog.items_status_sold }}
         </span>
         {% endif %}

@@ -11,14 +11,15 @@
 
     &__nav {
         line-height: $lh-sm;
-        padding: $padding-zero $padding-2md;
         display: flex;
-        margin-left: 213px;
+        margin: $margin-zero auto $margin-zero auto;
     }
 
     &__nav-item {
         font-size: $fontsize-base;
         padding: $padding-2xs $padding-md;
+        display: flex;
+        align-items: center;
 
         &:hover {
             border-bottom: 2px solid $marina800-color;
@@ -28,9 +29,7 @@
     &__logo {
         display: block;
         margin-block: $margin-2xl;
-        margin-left: $margin-xl;
         margin-right: $margin-md;
-
     }
 
     &__nav-list {
@@ -40,15 +39,10 @@
     }
 
     &__nav-icon {
-        display: inline-block;
-        vertical-align: middle;
-        background: transparent;
-        fill: $main-color;
         transition: fill 0.3s ease;
-    }
-
-    &__nav-icon-login {
-        padding-right: $padding-2xs;
+        order: 2;
+        margin-left: $padding-2xs;
+        flex-shrink: 0;
     }
 
     &__logo-name {
@@ -62,6 +56,11 @@
         align-items: center;
         gap: 16px;
         margin-left: auto;
+    }
 
+    &__brand {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
     }
 }

@@ -1,15 +1,18 @@
 <div class="form-field{{ modificator ? " form-field--" ~ modificator }}">
-    <label for="{{ field.name }}" class="form-field__label">
-        {{ field.label }}
-    </label>
+
+    {% if field.label %}
+        <label for="{{ field.name }}" class="form-field__label">
+            {{ field.label }}
+        </label>
+    {% endif %}
 
     {% if field.icon %}
-    {{ icon("form-field__icon", field.icon, 20, 20) }}
+        {{ icon("form-field__icon", field.icon, 20, 20) }}
     {% endif %}
 
     <input class="form-field__element{{ field.icon ? " form-field__element--with-icon" }}"
-        name="{{ field.name }}" id="{{ field.name }}" type="{{ field.type }}"
-        placeholder="{{ field.placeholder }}"
-        {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %}
-        {% if field.required==true %} required {% endif %} />
+           name="{{ field.name }}" id="{{ field.name }}" type="{{ field.type }}"
+           placeholder="{{ field.placeholder }}"
+            {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %}
+            {% if field.required==true %} required {% endif %} />
 </div>

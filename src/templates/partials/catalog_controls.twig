@@ -5,7 +5,7 @@
 
     <div class="form-field">
         <label>
-            <select name="{{ catalog.controls.select.name }}" id="{{ catalog.controls.select.id }}" class="select">
+            <select name="{{ catalog.controls.select.name }}" id="{{ catalog.controls.select.id }}" class="select form-field__element">
                 {% for option in catalog.controls.select.options %}
                 <option value="{{ option.value }}">{{ option.text }}</option>
                 {% endfor %}
@@ -24,7 +24,7 @@
                 <button class="button button--primary button--large">
                     <span class="button__content">
                         {{ tag }}
-                        {{ icon("catalog-content__tag-delete", "delete", 16, 16) }}
+                        {{ icon("button__icon button__icon--right", "delete", 16, 16) }}
                     </span>
                 </button>
             </li>
