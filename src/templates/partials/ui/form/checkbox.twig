@@ -1,12 +1,12 @@
 <p class="checkbox">
     <input
-        type="checkbox"
-        name="{{ field.name }}"
-        value="{{ option.value }}"
-        id="{{ field.name }}_{{ option.value }}"
-        class="checkbox__input visually-hidden"
-        {% if option.disabled %}disabled{% endif %}
-        {% if option.checked %}checked{% endif %}
+            type="checkbox"
+            name="{{ field.name }}"
+            value="{{ option.value }}"
+            id="{{ field.name }}_{{ option.value }}"
+            class="checkbox__input visually-hidden"
+            {% if option.disabled %}disabled{% endif %}
+            {% if option.checked %}checked{% endif %}
     />
     <label for="{{ field.name }}_{{ option.value }}" class="checkbox__label">
         {{ option.label }}

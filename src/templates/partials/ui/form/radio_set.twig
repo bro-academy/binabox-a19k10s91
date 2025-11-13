@@ -1,8 +1,8 @@
-<fieldset class="form-field">
+<fieldset class="field-set">
     {% if field.label %}
-    <legend class="form-field__label">{{ field.label }}</legend>
+    <legend class="field-set__label">{{ field.label }}</legend>
     {% endif %}
     {% for option in field.options %}
-    {% include 'radio.twig' with {'field': field, 'option': option} %}
+    {% include "radio.twig" with {field: field, option: option} %}
     {% endfor %}
 </fieldset>

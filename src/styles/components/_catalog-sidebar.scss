@@ -11,7 +11,7 @@
         width: 100%;
         background: $alternative2;
         margin-bottom: 21px;
-        padding: $padding-lg $padding-lg 0 $padding-lg;
+        padding: $padding-lg;
     }
 
     &__title{
@@ -20,9 +20,11 @@
 
     &__item {
         border-top: 2px solid $seporatorbold-color;
+        padding-top: $padding-lg;
     }
 
     &__button {
         width: 100%;
+        justify-content: center;
     }
 }

@@ -1,16 +1,10 @@
 @use "../base/variables" as *;
 
 .sidebar {
-    background: $alternative2;
     width: 280px;
-    //height: 100%;
-    padding-bottom: $padding-sm;
-    padding-inline: $padding-lg;
     margin-left: 108px;
-    //display: flex;
 
     &__title {
-        padding-top: $padding-lg;
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
@@ -22,11 +16,19 @@
         padding-block: $padding-2md;
     }
 
+    &__categories{
+        background: $alternative2;
+        padding: $padding-lg;
+        margin-bottom: 21px;
+    }
+
     &__list {
         padding-inline: 0;
         display: flex;
         flex-direction: column;
         gap: 8px;
+        border-top: 2px solid $seporatorbold-color;
+        padding-top: $padding-lg;
     }
 
     &__list-item {
@@ -37,15 +39,23 @@
         display: flex;
     }
 
-    &__tags {
+    &__tags-list {
         padding: $padding-zero;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 8px;
         align-content: flex-start;
-        //justify-content: ;
+        border-top: 2px solid $seporatorbold-color;
+        padding-top: $padding-lg;
     }
+
+    &__tags {
+        background: $alternative2;
+        padding: $padding-lg;
+
+    }
+
     &__tags-item {
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
@@ -53,6 +63,7 @@
         color: $main-color;
         border: 2px solid $seporatorbold-color;
         display: flex;
-        //flex-direction: column;
+
+
     }
-    }
+}

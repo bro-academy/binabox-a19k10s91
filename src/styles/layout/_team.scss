@@ -10,7 +10,6 @@
         text-align: center;
         color: $title-color;
         margin-bottom: $margin-3xl;
-
     }
 
     &__wrapper{
@@ -20,18 +19,22 @@
         justify-content: space-between;
     }
 
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
     &__item {
         background: $alternative2;
-        width: 293px;
-        height: 316px;
+        width: 229px;
         padding: $padding-xl;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        margin: $margin-3xl;
-
     }
-
 }
