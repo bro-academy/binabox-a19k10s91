@@ -1,19 +1,33 @@
 @use "../base/variables" as *;
 
 .article-picture {
+    position: relative;
+    height: 100%;
+    line-height: 0;
+    overflow: hidden;
 
-   
-    
     &__description {
+        position: absolute;
         font-weight: $fw-medium;
         line-height: $lh-sm;
         color: $title-color;
+
+        &--primary {
+            left: 24px;
+            bottom: 16px;
+        }
+
+        &--secondary {
+            left: 26px;
+            bottom: 26px;
+        }
     }
 
     &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
         background-color: darkcyan;
         object-fit: cover;
-
     }
-
 }

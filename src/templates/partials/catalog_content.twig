@@ -1,11 +1,13 @@
 {% from '../macro/icon.twig' import icon %}
 <section class="catalog-content">
-    <div>
-        {% for item in catalog.items %}
-        {% include 'catalog_item.twig' %}
+    <div class="catalog-content__list">
+        {% for _ in 1..9 %}
+            {% for item in catalog.items %}
+                {% include 'catalog_item.twig' with { width: 336, height: 454} %}
+            {% endfor %}
         {% endfor %}
     </div>
     <a class="catalog-content__button button button--primary button--large" href="#">
-            {{ catalog.button_load }}
+        {{ catalog.button_load }}
     </a>
 </section>

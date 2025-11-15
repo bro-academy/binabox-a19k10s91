@@ -11,7 +11,7 @@
                 1024,
                 560
             ) }}
-            <figcaption class="article-picture__description">{{ blog.content.block_1.description }}</figcaption>
+            <figcaption class="article-picture__description article-picture__description--primary">{{ blog.content.block_1.description }}</figcaption>
         </figure>
         <h2 class="blog-content__subtitle">{{ blog.content.title }}</h2>
         <button class="button button--secondary button--large blog-content__button" type="button">
@@ -61,7 +61,7 @@
                         500,
                         394
                     ) }}
-                    <figcaption class="article-picture__description">{{ block.description }}
+                    <figcaption class="article-picture__description article-picture__description--secondary">{{ block.description }}
                     </figcaption>
                 </figure>
             {% endfor %}
