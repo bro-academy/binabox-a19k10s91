@@ -1,16 +1,13 @@
 @use "../base/variables" as *;
 
 .counted-list {
-
     &__item{
         background: $alternative;
         padding: $padding-xl;
-        width: 376px;
         margin-inline: auto;
         display: grid;
     }
 
-    
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
