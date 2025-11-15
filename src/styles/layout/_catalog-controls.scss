@@ -13,6 +13,9 @@
     }
 
     &__title {
+        font-family: $font-secondary;
+        line-height: $lh-xxl;
+        font-size: $fontsize-xl;
         width: 30%;
     }
 
