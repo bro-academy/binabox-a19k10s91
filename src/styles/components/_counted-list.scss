@@ -1,11 +1,27 @@
 @use "../base/variables" as *;
 
 .counted-list {
-    &__item{
-        background: $alternative;
+    &__item {
         padding: $padding-xl;
         margin-inline: auto;
         display: grid;
+        background: no-repeat 32px 32px $alternative;
+
+        &:nth-child(1) {
+            background-image: url("../../assets/icons/about_list/01.svg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../../assets/icons/about_list/02.svg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../../assets/icons/about_list/03.svg");
+        }
+
+        &:nth-child(4) {
+            background-image: url("../../assets/icons/about_list/04.svg");
+        }
     }
 
     &__title {
