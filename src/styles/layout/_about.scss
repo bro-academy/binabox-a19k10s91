@@ -1,7 +1,8 @@
 @use "../base/variables" as *;
 
 .about {
-    padding: $margin-4xl $margin-zero;
+    padding-bottom: $margin-4xl;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;

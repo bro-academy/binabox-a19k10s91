@@ -4,15 +4,17 @@
     >summary {
         list-style: none;
         cursor: pointer;
+        display: flex;
+        align-items: center;
 
         &::after {
             content: "";
             width: 16px;
             height: 16px;
-            float: right;
+            margin-left: auto;
             display: inline-block;
             background-color: $main-color;
-            mask: url('/src/assets/icons/plus.svg') no-repeat center / contain
+            mask: url('/src/assets/icons/plus.svg') no-repeat center / contain;
         }
     }
 

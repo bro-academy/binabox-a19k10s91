@@ -1,7 +1,9 @@
 @use "../base/variables" as *;
 
 .blog-item {
-    width: 736px;
+    display: flex;
+    flex-direction: column;
+    max-width: 736px;
     background: $alternative2;
     padding: $padding-lg;
 
@@ -39,7 +41,7 @@
         margin-bottom: $margin-lg;
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         gap: 8px;
@@ -52,5 +54,11 @@
         position: absolute;
         top: 16px;
         right: 16px;
+    }
+
+    &__button {
+        display: inline-flex;
+        width: max-content;
+        align-self: flex-start;
     }
 }
