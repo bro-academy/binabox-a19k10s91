@@ -3,10 +3,9 @@
 .catalog-content {
 
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
+        display: grid;
     }
+
     &__button{
         margin-top: $margin-xl;
         width: 100%;

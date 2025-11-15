@@ -10,7 +10,7 @@
         {{ icon("form-field__icon", field.icon, 20, 20) }}
     {% endif %}
 
-    <input class="form-field__element{{ field.icon ? " form-field__element--with-icon" }}"
+    <input class="form-field__element{{ field.icon ? " form-field__element--with-icon" }}{{ modificator ? " form-field__element--" ~ modificator }}"
            name="{{ field.name }}" id="{{ field.name }}" type="{{ field.type }}"
            placeholder="{{ field.placeholder }}"
             {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %}
