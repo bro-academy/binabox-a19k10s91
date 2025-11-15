@@ -3,13 +3,9 @@
 .blog-content {
     line-height: $lh-lg;
 
-    //display: flex;
-    margin-bottom: $margin-4xl;
 
     &__wrapper {
-        //width: 100%;
         max-width: 1024px;
-        //margin: 0 0 0 $margin-4xl;
     }
 
     &__subtitle {
@@ -19,6 +15,8 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         color: $title-color;
+        margin-top: $margin-xl;
+        margin-bottom: $margin-sm;
     }
 
     &__created {

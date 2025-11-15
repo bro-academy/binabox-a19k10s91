@@ -34,6 +34,7 @@
         line-height: $lh-lg;
         display: flex;
         flex-direction: column;
+        margin-bottom: $margin-2xs;
     }
 
     &__nav-list {
@@ -45,7 +46,7 @@
 
         display: flex;
         flex-wrap: wrap;
-        gap: 16px 40px;
+        gap: 8px 40px;
         padding: $padding-zero;
         margin: $margin-zero;
         list-style: none;
@@ -55,6 +56,7 @@
     &__nav-item {
         flex: 0 0 40%;
         box-sizing: border-box;
+        padding: 4px 0 4px 0;
     }
 
     &__logo-picture {

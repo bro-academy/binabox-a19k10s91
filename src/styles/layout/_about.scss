@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 
 .about {
+    padding: $margin-4xl $margin-zero;
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -8,7 +9,6 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         text-align: center;
-        margin-top: $margin-4xl;
         margin-bottom: $margin-sm;
     }
 
@@ -19,7 +19,6 @@
         line-height: $lh-lg;
         text-align: center;
         white-space: normal;
-        margin-bottom: $margin-3xl;
     }
 
     &__list {
@@ -27,6 +26,7 @@
         justify-content: center;
         gap: 32px;
         margin-top: $margin-3xl;
+        margin-bottom: $margin-3xl;
     }
 
     &__button-wrapper {

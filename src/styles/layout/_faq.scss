@@ -6,8 +6,8 @@
     max-width: 1600px;
     display: grid;
     gap: 24px;
-    margin-top: $margin-3xl;
-    margin-bottom: 104px;
+    padding-top: $padding-4xl;
+    padding-bottom: 104px;
 
     &__title {
         font-family: $font-secondary;

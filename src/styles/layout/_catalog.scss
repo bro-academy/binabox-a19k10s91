@@ -1,6 +1,8 @@
 @use "../base/variables" as *;
 
 .catalog {
+    padding: $margin-4xl $margin-zero;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -25,6 +27,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: $margin-3xl;
     }
 
     &__icon {

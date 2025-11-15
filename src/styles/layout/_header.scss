@@ -2,6 +2,7 @@
 
 .header {
     display: flex;
+    padding-block: 45px;
 
     &__wrapper {
         font-weight: $fw-semibold;
@@ -28,7 +29,6 @@
 
     &__logo {
         display: block;
-        margin-block: $margin-2xl;
         margin-right: $margin-md;
         //animation-name: rotate;
         //animation-duration: 5s;

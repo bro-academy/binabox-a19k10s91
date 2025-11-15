@@ -7,7 +7,6 @@
         padding: $padding-xl;
         width: 376px;
         margin-inline: auto;
-        margin-block: $margin-3xl;
         display: grid;
     }
 
@@ -17,7 +16,8 @@
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
         line-height: $lh-xl;
-        margin-top: 62px;
+        margin-top: 30px;
+        margin-bottom: $margin-lg;
     }
 
     &__text {

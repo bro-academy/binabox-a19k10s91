@@ -2,6 +2,8 @@
 
 .hero-section {
     background-image: url('/src/assets/images/big_circular_lines.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
     fill: $secondary;
     min-height: 376px;
     text-align: center;
@@ -15,6 +17,8 @@
         letter-spacing: -0.5px;
         text-align: center;
         color: $title-color;
+        padding-top: $padding-4xl;
+        margin-bottom: $margin-md;
     }
 
     &__nav-list {
