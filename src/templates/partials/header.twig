@@ -1,41 +1,42 @@
 {% from '../macro/icon.twig' import icon %}
 <header class="header">
-    <div class="content-wrapper">
-        <svg class="icon header__logo" width="36" height="40">
-            <use href="/src/assets/icons/graph_logo.svg" />
-        </svg>
-        <svg class="icon header__logo-name" width="134" height="21">
-            <use href="/src/assets/icons/binabox.svg" />
-        </svg>
-         {# {{ icon("header__logo", "logo_white", 188, 42) }}  #}
-         {# <img class="header__logo" src="{{ header.logo.icon }}" alt="{{ header.logo.alt }}"> #}
+    <div class="content-wrapper header__wrapper">
+        <a class="header__brand" href="/">
+            <svg class="icon header__logo" width="36" height="40">
+                <use href="/src/assets/icons/graph_logo.svg" />
+            </svg>
+            <svg class="icon header__logo-name" width="134" height="21">
+                <use href="/src/assets/icons/binabox.svg" />
+            </svg>
+        </a>
+
+
         <nav class="header__nav">
             <ul class="header__nav-list">
                 {% for link in header.links %}
-                <li>
-                    <a class="link link--tertiary header__nav-item {% if link.active %} header__nav-item--active {% endif %}"
-                        href="{{ link.href }} ">{{ link.label }}
-                    {{ icon("header__nav-icon", "down", 24, 24) }} 
-                </a>
-                </li>
+                    <li>
+                        <a class="link link--tertiary header__nav-item{% if link.active %} header__nav-item--active{% endif %}"
+                           href="{{ link.href }}">
+                            {{ link.label }}
+                            {{ icon("header__nav-icon", "down", 24, 24) }}
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
         </nav>
-        <div>
+        <div class="header__user-nav">
             <form action="/search" method="get">
-                {% include "ui/form/input.twig" with {field: header.search} %}
+                {% include "ui/form/input.twig" with {field: header.search, modificator: "search"} %}
                 <button type="submit" hidden></button>
             </form>
 
-            <a href="#" class="button button--primary button--large">
-                {{ icon("header__nav-icon", "discord", 24, 24) }}
-                {# <img src="{{ header.default_button.icon }}" alt="{{ header.default_button.alt }}"> #}
-                <span>{{ header.default_button.text }}</span>
+            <a href="#" class="button button--primary button--large button--separator_left">
+                {{ header.default_button.text }}
+                {{ icon("button__icon button__icon--left header__nav-icon-login", "discord", 24, 24) }}
             </a>
             <a class="button button--secondary button--large">
-                {{ icon( "header__nav-icon-login", "men", 24, 24) }}
-                {# <img src="{{ header.primary_button.icon }}" alt=" {{ .header.primary_button.alt }}"> #}
-                <span>{{ header.primary_button.text }}</span>
+                {{ header.primary_button.text }}
+                {{ icon( "button__icon button__icon--left header__nav-icon-login", "men", 24, 24) }}
             </a>
         </div>
     </div>

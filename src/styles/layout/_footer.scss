@@ -2,32 +2,100 @@
 
 .footer {
     background: $alternative;
+    padding-bottom: $padding-xl;
+
+    &__wrapper {
+        font-weight: $fw-semibold;
+        align-items: center;
+        padding: $padding-4xl $padding-zero;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__brand {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
     &__slogan {
         font-weight: $fw-regular;
         font-size: $fontsize-sm;
+        margin-top: $margin-xs;
     }
 
-    &__subtitle {
+    &__nav-subtitle {
         font-weight: $fw-medium;
         font-size: 20px;
         line-height: $lh-lg;
-    }
-
-    &__rights {
-        font-weight: $fw-regular;
-        font-size: $fontsize-sm;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $margin-2xs;
     }
 
     &__nav-list {
+        max-width: 328px;
+        padding-block: 4px;
         font-weight: $fw-semibold;
         font-size: 12px;
         line-height: 16px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 40px;
+        padding: $padding-zero;
+        margin: $margin-zero;
+        list-style: none;
+        align-content: flex-start;
+    }
+
+    &__nav-item {
+        flex: 0 0 40%;
+        box-sizing: border-box;
+        padding: 4px 0 4px 0;
+    }
+
+    &__logo-picture {
+        margin-right: 18px;
     }
 
     &__logo-name {
         background: transparent;
         fill: $marina800-color;
         transition: fill 0.3s ease;
+        margin: $margin-xs $margin-zero;
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 2px solid $seporatorbold-color;
+    }
+
+    &__rights-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 42px;
+    }
+
+    &__rights {
+        font-weight: $fw-regular;
+        font-size: $fontsize-sm;
+        text-align: left;
+        display: flex;
+        //justify-content: flex-start;
+    }
+
+    &__social {
+        display: flex;
+        margin-left: 1078px;
+        justify-content: flex-end;
+
     }
 }

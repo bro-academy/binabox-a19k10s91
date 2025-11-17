@@ -1,25 +1,32 @@
 {% from '../macro/macro_picture.twig' import picture %}
 {% from '../macro/icon.twig' import icon %}
 <article class="blog-item">
-    <div>
+    <div class="blog-item__image-wrapper">
         {{ picture(
-        'blog-item__picture',
-        item.image,
-        item.image_alt,
-        736,
-        664
+            'blog-item__picture',
+            item.image,
+            item.image_alt,
+            736,
+            664
         ) }}
-        <span class="label label--available">{{ item.category }}</span>
+        <span class="blog-item__label label label--available">{{ item.category }}</span>
     </div>
+    <div class="blog-item__wrapper">
     <span class="blog-item__author">
         {{ icon("blog-item__icon","men", 16,16) }}
         {{ item.author }}
     </span>
-    <time class="blog-item__time">
-        {{ icon("blog-item__icon","calendar", 16,16) }}
-        {{ item.date }}
-    </time>
+        <time class="blog-item__time">
+            {{ icon("blog-item__icon","calendar", 16,16) }}
+            {{ item.date }}
+        </time>
+    </div>
     <p class="blog-item__title"><strong>{{ item.title }}</strong></p>
     <p class="blog-item__text">{{ item.text }}</p>
-    <a class="button button--primary button--medium" href="#">{{ index.blog.button_primary }}  {{ icon("blog-item__icon", "arrow_right", 24, 24) }}</a>
+    <a class="button button--primary button--medium" href="#">
+        {{ index.blog.button_primary }}
+        {{ icon("button__icon button__icon--right", "arrow_right", 24, 24) }}
+    </a>
+
+
 </article>

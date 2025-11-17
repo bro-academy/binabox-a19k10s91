@@ -1,7 +1,7 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
-  {% include 'src/templates/partials/contact/hero.twig' %}
-  {% include 'src/templates/partials/contact/info.twig' %}
-  {% include 'src/templates/partials/contact/form.twig' %}
+    {% include 'src/templates/partials/hero.twig' with {hero: contact.hero} %}
+    {% include 'src/templates/partials/contact/info.twig' %}
+    {% include 'src/templates/partials/contact/form.twig' %}
 {% endblock %}

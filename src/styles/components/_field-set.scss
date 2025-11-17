@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+
+.field-set {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-evenly;
+    margin-bottom: $margin-lg;
+
+}

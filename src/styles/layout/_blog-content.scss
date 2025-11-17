@@ -1,6 +1,13 @@
 @use "../base/variables" as *;
 
 .blog-content {
+    line-height: $lh-lg;
+
+
+    &__wrapper {
+        max-width: 1024px;
+    }
+
     &__subtitle {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -8,7 +15,14 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         color: $title-color;
+        margin-top: $margin-xl;
+        margin-bottom: $margin-sm;
     }
+
+    &__created {
+        margin:$margin-xl 0;
+    }
+
 
     &__author {
         font-weight: $fw-semibold;
@@ -27,6 +41,13 @@
         font-size: $fontsize-md;
         line-height: $lh-lg;
         color: $main-color;
+        margin-bottom: $margin-xl;
+    }
+
+    &__list{
+        list-style: disc;
+        margin-left: $margin-zero;
+        padding-left: 18px;
     }
 
     &__list-description {
@@ -34,9 +55,10 @@
         font-size: $fontsize-md;
         line-height: $lh-lg;
         color: $main-color;
+        margin-left: $margin-zero;
     }
 
-     &__button {
+    &__button {
         font-weight: $fw-semibold;
         font-size: $fontsize-md;
         line-height: $lh-lg;
@@ -44,8 +66,49 @@
     }
 
     &__icon {
-        background: transparent;
-        fill: $main-color;
         transition: fill 0.3s ease;
+    }
+
+    &__features {
+        margin-left: $margin-zero;
+        padding-left: $padding-zero;
+        margin-block: $margin-xl;
+    }
+
+    &__feature-item {
+        margin-left: $margin-zero;
+        padding-left: $padding-zero;
+    }
+
+    &__pictures{
+        display: flex;
+        gap: 24px;
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: $margin-xl;
+    }
+
+    &__tags {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: $padding-zero;
+        gap: 16px
+    }
+
+    &__social-button{
+        padding: $padding-zero;
     }
 }

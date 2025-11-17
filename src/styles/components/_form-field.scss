@@ -1,58 +1,74 @@
 @use "../base/variables" as *;
 
 .form-field {
-  border-width: 0;
-  position: relative;
+    border-width: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: $margin-lg;
+    padding: $padding-zero;
 
-  &__element {
-    font-family: $font-primary;
-    font-weight: $fw-regular;
-    font-size: $fontsize-sm;
-    line-height: $lh-sm;
-    color: $main-color;
-    background-color: transparent;
-    border: 2px solid $seporatorbold-color;
-    outline: none;
-    padding: 10px 12px;
+    &__element {
+        font-family: $font-primary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-sm;
+        line-height: $lh-sm;
+        height: 48px;
+        color: $main-color;
+        background-color: transparent;
+        border: 2px solid $seporatorbold-color;
+        outline: none;
+        padding-inline: 10px $padding-xs;
+        width: 100%;
+        box-sizing: border-box;
 
-    &::placeholder {
-      color: $secondary2white-color;
-      background-color: transparent;
+        &::placeholder {
+            color: $secondary2white-color;
+            background-color: transparent;
+        }
+
+        &:disabled {
+            border-color: $seporatorbold-color;
+            background-color: $seporator-color;
+        }
+
+        &:user-invalid:not(:placeholder-shown) {
+            border-color: $negative-color;
+        }
+
+        &:hover:not(:disabled) {
+            border-color: $marina600-color;
+        }
+
+        &:focus:not(:disabled) {
+            border-color: $marina600-color;
+            box-shadow: 0 0 0 2px $marina600-color;
+        }
+
+        &--with-icon {
+            padding-left: $padding-2xl;
+        }
+
     }
 
-    &:disabled {
-      border-color: $seporatorbold-color;
-      background-color: $seporator-color;
+    &__icon {
+        position: absolute;
+        left: 12px;
+        top: 12px;
     }
 
-    &:user-invalid:not(:placeholder-shown) {
-      border-color: $negative-color;
+    &__label {
+        display: block;
+        text-align: left;
+        margin-bottom: 4px;
     }
 
-    &:hover:not(:disabled) {
-      border-color: $marina600-color;
+    &--search {
+        max-width: 188px;
+        height: 48px;
+        margin-bottom: $margin-zero;
     }
 
-    &:focus:not(:disabled) {
-      border-color: $marina600-color;
-      box-shadow: 0 0 0 2px $marina600-color;
+    &--catalog-search{
+        background: $alternative2;
     }
-
-    &--with-icon {
-      padding-left: 36px;
-    }
-
-  }
-
-  &__icon {
-    fill: $main-color;
-    position: absolute;
-    left: 12px;
-    top: 12px;
-  }
-
-  &__label {
-    display: block;
-    text-align: left;
-  }
 }

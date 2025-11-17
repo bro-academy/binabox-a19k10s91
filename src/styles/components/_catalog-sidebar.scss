@@ -1,11 +1,30 @@
 @use "../base/variables" as *;
 @use "../mixin/summary" as *;
 
-
 .catalog-sidebar {
-    background: $alternative2;
+    max-width: 320px;
+    width: 100%;
 
     &__list {
         @include summary();
+        max-width: 272px;
+        width: 100%;
+        background: $alternative2;
+        margin-bottom: 21px;
+        padding: $padding-lg;
+    }
+
+    &__title{
+        margin-bottom: $margin-sm;
+    }
+
+    &__item {
+        border-top: 2px solid $seporatorbold-color;
+        padding-top: $padding-lg;
+    }
+
+    &__button {
+        width: 100%;
+        justify-content: center;
     }
 }

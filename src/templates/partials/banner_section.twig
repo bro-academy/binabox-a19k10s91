@@ -1,23 +1,39 @@
 {% from '../macro/macro_picture.twig' import picture %}
 <section class="banner">
-    <h1 class="banner__title">{{ index.banner.heading.part_1 }} <span class="banner__title-highlighted">{{
-            index.banner.heading.part_2 }}</span> {{ index.banner.heading.part_3 }}</h1>
-    <p class="banner__description">{{ index.banner.text }}</p>
-    <p>
-        <span class="banner__counter">{{ index.banner.counter_1.number }}</span>
-        <span class="banner__subtext">{{ index.banner.counter_1.text }}</span>
-    </p>
-    <p>
-        <span class="banner__counter">{{ index.banner.counter_2.number }}</span>
-        <span class="banner__subtext">{{ index.banner.counter_2.text }}</span>
-    </p>
+    <div class="content-wrapper content-wrapper--narrow banner__content">
+        <h1 class="banner__title">{{ index.banner.heading.part_1 }}
+            <span class="banner__title-highlighted">
+            {{ index.banner.heading.part_2 }}
+        </span>
+            {{ index.banner.heading.part_3 }}
+        </h1>
+        <p class="banner__description">{{ index.banner.text }}</p>
+
+        <div class="banner__counter-wrapper">
+            <div>
+                <p class="banner__counter">{{ index.banner.counter_1.number }}</p>
+                <p class="banner__subtext">{{ index.banner.counter_1.text }}</p>
+            </div>
+            <div>
+                <p class="banner__counter">{{ index.banner.counter_2.number }}</p>
+                <p class="banner__subtext">{{ index.banner.counter_2.text }}</p>
+            </div>
+        </div>
+        <div class="banner__buttons-wrapper">
+            <a href="#" class="button button--secondary button--large">
+                {{ index.banner.connect_button }}
+            </a>
+            <a href="#" class="button button--primary button--large">
+                {{ index.banner.whitelist_button }}
+            </a>
+        </div>
+    </div>
+
     {{ picture(
-    'banner__image',
-    index.banner.promo.image,
-    index.banner.promo.image_alt,
-    534,
-    642
+        'banner__image',
+        index.banner.promo.image,
+        index.banner.promo.image_alt,
+        534,
+        642
     ) }}
-    <a href="#" class="button button--secondary button--large">{{ index.banner.connect_button }}</a>
-    <a href="#" class="button button--primary button--large">{{ index.banner.whitelist_button }}</a>
 </section>

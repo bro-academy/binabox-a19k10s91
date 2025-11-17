@@ -1,15 +1,54 @@
 @use "../base/variables" as *;
 
 .catalog {
+    padding: $margin-4xl $margin-zero;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
         line-height: $lh-xl;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1 1 auto;
     }
+
+    &__title::after {
+        content: "";
+        flex: 1 1 auto;
+        border-bottom: 2px solid;
+        color: $seporatorbold-color;
+        margin-inline: $margin-xl;
+    }
+
+    &__control {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $margin-3xl;
+    }
+
     &__icon {
-        background: transparent;
-        fill: $main-color;
         transition: fill 0.3s ease;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 24px;
+    }
+
+    &__nav-pagination {
+        padding-inline: $padding-sm;
     }
 }

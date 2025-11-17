@@ -3,6 +3,8 @@
 .blockquote {
     border-radius: 16px;
     background-color: $marina1200-color;
+    padding: $padding-2md;
+    margin: $margin-zero $margin-zero $margin-xl;
 
     &__text {
         font-family: $font-secondary;
@@ -11,21 +13,38 @@
         line-height: 36px;
         vertical-align: bottom;
         color: $title-color;
+        margin: $margin-zero;
+    }
+
+    &__footer {
+        margin-top: $margin-2xs;
+        margin-bottom: $margin-zero;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: 8px;
+        margin-left: $margin-zero;
+        align-items: center;
+
     }
 
     &__rating {
+        display: flex;
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         color: $subtitle-color;
     }
 
     &__company {
+        display: flex;
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         color: $title-color;
+        //margin-left: 8px;
     }
 
     &__icon {
+        display: flex;
         background: transparent;
         fill: $secondary2white-color;
         transition: fill 0.3s ease;

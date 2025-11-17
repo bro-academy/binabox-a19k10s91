@@ -6,7 +6,7 @@
     align-items: center;
     cursor: pointer;
     position: relative;
-    padding-left: 24px;
+    padding-left: $padding-lg;
     user-select: none;
 
     &::before {

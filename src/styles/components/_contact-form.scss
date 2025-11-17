@@ -2,12 +2,20 @@
 
 .contact-form {
     text-align: center;
+    margin-bottom: 104px;
+
+    &__wrapper {
+        max-width: 640px;
+        margin: $margin-zero auto;
+        text-align: left;
+    }
 
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
         line-height: $lh-xxl;
+        margin: $margin-4xl $margin-zero $margin-2xs;
     }
 
     &__subtitle {
@@ -15,6 +23,15 @@
         font-weight: $fw-medium;
         font-size: 20px;
         line-height: $lh-lg;
+        margin-bottom: $margin-3xl;
+    }
+
+    &__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+
     }
 
 }

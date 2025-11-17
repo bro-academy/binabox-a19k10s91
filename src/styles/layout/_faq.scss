@@ -2,6 +2,13 @@
 @use "../mixin/summary" as *;
 
 .faq {
+    width: 100%;
+    max-width: 1600px;
+    display: grid;
+    gap: 24px;
+    padding-top: $padding-4xl;
+    padding-bottom: 104px;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -12,6 +19,8 @@
     }
 
     &__phrase {
+        background: $alternative2;
         @include summary();
+
     }
 }

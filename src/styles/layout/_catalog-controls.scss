@@ -1,0 +1,17 @@
+@use "../base/variables" as *;
+
+.catalog-controls {
+    &__tag-list {
+        background: $alternative2;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: flex-start;
+        padding-left: $padding-2md;
+        margin-bottom: $margin-xl;
+    }
+
+    &__tag {
+        padding: $padding-2md $padding-zero;
+    }
+}

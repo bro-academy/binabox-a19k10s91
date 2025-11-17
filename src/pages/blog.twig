@@ -1,7 +1,11 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
-  {% include 'src/templates/partials/blog_hero.twig' %}
-  {% include 'src/templates/partials/blog_sidebar.twig' %}
-  {% include 'src/templates/partials/blog_content.twig' %}
+    {% include 'src/templates/partials/hero.twig' with {hero: blog.hero} %}
+
+    <div class="content-wrapper">
+        {% include 'src/templates/partials/blog_box.twig' %}
+    </div>
+    {#    {% include 'src/templates/partials/blog_sidebar.twig' %} #}
+    {#    {% include 'src/templates/partials/blog_content.twig' %} #}
 {% endblock %}

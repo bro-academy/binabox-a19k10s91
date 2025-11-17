@@ -1,9 +1,11 @@
 @use "../base/variables" as *;
 
 .tags {
+  
     &__button {
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         border: none;
+     
     }
 }

@@ -1,28 +1,43 @@
 @use "../base/variables" as *;
 
 .button {
-    font-weight:$fw-semibold;
+    font-weight: $fw-semibold;
     border: none;
     cursor: pointer;
-    ;
+    display: inline-flex;
+    align-items: center;
+    padding: $padding-zero $padding-sm;
+    white-space: nowrap;
+
+
+    &__icon {
+        &--right {
+            order: 2;
+            padding-left: $padding-2xs;
+        }
+
+        &--left {
+            order: -1;
+            padding-right: $padding-2xs;
+        }
+    }
 
     &--large {
         font-size: $fontsize-md;
         line-height: $lh-lg;
-        padding: 10px 24px;
+        padding: $padding-xs $padding-md;
     }
 
     &--medium {
         font-size: $fontsize-base;
         line-height: $lh-md;
-        padding: 8px 20px;
-
+        padding: $padding-2xs $padding-md;
     }
 
     &--small {
         font-size: $fontsize-sm;
         line-height: $lh-sm;
-        padding: 6px 12px;
+        padding: $padding-3xs $padding-sm;
     }
 
     &--primary {
@@ -43,7 +58,7 @@
         }
 
         &:focus-visible {
-           background-color: $seporator-color;
+            background-color: $seporator-color;
             box-shadow: 0 0 0 2px $marina600-color inset;
             outline: 2px $marina600-color solid;
             outline-offset: -2px;
@@ -138,6 +153,21 @@
         &:disabled {
             background-color: $main-bg-color;
             color: $disabled-color;
+        }
+    }
+
+    &--separator_left {
+        position: relative;
+        margin-left: $margin-sm;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: auto;
+            left: -16px;
+            border-right: 2px solid;
+            color: $seporatorbold-color;
+            height: 24px;
         }
     }
 }

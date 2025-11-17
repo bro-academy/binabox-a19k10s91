@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 
 .about {
+    padding: $margin-4xl $margin-zero;
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -8,12 +9,28 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         text-align: center;
+        margin-bottom: $margin-sm;
     }
 
     &__description {
+        font-family: $font-primary;
         font-weight: $fw-medium;
         font-size: 20px;
         line-height: $lh-lg;
+        text-align: center;
+        white-space: normal;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-top: $margin-3xl;
+        margin-bottom: $margin-3xl;
+    }
+
+    &__button-wrapper {
+        width: 100%;
         text-align: center;
     }
 }

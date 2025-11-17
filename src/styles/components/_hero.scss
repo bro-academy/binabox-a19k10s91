@@ -1,0 +1,48 @@
+@use "../base/variables" as *;
+
+.hero-section {
+    background-image: url('/src/assets/images/big_circular_lines.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    fill: $secondary;
+    min-height: 376px;
+    text-align: center;
+    width: 100%;
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xxl;
+        line-height: $lh-huge;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: $title-color;
+        padding-top: $padding-4xl;
+        margin-bottom: $margin-md;
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        padding-left: $padding-zero;
+    }
+
+    &__nav-item {
+        font-weight: $fw-semibold;
+        font-size: $fontsize-sm;
+        text-align: center;
+        color: $main-color;
+
+        &:not(:first-child):before {
+            content: '';
+            padding-left: $padding-2md;
+            border-left: 1px solid $seporatorbold-color;
+        }
+
+        &--active {
+            color: $secondary2white-color;
+        }
+    }
+}

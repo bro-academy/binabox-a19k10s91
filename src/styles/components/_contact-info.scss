@@ -2,11 +2,18 @@
 @use "../mixin/icon_hover" as *;
 
 .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: $margin-4xl;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
         font-size: $fontsize-xl;
         line-height: $lh-xxl;
+        margin: $margin-lg $margin-zero $margin-zero $margin-zero;
     }
 
     &__subtitle {
@@ -17,13 +24,18 @@
     }
 
     &__card {
-        border: 1px solid $line;
         @include icon_hover();
+        border: 1px solid $line;
+        width: 264px;
+        max-height: 232px;
+        padding-block: $padding-3xl;
+        padding-inline: $padding-xl;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__icon {
-        background: transparent;
-        fill: $main-color;
         transition: fill 0.3s ease;
     }
 }

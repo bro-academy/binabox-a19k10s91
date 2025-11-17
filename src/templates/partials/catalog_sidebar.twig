@@ -1,16 +1,16 @@
 <aside class="catalog-sidebar">
     <form action="/filter_catalog" method="get">
         {% for field in catalog.sidebar.filters %}
-        <details class="catalog-sidebar__list" {% if field.open %}open{% endif %}>
-            <summary>{{ field.title }}</summary>
-
-            {% if field.type == 'radio' %}
-                {% include "ui/form/radio_set.twig" %}
-            {% elseif field.type == 'checkbox' %}
-                {% include "ui/form/checkbox_set.twig" %}
-            {% endif %}
-
-        </details>
+            <details class="catalog-sidebar__list" {% if field.open %}open{% endif %}>
+                <summary class="catalog-sidebar__title">{{ field.title }}</summary>
+                <div class="catalog-sidebar__item">
+                    {% if field.type == 'radio' %}
+                        {% include "ui/form/radio_set.twig" %}
+                    {% elseif field.type == 'checkbox' %}
+                        {% include "ui/form/checkbox_set.twig" %}
+                    {% endif %}
+                </div>
+            </details>
         {% endfor %}
 
         <button type="submit" class="catalog-sidebar__button button button--secondary button--large">

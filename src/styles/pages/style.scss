@@ -19,6 +19,9 @@
 @use "../components/radio";
 @use "../components/select";
 @use "../components/catalog-sidebar";
+@use "../components/icon";
+@use "../components/hero";
+@use "../components/field-set";
 
 @use "../layout/header";
 @use "../layout/banner";
@@ -26,11 +29,13 @@
 @use "../layout/catalog";
 @use "../layout/catalog-page";
 @use "../layout/catalog-content";
+@use "../layout/catalog-controls";
 @use "../layout/contact-page";
 @use "../layout/blog";
 @use "../layout/about";
 @use "../layout/team";
 @use "../layout/blog-page";
+@use "../layout/blog-box";
 @use "../layout/article-picture";
 @use "../layout/blog-content";
 @use "../layout/features-list";

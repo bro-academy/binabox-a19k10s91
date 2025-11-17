@@ -1,21 +1,28 @@
 {% from '../macro/icon.twig' import icon %}
-<section class="catalog">
-    <h2 class="catalog__title">
-             {{ icon("catalog__icon", "folder", 24, 24) }} 
-            {{ index.catalog.title }}</h2>
-    <div></div>
-    <div class="slider-nav">
-        <button class="button button--primary button--large">{{ index.catalog.slider.button_all }}</button>
-        <button class="button button--primary button--large">
-          {{ icon("catalog__icon", "arrow_left", 24, 24) }} 
-          {{ index.catalog.slider.button_left }}</button>
-        <button class="button button--secondary button--large">
-            {{ icon("catalog__icon", "arrow_right", 24, 24) }} 
-            {{ index.catalog.slider.button_right }}</button>
-    </div>
-    <div>
-        {% for item in index.catalog.items %}
-        {% include "../partials/catalog_item.twig" %}
-        {% endfor %}
-    </div>
-</section>
+<div class="content-wrapper">
+    <section class="catalog">
+        <div class="catalog__control">
+            <h2 class="catalog__title">
+                {{ icon("catalog__icon", "folder", 24, 24) }}
+                {{ index.catalog.title }}</h2>
+            <div class="catalog__nav">
+                <button class="button button--primary button--large" type="button">
+                    {{ index.catalog.slider.button_all }}
+                </button>
+                <button class="button button--primary button--large catalog__nav-pagination button--separator_left" type="button">
+                    {{ icon("button__icon", "arrow_left", 24, 24) }}
+                    {{ index.catalog.slider.button_left }}
+                </button>
+                <button class="button button--secondary button--large catalog__nav-pagination" type="button">
+                    {{ icon("button__icon", "arrow_right", 24, 24) }}
+                    {{ index.catalog.slider.button_right }}
+                </button>
+            </div>
+        </div>
+        <div class="catalog__list">
+            {% for item in index.catalog.items %}
+                {% include "../partials/catalog_item.twig" %}
+            {% endfor %}
+        </div>
+    </section>
+</div>

@@ -2,13 +2,26 @@
 @use "../mixin/icon_hover" as *;
 
 .social-list {
+    display: flex;
+    padding-inline: $padding-zero;
+    gap: 8px;
+    justify-content: center;
+
+    &__item{
+        display: flex;
+    }
+
     &__link {
         @include icon_hover();
     }
 
     &__logo {
-        background: transparent;
-        fill: $main-color;
         transition: fill 0.3s ease;
+        margin: $margin-2xs;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
     }
 }

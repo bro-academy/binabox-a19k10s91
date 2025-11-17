@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 
 .blog-section {
+    padding: $margin-4xl $margin-zero;
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -9,5 +10,11 @@
         letter-spacing: -0.5px;
         text-align: center;
         color: $title-color;
+        margin-bottom: $margin-3xl;
+    }
+
+    &__list {
+        display: grid;
+        gap: 24px;
     }
 }

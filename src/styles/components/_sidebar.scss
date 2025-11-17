@@ -1,7 +1,9 @@
 @use "../base/variables" as *;
 
 .sidebar {
-    background: $alternative2;
+    width: 280px;
+    margin-left: 108px;
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -10,10 +12,48 @@
         color: $main-color;
     }
 
+    &__seporator {
+        padding-block: $padding-2md;
+    }
+
+    &__categories{
+        background: $alternative2;
+        padding: $padding-lg;
+        margin-bottom: 21px;
+    }
+
+    &__list {
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border-top: 2px solid $seporatorbold-color;
+        padding-top: $padding-lg;
+    }
+
     &__list-item {
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         color: $main-color;
+        padding: $padding-3xs $padding-sm;
+        display: flex;
+    }
+
+    &__tags-list {
+        padding: $padding-zero;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-content: flex-start;
+        border-top: 2px solid $seporatorbold-color;
+        padding-top: $padding-lg;
+    }
+
+    &__tags {
+        background: $alternative2;
+        padding: $padding-lg;
+
     }
 
     &__tags-item {
@@ -22,5 +62,8 @@
         text-align: center;
         color: $main-color;
         border: 2px solid $seporatorbold-color;
+        display: flex;
+
+
     }
 }
