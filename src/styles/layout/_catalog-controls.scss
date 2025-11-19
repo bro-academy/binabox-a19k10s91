@@ -46,10 +46,12 @@
         gap: 16px;
         justify-content: flex-start;
         padding-left: $padding-2md;
+        padding-top: $padding-2md;
+        padding-bottom: $padding-2md;
         margin-bottom: $margin-xl;
     }
 
     &__tag {
-        padding: $padding-2md $padding-zero;
+        padding: $padding-zero;
     }
 }
