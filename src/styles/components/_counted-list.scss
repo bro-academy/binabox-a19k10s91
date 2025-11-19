@@ -1,26 +1,33 @@
 @use "../base/variables" as *;
 
 .counted-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: counted;
+
     &__item {
+        position: relative;
         padding: $padding-xl;
         margin-inline: auto;
         display: grid;
-        background: no-repeat 32px 32px $alternative;
+        background-color: $alternative;
 
-        &:nth-child(1) {
-            background-image: url("../../assets/icons/about_list/01.svg");
-        }
-
-        &:nth-child(2) {
-            background-image: url("../../assets/icons/about_list/02.svg");
-        }
-
-        &:nth-child(3) {
-            background-image: url("../../assets/icons/about_list/03.svg");
-        }
-
-        &:nth-child(4) {
-            background-image: url("../../assets/icons/about_list/04.svg");
+        &::before {
+            counter-increment: counted;
+            content: counter(counted, decimal-leading-zero);
+            position: absolute;
+            top: 26px;
+            left: 28px;
+            font-family: $font-secondary;
+            font-weight: $fw-medium;
+            font-size: 64px;
+            line-height: 1;
+            letter-spacing: 0;
+            // Outline like the SVG: blue stroke, no fill
+            color: transparent;
+            -webkit-text-stroke: 1px $marina800-color;
+            text-stroke: 0.1px $marina800-color;
         }
     }
 
@@ -31,6 +38,7 @@
         line-height: $lh-xl;
         margin-top: 30px;
         margin-bottom: $margin-lg;
+        z-index: 1;
     }
 
     &__text {
