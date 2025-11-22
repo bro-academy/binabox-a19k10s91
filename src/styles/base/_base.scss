@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .content-wrapper {
     max-width: 1600px;
@@ -12,6 +13,10 @@
 
     &--narrow {
         max-width: 866px;
+    }
+
+    @include mobile {
+        padding-inline: $padding-2md;
     }
 }
 

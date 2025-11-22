@@ -1,6 +1,13 @@
 {% from '../macro/icon.twig' import icon %}
 <header class="header">
     <div class="content-wrapper header__wrapper">
+
+        <button class="button button--primary button--small burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </button>
+
         <a class="header__brand" href="/">
             <svg class="icon header__logo" width="36" height="40">
                 <use href="/src/assets/icons/graph_logo.svg" />
@@ -9,7 +16,6 @@
                 <use href="/src/assets/icons/binabox.svg" />
             </svg>
         </a>
-
 
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -25,17 +31,17 @@
             </ul>
         </nav>
         <div class="header__user-nav">
-            <form action="/search" method="get">
+            <form action="/search" method="get" class="header__search header__search--separator_right">
                 {% include "ui/form/input.twig" with {field: header.search, modificator: "search"} %}
                 <button type="submit" hidden></button>
             </form>
 
-            <a href="#" class="button button--primary button--large button--separator_left">
-                {{ header.default_button.text }}
+            <a href="#" class="button button--primary button--large">
+                <span class="button__text">{{ header.default_button.text }}</span>
                 {{ icon("button__icon button__icon--left header__nav-icon-login", "discord", 24, 24) }}
             </a>
             <a class="button button--secondary button--large">
-                {{ header.primary_button.text }}
+                <span class="button__text">{{ header.primary_button.text }}</span>
                 {{ icon( "button__icon button__icon--left header__nav-icon-login", "men", 24, 24) }}
             </a>
         </div>

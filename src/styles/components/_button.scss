@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .button {
     font-weight: $fw-semibold;
@@ -17,6 +18,12 @@
 
         &--left {
             order: -1;
+        }
+    }
+
+    &__text {
+        @include mobile {
+            display: none;
         }
     }
 

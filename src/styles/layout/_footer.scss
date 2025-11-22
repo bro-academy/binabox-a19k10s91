@@ -82,6 +82,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 42px;
+        width: 100%;
     }
 
     &__rights {
@@ -89,13 +90,10 @@
         font-size: $fontsize-sm;
         text-align: left;
         display: flex;
-        //justify-content: flex-start;
     }
 
     &__social {
         display: flex;
-        margin-left: 1078px;
         justify-content: flex-end;
-
     }
 }

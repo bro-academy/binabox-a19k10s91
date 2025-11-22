@@ -1,0 +1,28 @@
+
+// <= 360px
+@mixin mobile {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+
+// >= 678px
+@mixin table {
+    @media screen and (min-width: 678px) {
+        @content;
+    }
+}
+
+// >= 1280px
+@mixin desktop {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+// >= 1728px
+@mixin desktop-l {
+    @media screen and (min-width: 1728px) {
+        @content;
+    }
+}
