@@ -1,7 +1,6 @@
 @use "../base/variables" as *;
 
 .blog-box {
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -10,12 +9,13 @@
 
     &__sidebar {
         display: flex;
-
+        position: sticky;
+        left: 0;
+        top: 130px;
+        align-self: flex-start;
     }
 
     &__content {
         display: flex;
     }
-
-
 }
