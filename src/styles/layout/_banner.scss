@@ -68,9 +68,7 @@
         object-fit: cover;
         flex: 0 0 auto;
 
-        @include mobile{
-            display: none;
-        }
+        @include mobile-hidden;
     }
 
     &__buttons-wrapper {

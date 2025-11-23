@@ -17,8 +17,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        $('.burger').click(function() {
+        $('.burger').on('click', function() {
           $('.burger__line').toggleClass('burger__line--open');
+          $('.header__menu').toggleClass('header__menu--open');
         });
       });
     </script>

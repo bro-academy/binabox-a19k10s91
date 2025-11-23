@@ -22,9 +22,7 @@
     }
 
     &__text {
-        @include mobile {
-            display: none;
-        }
+        @include mobile-hidden;
     }
 
     &--large {

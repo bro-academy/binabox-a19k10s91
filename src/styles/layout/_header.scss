@@ -12,11 +12,53 @@
     width: 100%;
     z-index: 1000;
 
+    @include mobile {
+        padding-block: 16px;
+    }
+
     &__wrapper {
         font-weight: $fw-semibold;
         display: flex;
         align-items: center;
     }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        width: 100%;
+
+        @include mobile {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            width: 100%;
+            transform: translateY(-16px);
+            background-color: $main-bg-color;
+            z-index: 1001;
+
+            box-sizing: border-box;
+            padding-inline: 0;
+
+            opacity: 0;
+            transition: transform .24s ease, opacity .24s ease;
+
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+        }
+
+        &--open {
+            @include mobile {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+
 
     &__nav {
         line-height: $lh-sm;
@@ -24,7 +66,12 @@
         margin: $margin-zero auto $margin-zero auto;
 
         @include mobile {
-            display: none;
+            display: block;
+            margin: 0 0 $margin-lg 0;
+            padding-left: 0;
+            padding-inline: $padding-2md;
+            box-sizing: border-box;
+            width: 100%;
         }
     }
 
@@ -63,6 +110,12 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            gap: $margin-xs;
+        }
     }
 
     &__nav-icon {
@@ -70,6 +123,8 @@
         order: 2;
         margin-left: $padding-2xs;
         flex-shrink: 0;
+
+        @include mobile-hidden;
     }
 
     &__logo-name {
@@ -92,9 +147,7 @@
         //    }
         //}
 
-        @include mobile {
-            display: none;
-        }
+        @include mobile-hidden;
     }
 
     &__user-nav {
@@ -116,7 +169,7 @@
 
         &--separator_right {
             position: relative;
-            margin-right: $margin-sm;
+            margin-right: $margin-xl;
 
             &::after {
                 content: "";
@@ -126,11 +179,9 @@
                 border-right: 2px solid;
                 color: $seporatorbold-color;
                 height: 24px;
-            }
-        }
 
-        @include mobile {
-            display: none;
+                @include mobile-hidden;
+            }
         }
     }
 }

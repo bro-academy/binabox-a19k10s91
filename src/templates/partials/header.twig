@@ -17,25 +17,28 @@
             </svg>
         </a>
 
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                {% for link in header.links %}
-                    <li>
-                        <a class="link link--tertiary header__nav-item{% if link.active %} header__nav-item--active{% endif %}"
-                           href="{{ link.href }}">
-                            {{ link.label }}
-                            {{ icon("header__nav-icon", "down", 24, 24) }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </nav>
-        <div class="header__user-nav">
+        <div class="header__menu">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    {% for link in header.links %}
+                        <li>
+                            <a class="link link--tertiary header__nav-item{% if link.active %} header__nav-item--active{% endif %}"
+                               href="{{ link.href }}">
+                                {{ link.label }}
+                                {{ icon("header__nav-icon", "down", 24, 24) }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+
             <form action="/search" method="get" class="header__search header__search--separator_right">
                 {% include "ui/form/input.twig" with {field: header.search, modificator: "search"} %}
                 <button type="submit" hidden></button>
             </form>
+        </div>
 
+        <div class="header__user-nav">
             <a href="#" class="button button--primary button--large">
                 <span class="button__text">{{ header.default_button.text }}</span>
                 {{ icon("button__icon button__icon--left header__nav-icon-login", "discord", 24, 24) }}
@@ -45,5 +48,6 @@
                 {{ icon( "button__icon button__icon--left header__nav-icon-login", "men", 24, 24) }}
             </a>
         </div>
+
     </div>
 </header>
