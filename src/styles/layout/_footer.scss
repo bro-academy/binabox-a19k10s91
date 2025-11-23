@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .footer {
     background: $alternative;
@@ -26,6 +27,21 @@
         font-weight: $fw-regular;
         font-size: $fontsize-sm;
         margin-top: $margin-xs;
+
+        @include mobile {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include tablet {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include desktop {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
     }
 
     &__nav-subtitle {
@@ -83,6 +99,10 @@
         justify-content: space-between;
         margin-top: 42px;
         width: 100%;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &__rights {

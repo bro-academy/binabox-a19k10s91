@@ -18,18 +18,36 @@
     gap: 64px;
     justify-content: center;
 
+    @include mobile {
+        gap: 16px;
+    }
+
     &__content {
         padding-block: 139px;
         margin-inline: 0;
+
+        @include mobile {
+            padding-block: $padding-xl;
+        }
     }
 
     &__title {
-        font-family: $font-secondary;
-        font-weight: $fw-regular;
-        font-size: $fontsize-xxl;
-        line-height: $lh-huge;
-        letter-spacing: -0.5px;
         margin-bottom: $margin-2xs;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xxl;
+            line-height: $lh-mobile-huge;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xxl;
+            line-height: $lh-tablet-huge;
+        }
+
+        @include desktop {
+            font-size: $fontsize-xxl;
+            line-height: $lh-desktop-huge;
+        }
     }
 
     &__title-highlighted {
@@ -39,6 +57,21 @@
     &__description {
         color: $secondary-color;
         margin-bottom: $margin-xl;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xl;
+            line-height: $lh-mobile-small;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xl;
+            line-height: $lh-tablet-medium;
+        }
+
+        @include desktop {
+            font-size: $fontsize-desktop-xl;
+            line-height: $lh-desktop-medium;
+        }
     }
 
     &__counter-wrapper {
@@ -54,11 +87,41 @@
         line-height: $lh-huge;
         letter-spacing: -0.5px;
         text-shadow: 0 4px 13px $baseicon-color;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xxl;
+            line-height: $lh-mobile-huge;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xxl;
+            line-height: $lh-tablet-huge;
+        }
+
+        @include desktop {
+            font-size: $fontsize-desktop-xxl;
+            line-height: $lh-desktop-huge;
+        }
     }
 
     &__subtext {
         color: $secondary-color;
         margin-bottom: $margin-xl;
+
+        @include mobile {
+            font-size: $fontsize-mobile-l;
+            line-height: $lh-mobile-medium;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-l;
+            line-height: $lh-tablet-small;
+        }
+
+        @include desktop {
+            font-size: $fontsize-desktop-l;
+            line-height: $lh-desktop-small;
+        }
     }
 
     &__image {

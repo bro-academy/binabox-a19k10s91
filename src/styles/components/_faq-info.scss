@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .faq-info {
     &__title {
@@ -7,6 +8,21 @@
         font-size: $fontsize-lg;
         line-height: $lh-xl;
         padding: $padding-lg;
+
+        @include mobile {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
+
+        @include tablet {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
+
+        @include desktop {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
     }
 
     &__answer {
@@ -16,6 +32,21 @@
         padding-top: $padding-2md;
         padding-bottom: $padding-2xs;
         border-top: 2px solid $seporatorbold-color;
+
+        @include mobile {
+            font-size: $fontsize-base;
+            line-height: $lh-md;
+        }
+
+        @include tablet {
+            font-size: $fontsize-base;
+            line-height: $lh-md;
+        }
+
+        @include desktop {
+            font-size: $fontsize-base;
+            line-height: $lh-md;
+        }
     }
 
     &--highlighted {

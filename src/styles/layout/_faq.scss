@@ -1,5 +1,6 @@
 @use "../base/variables" as *;
 @use "../mixin/summary" as *;
+@use "../mixin/breakpoints" as *;
 
 .faq {
     width: 100%;
@@ -16,6 +17,21 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         text-align: center;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xxl;
+            line-height: $lh-mobile-huge;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-huge;
+            line-height: $lh-tablet-xl;
+        }
+
+        @include desktop {
+            font-size: $fontsize-xl;
+            line-height: $lh-xxl;
+        }
     }
 
     &__phrase {

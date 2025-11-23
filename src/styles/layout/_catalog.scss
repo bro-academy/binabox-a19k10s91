@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .catalog {
     padding: $margin-4xl $margin-zero;
@@ -20,6 +21,21 @@
             color: $seporatorbold-color;
             margin-inline: $margin-xl;
         }
+
+        @include mobile {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xl;
+            line-height: $lh-tablet-xl;
+        }
+
+        @include desktop {
+            font-size: $fontsize-lg;
+            line-height: $lh-desktop-xl;
+        }
     }
 
     &__control {
@@ -28,6 +44,11 @@
         justify-content: center;
         align-items: center;
         margin-bottom: $margin-3xl;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
     }
 
     &__icon {

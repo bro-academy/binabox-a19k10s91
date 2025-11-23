@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .blog-item {
     display: flex;
@@ -12,12 +13,43 @@
         font-size: $fontsize-sm;
         text-transform: uppercase;
         color: $subtitle-color;
+
+        @include mobile {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include tablet {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include desktop {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
     }
+
 
     &__time {
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         color: $subtitle-color;
+
+        @include mobile {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include tablet {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include desktop {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
     }
 
     &__title {
@@ -27,6 +59,21 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         color: $main-color;
+
+        @include mobile {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-huge;
+            line-height: $lh-tablet-xl;
+        }
+
+        @include desktop {
+            font-size: $fontsize-xl;
+            line-height: $lh-xxl;
+        }
     }
 
     &__text {
@@ -34,6 +81,21 @@
         line-height: $lh-sm;
         color: $subtitle-color;
         margin-bottom: $margin-sm;
+
+        @include mobile {
+            font-size: $fontsize-base;
+            line-height: $lh-md;
+        }
+
+        @include tablet {
+            font-size: $fontsize-base;
+            line-height: $lh-md;
+        }
+
+        @include desktop {
+            font-size: $fontsize-base;
+            line-height: $lh-md;
+        }
     }
 
     &__image-wrapper {

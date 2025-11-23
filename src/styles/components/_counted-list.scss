@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .counted-list {
     list-style: none;
@@ -39,11 +40,41 @@
         margin-top: 30px;
         margin-bottom: $margin-lg;
         z-index: 1;
+
+        @include mobile {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
+
+        @include tablet {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
+
+        @include desktop {
+            font-size: $fontsize-lg;
+            line-height: $lh-xl;
+        }
     }
 
     &__text {
         font-weight: $fw-medium;
         font-size: $fontsize-md;
         line-height: $lh-lg;
+
+        @include mobile {
+            font-size: $fontsize-md;
+            line-height: $lh-lg;
+        }
+
+        @include tablet {
+            font-size: $fontsize-md;
+            line-height: $lh-lg;
+        }
+
+        @include desktop {
+            font-size: $fontsize-md;
+            line-height: $lh-lg;
+        }
     }
 }
