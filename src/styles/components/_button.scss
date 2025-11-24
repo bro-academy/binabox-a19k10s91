@@ -8,17 +8,15 @@
     align-items: center;
     padding: $padding-zero $padding-sm;
     white-space: nowrap;
-
+    gap: 8px;
 
     &__icon {
         &--right {
             order: 2;
-            padding-left: $padding-2xs;
         }
 
         &--left {
             order: -1;
-            padding-right: $padding-2xs;
         }
     }
 

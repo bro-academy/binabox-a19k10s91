@@ -1,9 +1,17 @@
 @use "../base/variables" as *;
 
 .catalog-content {
-    &__button{
+    &__list {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    &__button {
         margin-top: $margin-xl;
+        display: flex;
         width: 100%;
+        box-sizing: border-box;
         justify-content: center;
         margin-bottom: $margin-4xl;
     }

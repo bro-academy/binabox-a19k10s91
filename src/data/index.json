@@ -87,6 +87,7 @@
         {
           "image":"cards/skeleton_4x.png",
           "image_alt": "transparent glass-like human skeleton illuminated in blue light with swirling smoke in the background",
+          "image_top": 70,
           "category": "DROP",
           "author": "Kairo Null",
           "date": "04 Dec 2022",
@@ -96,6 +97,7 @@
         {
           "image":"cards/cat_4x.png",
           "image_alt": "black cat with glowing green eyes in blue light",
+          "image_top": 250,
           "category": "NFT",
           "author": "Synthya Void",
           "date": "07 Dec 2022",
@@ -105,20 +107,12 @@
         {
           "image":"cards/monkey_4x.png",
           "image_alt": "close-up of a chimpanzee face in blue light with glowing particles",
+          "image_top": 240,
           "category": "RARE",
           "author": "Dr. Wex Omega",
           "date": "08 Dec 2022",
           "title": "Primal.exe",
           "text": "We tried to resurrect the past. What we got was rage compressed into an algorithm."
-        },
-        {
-          "image":"cards/duck_4x.png",
-          "image_alt": "futuristic blue duck statue with digital background",
-          "category": "NFT",
-          "author": "Tony Nguyer",
-          "date": "20 Jun 2022",
-          "title": "White Protocol",
-          "text": "At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive."
         },
         {
           "image":"cards/frame_4x.png",
@@ -128,6 +122,16 @@
           "date": "09 Dec 2022",
           "title": "Retrocore",
           "text": "his console comes from a game no one remembers how to play. But it's still powered on."
+        },
+        {
+          "image":"cards/duck_4x.png",
+          "image_alt": "futuristic blue duck statue with digital background",
+          "image_top": 110,
+          "category": "NFT",
+          "author": "Tony Nguyer",
+          "date": "20 Jun 2022",
+          "title": "White Protocol",
+          "text": "At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive."
         }
       ],
       "button_primary": "Read more"

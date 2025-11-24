@@ -1,0 +1,45 @@
+@use "../base/variables" as *;
+
+.blog-section {
+    padding-bottom: $margin-4xl;
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-xl;
+        line-height: $lh-xxl;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: $title-color;
+        margin-bottom: $margin-3xl;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    &__item {
+        .blog-item__image-wrapper {
+            height: 190px;
+            overflow: hidden;
+        }
+
+        &:nth-child(4n + 1) {
+            grid-row: span 2;
+
+            .blog-item__image-wrapper {
+                height: 664px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &__button {
+        position: relative;
+        display: block;
+        width: max-content;
+        margin: $margin-3xl auto 0 auto;
+    }
+}

@@ -9,7 +9,8 @@
                 <button class="button button--primary button--large" type="button">
                     {{ index.catalog.slider.button_all }}
                 </button>
-                <button class="button button--primary button--large catalog__nav-pagination button--separator_left" type="button">
+                <button class="button button--primary button--large catalog__nav-pagination button--separator_left"
+                        type="button">
                     {{ icon("button__icon", "arrow_left", 24, 24) }}
                     {{ index.catalog.slider.button_left }}
                 </button>
@@ -21,7 +22,7 @@
         </div>
         <div class="catalog__list">
             {% for item in index.catalog.items %}
-                {% include "../partials/catalog_item.twig" %}
+                {% include "../partials/catalog_item.twig" with { width: 253, height: 324} %}
             {% endfor %}
         </div>
     </section>

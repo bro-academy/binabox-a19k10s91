@@ -1,6 +1,44 @@
 @use "../base/variables" as *;
 
 .catalog-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        line-height: $lh-xxl;
+        font-size: $fontsize-xl;
+        width: 30%;
+    }
+
+    &__elements {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: flex-end;
+        margin-left: auto;
+        flex-wrap: nowrap;
+        flex: 1 1 100%;
+    }
+
+    &__select {
+        max-width: 145px;
+        flex: 0 0 100%;
+    }
+
+    &__search {
+        max-width: 520px;
+        flex: 0 0 100%;
+    }
+
     &__tag-list {
         background: $alternative2;
         display: flex;
@@ -8,10 +46,12 @@
         gap: 16px;
         justify-content: flex-start;
         padding-left: $padding-2md;
+        padding-top: $padding-2md;
+        padding-bottom: $padding-2md;
         margin-bottom: $margin-xl;
     }
 
     &__tag {
-        padding: $padding-2md $padding-zero;
+        padding: $padding-zero;
     }
 }

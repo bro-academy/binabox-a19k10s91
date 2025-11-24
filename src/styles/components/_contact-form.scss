@@ -26,12 +26,15 @@
         margin-bottom: $margin-3xl;
     }
 
+    &__field {
+        margin-bottom: $margin-lg;
+    }
+
     &__button {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center
-
     }
 
 }

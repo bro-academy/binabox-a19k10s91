@@ -2,7 +2,6 @@
 
 .sidebar {
     width: 280px;
-    margin-left: 108px;
 
     &__title {
         font-family: $font-secondary;
@@ -10,6 +9,7 @@
         font-size: $fontsize-lg;
         line-height: $lh-xl;
         color: $main-color;
+        padding-bottom: $padding-2md;
     }
 
     &__seporator {

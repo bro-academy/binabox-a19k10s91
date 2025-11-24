@@ -6,6 +6,10 @@
     padding-inline: $padding-4xl;
     width: 100%;
 
+    &--narrow-md {
+        max-width: 1384px;
+    }
+
     &--narrow {
         max-width: 866px;
     }

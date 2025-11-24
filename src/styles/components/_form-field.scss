@@ -4,7 +4,6 @@
     border-width: 0;
     position: relative;
     width: 100%;
-    margin-bottom: $margin-lg;
     padding: $padding-zero;
 
     &__element {
@@ -48,6 +47,9 @@
             padding-left: $padding-2xl;
         }
 
+        &--catalog-search {
+            background: $alternative2;
+        }
     }
 
     &__icon {
@@ -60,15 +62,15 @@
         display: block;
         text-align: left;
         margin-bottom: 4px;
+
+        &--empty {
+            margin-bottom: 0;
+        }
     }
 
     &--search {
         max-width: 188px;
         height: 48px;
         margin-bottom: $margin-zero;
-    }
-
-    &--catalog-search{
-        background: $alternative2;
     }
 }

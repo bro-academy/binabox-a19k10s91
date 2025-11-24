@@ -2,10 +2,12 @@
 
 {% block content %}
     {% include 'src/templates/partials/hero.twig' with {hero: catalog.hero } %}
-    <div class="content-wrapper">
+    <div class="content-wrapper catalog-box">
         {% include 'src/templates/partials/catalog_sidebar.twig' %}
-        {% include 'src/templates/partials/catalog_controls.twig' %}
-        {% include 'src/templates/partials/catalog_content.twig' %}
+        <div class="catalog-box__content">
+            {% include 'src/templates/partials/catalog_controls.twig' %}
+            {% include 'src/templates/partials/catalog_content.twig' %}
+        </div>
     </div>
 
 {% endblock %}

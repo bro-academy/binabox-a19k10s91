@@ -5,6 +5,11 @@
     max-width: 320px;
     width: 100%;
 
+    position: sticky;
+    left: 0;
+    top: 130px;
+    align-self: flex-start;
+
     &__list {
         @include summary();
         max-width: 272px;
@@ -14,13 +19,17 @@
         padding: $padding-lg;
     }
 
-    &__title{
-        margin-bottom: $margin-sm;
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $fw-regular;
+        font-size: $fontsize-lg;
+        line-height: $lh-md;
     }
 
     &__item {
         border-top: 2px solid $seporatorbold-color;
-        padding-top: $padding-lg;
+        margin-top: $margin-lg;
+        padding-top: $padding-2md;
     }
 
     &__button {

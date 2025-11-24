@@ -1,16 +1,36 @@
 @use "../base/variables" as *;
 
 .counted-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: counted;
 
-    &__item{
-        background: $alternative;
+    &__item {
+        position: relative;
         padding: $padding-xl;
-        width: 376px;
         margin-inline: auto;
         display: grid;
+        background-color: $alternative;
+
+        &::before {
+            counter-increment: counted;
+            content: counter(counted, decimal-leading-zero);
+            position: absolute;
+            top: 26px;
+            left: 28px;
+            font-family: $font-secondary;
+            font-weight: $fw-medium;
+            font-size: 64px;
+            line-height: 1;
+            letter-spacing: 0;
+            // Outline like the SVG: blue stroke, no fill
+            color: transparent;
+            -webkit-text-stroke: 1px $marina800-color;
+            text-stroke: 0.1px $marina800-color;
+        }
     }
 
-    
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -18,6 +38,7 @@
         line-height: $lh-xl;
         margin-top: 30px;
         margin-bottom: $margin-lg;
+        z-index: 1;
     }
 
     &__text {

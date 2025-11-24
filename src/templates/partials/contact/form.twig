@@ -5,16 +5,18 @@
 
     <div class="contact-form__wrapper">
         {% for field in contact.form.fields %}
-            {% if field.type == "radio" %}
-                {% include "../ui/form/radio_set.twig" %}
-            {% elseif field.type == "textarea" %}
-                {% include "../ui/form/textarea.twig" %}
-            {% else %}
-                {% include "../ui/form/input.twig" %}
-            {% endif %}
+            <div class="contact-form__field">
+                {% if field.type == "radio" %}
+                    {% include "../ui/form/radio_set.twig" %}
+                {% elseif field.type == "textarea" %}
+                    {% include "../ui/form/textarea.twig" %}
+                {% else %}
+                    {% include "../ui/form/input.twig" %}
+                {% endif %}
+            </div>
         {% endfor %}
 
-        <div class="form-field">
+        <div class="contact-form__field form-field">
             {% include "../ui/form/checkbox.twig" with { field: contact.form.submit, option: contact.form.submit.option } %}
         </div>
 

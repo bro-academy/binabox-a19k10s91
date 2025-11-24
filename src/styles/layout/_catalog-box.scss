@@ -1,0 +1,14 @@
+@use "../base/variables" as *;
+
+.catalog-box {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    padding-block: $padding-4xl;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
