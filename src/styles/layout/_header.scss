@@ -16,6 +16,10 @@
         padding-block: 16px;
     }
 
+    @include tablet {
+        padding-block: 16px;
+    }
+
     &__wrapper {
         font-weight: $fw-semibold;
         display: flex;
@@ -42,8 +46,30 @@
             padding-inline: 0;
 
             opacity: 0;
+            display: none;
             transition: transform .24s ease, opacity .24s ease;
 
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+        }
+
+        @include tablet {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            width: 100%;
+            transform: translateY(-16px);
+            background-color: $main-bg-color;
+            z-index: 1001;
+            box-sizing: border-box;
+            padding-inline: 0;
+            padding-bottom: $padding-xl;
+            opacity: 0;
+            display: none;
+            transition: transform .24s ease, opacity .24s ease;
             flex-direction: column-reverse;
             justify-content: flex-start;
             align-items: flex-start;
@@ -54,6 +80,14 @@
             @include mobile {
                 transform: translateY(0);
                 opacity: 1;
+                display: flex;
+                pointer-events: auto;
+            }
+
+            @include tablet {
+                transform: translateY(0);
+                opacity: 1;
+                display: flex;
                 pointer-events: auto;
             }
         }
@@ -66,6 +100,15 @@
         margin: $margin-zero auto $margin-zero auto;
 
         @include mobile {
+            display: block;
+            margin: 0 0 $margin-lg 0;
+            padding-left: 0;
+            padding-inline: $padding-2md;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        @include tablet {
             display: block;
             margin: 0 0 $margin-lg 0;
             padding-left: 0;
@@ -116,6 +159,12 @@
             flex-direction: column;
             gap: $margin-xs;
         }
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: $margin-xs;
+        }
     }
 
     &__nav-icon {
@@ -125,6 +174,8 @@
         flex-shrink: 0;
 
         @include mobile-hidden;
+
+        @include tablet-hidden;
     }
 
     &__logo-name {
@@ -147,6 +198,12 @@
         //    }
         //}
 
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+        
         @include mobile-hidden;
     }
 
@@ -163,13 +220,44 @@
         text-decoration: none;
     }
 
+    &__user-button {
+        &--compact {
+            @include tablet {
+                .button__text {
+                    display: none;
+                }
+            }
+        }
+    }
+
     &__search {
         display: flex;
         align-items: center;
+        width: auto;
+
+        @include mobile {
+            width: 100%;
+            padding: $padding-xl $padding-2md;
+            box-sizing: border-box;
+        }
+
+        @include tablet {
+            width: 100%;
+            padding: $padding-xl $padding-2md;
+            box-sizing: border-box;
+        }
 
         &--separator_right {
             position: relative;
             margin-right: $margin-xl;
+
+            @include mobile {
+                margin-right: 0;
+            }
+
+            @include tablet {
+                margin-right: 0;
+            }
 
             &::after {
                 content: "";

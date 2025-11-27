@@ -4,6 +4,22 @@
 .catalog-item {
     background: $alternative2;
     padding: $padding-lg;
+    box-sizing: border-box;
+
+    @include mobile {
+        flex: 0 0 303px;
+        width: 303px;
+    }
+
+    @include tablet {
+        flex: 0 0 303px;
+        width: 303px;
+    }
+
+    @include desktop {
+        flex: 0 0 270px;
+        width: 270px;
+    }
 
     &__price {
         font-family: $font-secondary;
@@ -55,11 +71,36 @@
         background-color: darkcyan;
         object-fit: cover;
 
+        @include mobile {
+            width: 255px;
+            max-width: 100%;
+            display: block;
+            margin-inline: auto;
+        }
+
+        @include tablet {
+            width: 255px;
+            max-width: 100%;
+            display: block;
+            margin-inline: auto;
+        }
+
+        @include desktop {
+            width: 222px;
+            max-width: 100%;
+            display: block;
+            margin-inline: auto;
+        }
     }
 
     &__image-wrapper {
         position: relative;
         margin-bottom: $margin-lg;
+
+        @include mobile {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     &__label {

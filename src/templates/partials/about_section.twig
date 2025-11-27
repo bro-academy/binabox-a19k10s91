@@ -4,16 +4,14 @@
         <p class="about__description">{{ index.about.text }}</p>
         <ol class="about__list counted-list">
             {% for item in index.about.items %}
-                <li class="counted-list__item">
+                <li class="about__item counted-list__item">
                     <h3 class="counted-list__title">{{ item.title }}</h3>
                     <span class="counted-list__text">{{ item.text }}</span>
                 </li>
             {% endfor %}
         </ol>
-        <div class="about__button-wrapper">
-            <a href="#" class="button button--primary button--large">
+        <a href="#" class="about__button button button--primary button--large button--mobile-fullwidth">
                 {{ index.about.button_primary }}
             </a>
-        </div>
     </section>
 </div>

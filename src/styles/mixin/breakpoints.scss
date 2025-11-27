@@ -1,37 +1,34 @@
-
-// <= 360px
+// < 360px
 @mixin mobile {
     @media screen and (max-width: 360px) {
         @content;
     }
 }
 
-// >= 678px
+// 360px - 678px
 @mixin tablet {
-    @media screen and (min-width: 678px) {
+    @media screen and (min-width: 361px) and (max-width: 678px) {
         @content;
     }
 }
 
-// >= 1280px
+// 678px - 1280px
 @mixin desktop {
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 679px) and (max-width: 1280px) {
         @content;
     }
 }
-
-// >= 1728px
-@mixin desktop-l {
-    @media screen and (min-width: 1728px) {
-        @content;
-    }
-}
-
 
 //
 
 @mixin mobile-hidden {
     @include mobile {
+        display: none;
+    }
+}
+
+@mixin tablet-hidden {
+    @include tablet {
         display: none;
     }
 }

@@ -1,11 +1,15 @@
 @use "../base/variables" as *;
 @use "../mixin/breakpoints" as *;
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .content-wrapper {
     max-width: 1600px;
     margin-inline: auto;
-    padding-inline: $padding-4xl;
     width: 100%;
+    box-sizing: border-box;
 
     &--narrow-md {
         max-width: 1384px;
@@ -16,7 +20,19 @@
     }
 
     @include mobile {
+        max-width: 360px;
+        width: 100%;
         padding-inline: $padding-2md;
+        margin-inline: 0;
+        box-sizing: border-box;
+    }
+
+    @include tablet {
+        padding-inline: $padding-lg;
+    }
+
+    @include desktop {
+        padding-inline: $padding-4xl;
     }
 }
 

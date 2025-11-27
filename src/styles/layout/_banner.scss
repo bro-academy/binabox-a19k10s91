@@ -22,12 +22,25 @@
         gap: 16px;
     }
 
+    @include tablet {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 24px;
+        width: 100%;
+    }
+
     &__content {
         padding-block: 139px;
         margin-inline: 0;
 
         @include mobile {
             padding-block: $padding-xl;
+        }
+
+        @include tablet {
+            padding-block: $padding-xl;
+            width: 100%;
         }
     }
 
@@ -132,11 +145,24 @@
         flex: 0 0 auto;
 
         @include mobile-hidden;
+        @include tablet-hidden;
     }
 
     &__buttons-wrapper {
         display: flex;
         flex-direction: row;
         gap: 16px;
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .button {
+            @include mobile {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     }
 }

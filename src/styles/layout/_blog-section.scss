@@ -35,13 +35,23 @@
         gap: 32px;
 
         @include mobile {
-            /* Horizontal scroll single-row grid on mobile */
-            grid-template-columns: none;
-            grid-auto-flow: column;
-            grid-auto-columns: 293px;
+            display: flex;
+            flex-direction: row;
             gap: 16px;
             overflow-x: auto;
-            padding-bottom: $padding-xs; // small space for possible scrollbar
+            overflow-y: hidden;
+            padding-bottom: $padding-xs;
+            margin-bottom: $margin-sm;
+        }
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
+            gap: 24px;
+            overflow: visible;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            justify-content: center;
         }
     }
 
@@ -52,12 +62,19 @@
         }
 
         @include mobile {
-            width: 293px;
-            min-width: 293px; // ensure fixed width in horizontal scroll
-            height: 560px;
+            max-width: 293px;
 
             .blog-item__image-wrapper {
-                height: 340px;
+                height: 320px;
+            }
+        }
+
+        @include tablet {
+            max-width: 303px;
+            margin: 0 auto;
+
+            .blog-item__image-wrapper {
+                height: 210px;
             }
         }
 
@@ -70,9 +87,16 @@
             }
 
             @include mobile {
-                grid-row: auto; // disable tall card on mobile
+                grid-row: auto;
                 .blog-item__image-wrapper {
                     height: 340px;
+                }
+            }
+
+            @include tablet {
+                grid-row: auto;
+                .blog-item__image-wrapper {
+                    height: 210px;
                 }
             }
         }
@@ -83,5 +107,10 @@
         display: block;
         width: max-content;
         margin: $margin-3xl auto 0 auto;
+
+        @include mobile {
+            width: 100%;
+            margin: $margin-2xl 0 0 0;
+        }
     }
 }

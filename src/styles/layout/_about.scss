@@ -60,10 +60,38 @@
         gap: 32px;
         margin-top: $margin-3xl;
         margin-bottom: $margin-3xl;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
-    &__button-wrapper {
-        width: 100%;
-        text-align: center;
+    &__item {
+        @include desktop {
+            &:nth-child(4) {
+                grid-column: 1 / -1;
+                width: 100%;
+            }
+        }
+    }
+
+    &__button {
+        display: block;
+        width: max-content;
+        margin: $margin-3xl auto 0 auto;
+        box-sizing: border-box;
+
+        @include mobile {
+            width: 100%;
+            margin: $margin-2xl 0 0 0;
+        }
     }
 }

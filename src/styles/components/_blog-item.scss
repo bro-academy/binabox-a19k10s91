@@ -4,6 +4,7 @@
 .blog-item {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 736px;
     background: $alternative2;
     padding: $padding-lg;
@@ -63,6 +64,8 @@
         @include mobile {
             font-size: $fontsize-lg;
             line-height: $lh-xl;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         @include tablet {
@@ -85,6 +88,8 @@
         @include mobile {
             font-size: $fontsize-base;
             line-height: $lh-md;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         @include tablet {
@@ -126,5 +131,7 @@
 
     &__picture{
         display: block;
+        width: 100%;
+        height: auto;
     }
 }

@@ -10,6 +10,12 @@
     padding: $padding-zero $padding-sm;
     white-space: nowrap;
     gap: 8px;
+    text-align: center;
+
+    @include mobile {
+        justify-content: center;
+        text-align: center;
+    }
 
     &__icon {
         &--right {
@@ -28,7 +34,8 @@
     &--large {
         font-size: $fontsize-md;
         line-height: $lh-lg;
-        padding: $padding-xs $padding-md;
+        padding: $padding-xs $padding-lg;
+        min-height: 48px;
     }
 
     &--medium {
@@ -162,6 +169,7 @@
     &--separator_left {
         position: relative;
         margin-left: $margin-sm;
+        padding-left: $padding-sm;
 
         &::before {
             content: "";
@@ -171,6 +179,18 @@
             border-right: 2px solid;
             color: $seporatorbold-color;
             height: 24px;
+        }
+    }
+
+    &--mobile-fullwidth {
+        @include mobile {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @include tablet {
+            width: 100%;
+            box-sizing: border-box;
         }
     }
 }
