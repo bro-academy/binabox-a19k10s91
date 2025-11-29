@@ -4,6 +4,10 @@
 .catalog {
     padding: $margin-4xl $margin-zero;
 
+        @include mobile {
+            padding: $padding-xl $padding-zero;
+        }
+
     &__control {
         display: flex;
         flex-direction: row;
@@ -17,6 +21,7 @@
             align-items: flex-start;
             gap: $margin-md;
             width: 100%;
+
         }
     }
 

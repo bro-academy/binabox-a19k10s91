@@ -39,8 +39,13 @@
         }
 
         @include tablet {
-            padding-block: $padding-xl;
+            padding-block: $padding-4xl;
             width: 100%;
+        }
+
+        @include desktop {
+            margin-block: 56px;
+            margin-left: 56px;
         }
     }
 
