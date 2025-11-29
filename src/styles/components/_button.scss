@@ -27,10 +27,6 @@
         }
     }
 
-    &__text {
-        @include mobile-hidden;
-    }
-
     &--large {
         font-size: $fontsize-md;
         line-height: $lh-lg;

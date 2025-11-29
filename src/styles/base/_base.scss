@@ -55,3 +55,11 @@
     background: transparent;
     fill: $main-color;
 }
+
+.mobile-hidden{
+    @include mobile-hidden;
+}
+
+.tablet-hidden{
+    @include tablet-hidden;
+}

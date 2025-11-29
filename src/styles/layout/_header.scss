@@ -203,7 +203,7 @@
         @include tablet {
             display: block;
         }
-        
+
         @include mobile-hidden;
     }
 
@@ -221,13 +221,7 @@
     }
 
     &__user-button {
-        &--compact {
-            @include tablet {
-                .button__text {
-                    display: none;
-                }
-            }
-        }
+        padding: $padding-sm;
     }
 
     &__search {

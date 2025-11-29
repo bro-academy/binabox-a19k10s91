@@ -39,12 +39,12 @@
         </div>
 
         <div class="header__user-nav">
-            <a href="#" class="button button--primary button--large header__user-button header__user-button--compact">
-                <span class="button__text">{{ header.default_button.text }}</span>
+            <a href="#" class="button button--primary button--large header__user-button">
+                <span class="button__text button__text tablet-hidden mobile-hidden">{{ header.default_button.text }}</span>
                 {{ icon("button__icon button__icon--left header__nav-icon-login", "discord", 24, 24) }}
             </a>
             <a href="#" class="button button--secondary button--large header__user-button">
-                <span class="button__text">{{ header.primary_button.text }}</span>
+                <span class="button__text mobile-hidden">{{ header.primary_button.text }}</span>
                 {{ icon( "button__icon button__icon--left header__nav-icon-login", "men", 24, 24) }}
             </a>
         </div>
