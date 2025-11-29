@@ -4,6 +4,10 @@
 .blog-section {
     padding-bottom: $margin-4xl;
 
+        @include mobile {
+            padding-bottom: 54px;
+        }
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -110,7 +114,7 @@
 
         @include mobile {
             width: 100%;
-            margin: $margin-2xl 0 0 0;
+            margin: $margin-3xl 0 56px 0;
         }
     }
 }

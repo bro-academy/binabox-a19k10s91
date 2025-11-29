@@ -8,6 +8,10 @@
             padding: $padding-xl $padding-zero;
         }
 
+        @include tablet {
+            padding: $padding-zero $padding-zero;
+        }
+
     &__control {
         display: flex;
         flex-direction: row;
