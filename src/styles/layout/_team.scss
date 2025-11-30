@@ -2,6 +2,10 @@
 @use "../mixin/breakpoints" as *;
 
 .team {
+
+    @include desktop {
+        padding-bottom: $padding-4xl;
+    }
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;

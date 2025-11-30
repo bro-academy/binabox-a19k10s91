@@ -53,12 +53,12 @@
 
         @include mobile {
             width: 100%;
-            margin-bottom: $margin-2xl;
+            margin-bottom: $margin-zero;
         }
 
         @include tablet {
             width: 100%;
-            margin-bottom: $margin-2xl;
+            margin-bottom: $margin-zero;
         }
     }
 

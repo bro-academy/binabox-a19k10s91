@@ -41,6 +41,8 @@
         @include tablet {
             font-size: $fontsize-base;
             line-height: $lh-md;
+            padding-bottom: $padding-zero;
+            margin-top: $margin-zero;
         }
 
         @include desktop {

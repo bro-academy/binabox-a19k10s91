@@ -10,6 +10,14 @@
     padding-top: $padding-4xl;
     padding-bottom: 104px;
 
+    @include mobile {
+        padding-bottom: $padding-4xl;
+    }
+
+    @include tablet {
+        padding-bottom: $padding-4xl;
+    }
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -17,6 +25,7 @@
         line-height: $lh-xxl;
         letter-spacing: -0.5px;
         text-align: center;
+        margin-bottom: $margin-lg;
 
         @include mobile {
             font-size: $fontsize-mobile-xxl;
@@ -32,6 +41,7 @@
             font-size: $fontsize-xl;
             line-height: $lh-xxl;
         }
+
     }
 
     &__phrase {
