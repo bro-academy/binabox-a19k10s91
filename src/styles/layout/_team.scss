@@ -53,6 +53,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
+        &::-webkit-scrollbar { display: none; }
 
         @include mobile {
             display: flex;
@@ -87,14 +88,16 @@
         background: $alternative2;
         width: 100%;
         max-width: 293px;
-        padding: $padding-xl;
+        padding-block: $padding-xl;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
 
+
         @include mobile {
+            padding-block: $padding-2md;
             flex: 0 0 293px;
         }
 
