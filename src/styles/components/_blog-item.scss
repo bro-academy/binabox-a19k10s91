@@ -9,11 +9,24 @@
     background: $alternative2;
     padding: $padding-lg;
 
+    @include mobile {
+        padding: $padding-2md;
+    }
+
     &__author {
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
-        text-transform: uppercase;
         color: $subtitle-color;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+
+        border-right: 2px solid $seporatorbold-color;
+        border-radius: 2px;
+        padding-right: 8px;
 
         @include mobile {
             font-size: $fontsize-sm;
@@ -36,6 +49,11 @@
         font-weight: $fw-semibold;
         font-size: $fontsize-sm;
         color: $subtitle-color;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
 
         @include mobile {
             font-size: $fontsize-sm;
@@ -84,17 +102,22 @@
         line-height: $lh-sm;
         color: $subtitle-color;
         margin-bottom: $margin-sm;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
 
         @include mobile {
             font-size: $fontsize-base;
             line-height: $lh-md;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
         }
 
         @include tablet {
             font-size: $fontsize-base;
             line-height: $lh-md;
+
         }
 
         @include desktop {
@@ -121,6 +144,11 @@
         position: absolute;
         top: 16px;
         right: 16px;
+
+        @include mobile {
+            top: 24px;
+            right: 24px;
+        }
     }
 
     &__button {
@@ -129,9 +157,28 @@
         align-self: flex-start;
     }
 
-    &__picture{
+    &__picture {
         display: block;
         width: 100%;
         height: auto;
+
+        @include mobile {
+            transform: translateY(0) !important;
+            object-fit: cover;
+            width: 261px;
+            height: 340px;
+        }
+
+        @include tablet {
+            transform: translateY(0) !important;
+            object-fit: cover;
+            width: 255px;
+            height: 210px;
+        }
+
+        @include desktop {
+            transform: translateY(0) !important;
+            object-fit: cover;
+        }
     }
 }
