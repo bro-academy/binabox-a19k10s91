@@ -155,15 +155,15 @@
         }
 
         &--main {
+            justify-content: center;
+            text-align: center;
+
             @include mobile {
                 flex: 1 1 auto;
                 min-width: 0;
                 justify-content: center;
                 text-align: center;
             }
-
-            justify-content: center;
-            text-align: center;
         }
     }
 }

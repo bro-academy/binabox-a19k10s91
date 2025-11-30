@@ -77,5 +77,9 @@
         @include mobile {
             max-width: 100%;
         }
+
+        @include tablet {
+            max-width: 100%;
+        }
     }
 }

@@ -1,8 +1,8 @@
 @use "../base/variables" as *;
 @use "../mixin/breakpoints" as *;
 
-@mixin burger-visible {
-    display: flex;
+.burger {
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -47,20 +47,12 @@
             }
         }
     }
-}
-
-.burger {
-    display: none;
 
     @include mobile {
-        @include burger-visible;
+        display: flex;
     }
 
     @include tablet {
-        @include burger-visible;
-    }
-
-    @include desktop {
-        display: none;
+        display: flex;
     }
 }
