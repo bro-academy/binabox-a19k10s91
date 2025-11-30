@@ -4,6 +4,10 @@
 .about {
     padding-bottom: $margin-4xl;
 
+    @include desktop {
+       padding-top: $padding-4xl;
+    }
+
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
