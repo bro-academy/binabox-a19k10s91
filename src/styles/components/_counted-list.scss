@@ -9,7 +9,7 @@
 
     &__item {
         position: relative;
-        padding: $padding-xl;
+        padding: 62px $padding-xl $padding-xl;
         margin-inline: auto;
         display: grid;
         background-color: $alternative;
@@ -28,7 +28,30 @@
             color: transparent;
             -webkit-text-stroke: 1px $marina800-color;
             text-stroke: 0.1px $marina800-color;
+
+            @include mobile {
+                top: 0;
+                left: 24px;
+                font-size: 91px;
+            }
+
+            @include tablet {
+                top: 10px;
+                left: 32px;
+                font-size: 85px;
+            }
+
+            @include desktop {
+                top: 22px;
+                left: 24px;
+                font-size: 70px;
+            }
         }
+
+        @include mobile {
+            padding: 54px $padding-lg $padding-lg;
+        }
+
     }
 
     &__title {
@@ -36,7 +59,6 @@
         font-weight: $fw-regular;
         font-size: $fontsize-lg;
         line-height: $lh-xl;
-        margin-top: 30px;
         margin-bottom: $margin-lg;
         z-index: 1;
 
@@ -60,6 +82,7 @@
         font-weight: $fw-medium;
         font-size: $fontsize-md;
         line-height: $lh-lg;
+        color: $secondary;
 
         @include mobile {
             font-size: $fontsize-md;

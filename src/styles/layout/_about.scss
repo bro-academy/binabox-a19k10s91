@@ -36,6 +36,7 @@
         line-height: $lh-lg;
         text-align: center;
         white-space: normal;
+        color: $secondary;
 
         @include mobile {
             font-size: $fontsize-mobile-xl;
@@ -63,6 +64,7 @@
 
         @include mobile {
             grid-template-columns: 1fr;
+            gap: 16px;
         }
 
         @include tablet {

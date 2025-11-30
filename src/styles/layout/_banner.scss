@@ -26,7 +26,7 @@
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-start;
-        gap: 24px;
+        gap: 0;
         width: 100%;
     }
 
@@ -46,6 +46,8 @@
         @include desktop {
             margin-block: 56px;
             margin-left: 56px;
+            padding-block: 0;
+
         }
     }
 
@@ -151,6 +153,10 @@
 
         @include mobile-hidden;
         @include tablet-hidden;
+        @include desktop {
+            width: 437px;
+            height: 526px;
+        }
     }
 
     &__buttons-wrapper {
