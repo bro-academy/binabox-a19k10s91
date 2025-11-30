@@ -1,6 +1,6 @@
 {% from '../macro/icon.twig' import icon %}
 <footer class="footer">
-    <div class="content-wrapper">
+    <div class="footer__container">
         <div class="footer__wrapper">
             <div class="footer__content">
                 <div class="footer__brand">
@@ -11,8 +11,6 @@
                         <svg class="icon footer__logo-name" width="134" height="21">
                             <use href="/src/assets/icons/binabox.svg" />
                         </svg>
-                        {# {{ icon("footer-logo__picture", "blue_logo", 188, 42) }} #}
-                        {# <img class="footer-logo__picture" src="{{ footer.logo.icon }}" alt="{{ footer.logo.alt }}"> #}
                     </a>
                     <p class="footer__slogan">{{ footer.logo.slogan }}</p>
                 </div>

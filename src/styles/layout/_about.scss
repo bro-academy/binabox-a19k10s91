@@ -1,7 +1,12 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .about {
     padding-bottom: $margin-4xl;
+
+    @include desktop {
+       padding-top: $padding-4xl;
+    }
 
     &__title {
         font-family: $font-secondary;
@@ -11,6 +16,21 @@
         letter-spacing: -0.5px;
         text-align: center;
         margin-bottom: $margin-sm;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xxl;
+            line-height: $lh-mobile-huge;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-huge;
+            line-height: $lh-tablet-xl;
+        }
+
+        @include desktop {
+            font-size: $fontsize-xl;
+            line-height: $lh-xxl;
+        }
     }
 
     &__description {
@@ -20,6 +40,22 @@
         line-height: $lh-lg;
         text-align: center;
         white-space: normal;
+        color: $secondary;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xl;
+            line-height: $lh-lg;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xl;
+            line-height: $lh-lg;
+        }
+
+        @include desktop {
+            font-size: $fontsize-desktop-xl;
+            line-height: $lh-lg;
+        }
     }
 
     &__list {
@@ -29,10 +65,39 @@
         gap: 32px;
         margin-top: $margin-3xl;
         margin-bottom: $margin-3xl;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
-    &__button-wrapper {
-        width: 100%;
-        text-align: center;
+    &__item {
+        @include desktop {
+            &:nth-child(4) {
+                grid-column: 1 / -1;
+                width: 100%;
+            }
+        }
+    }
+
+    &__button {
+        display: block;
+        width: max-content;
+        margin: $margin-3xl auto 0 auto;
+        box-sizing: border-box;
+
+        @include mobile {
+            width: 100%;
+            margin: $margin-2xl 0 0 0;
+        }
     }
 }

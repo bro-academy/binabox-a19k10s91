@@ -1,8 +1,29 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .footer {
     background: $alternative;
     padding-bottom: $padding-xl;
+    width: 100%;
+
+    &__container {
+        width: 100%;
+        margin: 0;
+        padding-inline: $padding-4xl;
+        box-sizing: border-box;
+
+        @include desktop {
+            padding-inline: $padding-4xl;
+        }
+
+        @include tablet {
+            padding-inline: $padding-lg;
+        }
+
+        @include mobile {
+            padding-inline: $padding-2md;
+        }
+    }
 
     &__wrapper {
         font-weight: $fw-semibold;
@@ -14,18 +35,52 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: $margin-2xl;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &__brand {
         max-width: 320px;
         display: flex;
         flex-direction: column;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: $margin-zero;
+        }
+
+        @include tablet {
+            width: 100%;
+            margin-bottom: $margin-zero;
+        }
     }
 
     &__slogan {
         font-weight: $fw-regular;
         font-size: $fontsize-sm;
         margin-top: $margin-xs;
+
+        @include mobile {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include tablet {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
+
+        @include desktop {
+            font-size: $fontsize-sm;
+            line-height: $lh-sm;
+        }
     }
 
     &__nav-subtitle {
@@ -35,6 +90,11 @@
         display: flex;
         flex-direction: column;
         margin-bottom: $margin-2xs;
+
+        @include mobile {
+            font-size: $fontsize-lg;
+            margin-bottom: $margin-sm;
+        }
     }
 
     &__nav-list {
@@ -51,12 +111,36 @@
         margin: $margin-zero;
         list-style: none;
         align-content: flex-start;
+
+        @include mobile {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px 24px;
+        }
+
+        @include tablet {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px 24px;
+        }
     }
 
     &__nav-item {
         flex: 0 0 40%;
         box-sizing: border-box;
         padding: 4px 0 4px 0;
+
+        @include mobile {
+            flex: unset;
+            width: 100%;
+        }
+
+        @include tablet {
+            flex: unset;
+            width: 100%;
+        }
     }
 
     &__logo-picture {
@@ -75,13 +159,35 @@
         flex-direction: row;
         justify-content: space-between;
         border-top: 2px solid $seporatorbold-color;
+        gap: $margin-md;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+        }
     }
 
-    &__rights-wrapper{
+    &__rights-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 42px;
+        width: 100%;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: $margin-md;
+        }
+
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+        }
     }
 
     &__rights {
@@ -89,13 +195,15 @@
         font-size: $fontsize-sm;
         text-align: left;
         display: flex;
-        //justify-content: flex-start;
     }
 
     &__social {
         display: flex;
-        margin-left: 1078px;
         justify-content: flex-end;
+        gap: $margin-xs;
 
+        @include tablet {
+            justify-content: flex-end;
+        }
     }
 }

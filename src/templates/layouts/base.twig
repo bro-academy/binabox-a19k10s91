@@ -2,27 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    {% block title %}{{ siteTitle }}{% endblock %}
-  </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="/src/styles/pages/style.scss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{{ siteTitle }}{% endblock %}
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/src/styles/pages/style.scss">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.burger').on('click', function() {
+          $('.burger__line').toggleClass('burger__line--open');
+          $('.header__menu').toggleClass('header__menu--open');
+        });
+      });
+    </script>
+
 </head>
 
 <body>
-  {% include "../partials/header.twig" %}
+{% include "../partials/header.twig" %}
 
-  <main>
+<main>
     {% block content %}{% endblock %}
-  </main>
+</main>
 
-  {% include "../partials/footer.twig" %}
+{% include "../partials/footer.twig" %}
 </body>
 
 </html>

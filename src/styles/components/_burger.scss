@@ -1,0 +1,58 @@
+@use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
+
+.burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    margin-right: $margin-sm;
+
+    &__line {
+        display: block;
+        width: 18px;
+        height: 2px;
+        border-radius: 30px;
+        background: #fff;
+        transition: .2s ease;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        &--open {
+            transition: .2s ease;
+            transform-origin: 50% 50%;
+
+            &:nth-child(1) {
+                top: 6px;
+                left: 0;
+                width: 20px;
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                top: -6px;
+                left: 0;
+                width: 20px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @include mobile {
+        display: flex;
+    }
+
+    @include tablet {
+        display: flex;
+    }
+}

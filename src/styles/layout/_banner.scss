@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .banner {
     font-weight: $fw-medium;
@@ -17,18 +18,56 @@
     gap: 64px;
     justify-content: center;
 
+    @include mobile {
+        gap: 0;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
     &__content {
         padding-block: 139px;
         margin-inline: 0;
+
+        @include mobile {
+            padding-block: $padding-xl;
+        }
+
+        @include tablet {
+            padding-block: $padding-4xl;
+            width: 100%;
+        }
+
+        @include desktop {
+            margin-block: 56px;
+            margin-left: 56px;
+            padding-block: 0;
+
+        }
     }
 
     &__title {
-        font-family: $font-secondary;
-        font-weight: $fw-regular;
-        font-size: $fontsize-xxl;
-        line-height: $lh-huge;
-        letter-spacing: -0.5px;
         margin-bottom: $margin-2xs;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xxl;
+            line-height: $lh-mobile-huge;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xxl;
+            line-height: $lh-tablet-huge;
+        }
+
+        @include desktop {
+            font-size: $fontsize-xxl;
+            line-height: $lh-desktop-huge;
+        }
     }
 
     &__title-highlighted {
@@ -38,6 +77,21 @@
     &__description {
         color: $secondary-color;
         margin-bottom: $margin-xl;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xl;
+            line-height: $lh-lg;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xl;
+            line-height: $lh-tablet-medium;
+        }
+
+        @include desktop {
+            font-size: $fontsize-desktop-xl;
+            line-height: $lh-desktop-medium;
+        }
     }
 
     &__counter-wrapper {
@@ -53,11 +107,41 @@
         line-height: $lh-huge;
         letter-spacing: -0.5px;
         text-shadow: 0 4px 13px $baseicon-color;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xxl;
+            line-height: $lh-mobile-huge;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-xxl;
+            line-height: $lh-tablet-huge;
+        }
+
+        @include desktop {
+            font-size: $fontsize-desktop-xxl;
+            line-height: $lh-desktop-huge;
+        }
     }
 
     &__subtext {
         color: $secondary-color;
         margin-bottom: $margin-xl;
+
+        @include mobile {
+            font-size: $fontsize-mobile-l;
+            line-height: $lh-mobile-medium;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-l;
+            line-height: $lh-tablet-small;
+        }
+
+        @include desktop {
+            font-size: $fontsize-desktop-l;
+            line-height: $lh-desktop-small;
+        }
     }
 
     &__image {
@@ -66,11 +150,30 @@
         height: 642px;
         object-fit: cover;
         flex: 0 0 auto;
+
+        @include mobile-hidden;
+        @include tablet-hidden;
+        @include desktop {
+            width: 437px;
+            height: 526px;
+        }
     }
 
     &__buttons-wrapper {
         display: flex;
         flex-direction: row;
         gap: 16px;
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .button {
+            @include mobile {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     }
 }

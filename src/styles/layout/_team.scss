@@ -1,6 +1,11 @@
 @use "../base/variables" as *;
+@use "../mixin/breakpoints" as *;
 
 .team {
+
+    @include desktop {
+        padding-bottom: $padding-4xl;
+    }
     &__title {
         font-family: $font-secondary;
         font-weight: $fw-regular;
@@ -10,31 +15,103 @@
         text-align: center;
         color: $title-color;
         margin-bottom: $margin-3xl;
+
+        @include mobile {
+            font-size: $fontsize-mobile-xxl;
+            line-height: $lh-mobile-huge;
+        }
+
+        @include tablet {
+            font-size: $fontsize-tablet-huge;
+            line-height: $lh-tablet-xl;
+        }
+
+        @include desktop {
+            font-size: $fontsize-xl;
+            line-height: $lh-xxl;
+        }
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            width: 100%;
+            overflow-x: hidden;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 40px;
+        &::-webkit-scrollbar { display: none; }
+
+        @include mobile {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 100%;
+            gap: 16px;
+            padding-bottom: $padding-md;
+        }
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 100%;
+            gap: 24px;
+            padding-bottom: $padding-md;
+        }
+
+        @include desktop {
+            justify-content: center;
+        }
     }
 
     &__item {
         background: $alternative2;
-        width: 229px;
-        padding: $padding-xl;
+        width: 100%;
+        max-width: 293px;
+        padding-block: $padding-xl;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+
+
+        @include mobile {
+            padding-block: $padding-2md;
+            flex: 0 0 293px;
+        }
+
+        @include tablet {
+            flex: 0 0 293px;
+        }
+
+        @include desktop {
+            width: 100%;
+            max-width: 293px;
+        }
     }
 }
